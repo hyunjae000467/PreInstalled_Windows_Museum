@@ -1,0 +1,9 @@
+SetVolume(0)
+
+nextScript = "VolOSD.mscr"
+If(ScriptProcExists(nextScript))
+	KillScript(nextScript)
+EndIf
+
+cwd = SystemPath("ScriptPath")
+Run(cwd\nextScript)

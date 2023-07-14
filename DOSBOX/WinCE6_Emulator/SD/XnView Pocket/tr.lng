@@ -1,0 +1,187 @@
+Language=Turkish
+
+[Menu]
+Action = Seçenekler
+File = Dosya
+Select = Seç
+Cancel = Ýptal
+Ok = Tamam
+Done = Tamam
+
+# Menu Browser
+Open folder... = Klasör Aç
+Start Slideshow = Slaytý Baþlat
+Capture=Yakala
+View = Göster
+Thumbnails = Küçük Resimler
+List = Liste
+Details = Detaylar
+Strip = Önizleme
+Show Filename = Dosya Adýný Göster
+Thumbnails = Küçük Resimler
+Small = Küçük
+Normal = Normal
+Large = Büyük
+Sort by = Sýralama
+Name = Ýsim
+Date = Tarih
+Type = Tür
+Size = Boyut
+Image resolution = Resim Çözünürlüðü
+Ascending = Artan
+Descending = Azalan
+About = Hakkýnda
+Quit = Çýkýþ
+Send to = Gönder
+via IrDA = Kýzýlötesi Ýle
+as EMail = E-posta Ýle
+Copy to = Kopyala...
+Move to = Taþý...
+Rename = Yeniden Adlandýr
+Delete = Sil
+Properties = Özellikler
+Options = Seçenekler
+Favorites=Favoriler
+Add to Favorites=Favorilere Ekle
+Delete Current=Þimdikini Sil
+
+# Menu View
+Browse = Tarayýcý
+Zoom = Büyütme
+Fit to Screen = Ekrana Uydur
+Fill the Screen = Ekraný Doldur
+Rotate = Döndür
+Automatic = Otomatik
+Left = Sol
+Right = Sað
+Page = Sayfa
+Previous = Önceki
+Next = Sonraki
+Resize = Yeniden Boyutlandýr
+Adjust = Ayarla
+Quit = Çýkýþ
+Save as = Farklý Kaydet
+
+# Menu properties
+Previous = Önceki
+Next = Sonraki
+
+# Menu View
+Brightness = Parlaklýk
+Contrast =Zýtlýk
+Gamma = Gamma
+Negative=Negatif
+Auto Levels=Otomatik Seviye
+Auto Contrast=Otomatik Zýtlýk
+Reset = Baþa Dön
+Cancel = Ýptal
+
+Fill the screen=Ekraný kapla
+Lock zoom=Lock zoom
+
+[DlgAbout]
+-1 = Hakkýnda
+
+[DlgBrowse]
+-1 = Tarayýcý
+
+[DlgProperties]
+-1 = Özellikler
+
+[DlgRename]
+-1 = Yeniden Adlandýr
+IDC_TPATHNAME = Dosya Yolu:
+IDC_TFILENAME = Dosya Ýsmi:
+IDC_TEXTENSION = Dosya Uzantýsý:
+
+[DlgResize]
+-1 = Yeniden Boyutlandýr
+IDC_TIMAGESIZE = Resim  Boyutu (%):
+IDC_TIMAGEWIDTH = Geniþlik (piksel):
+IDC_TIMAGEHEIGHT = Yükseklik (piksel):
+IDC_TDEFINEDSIZE = Öntanýmlý boyut:
+
+[DlgSaveas]
+-1 = Farklý kaydet
+IDC_TPATHNAME = Dosya Yolu:
+IDC_TFILENAME = Dosya Adý:
+IDC_TFORMAT = Biçim:
+IDC_TQUALITY = Kalite:
+IDC_SAVEEXIF = EXIF bilgisini kaydet
+IDC_TCOLOR = Renk modu:
+
+[DlgOption]
+-1 = Parametre
+
+[DlgCapture]
+-1=Ekran Yakalama
+IDC_TINFO = Ekraný yakalamak için # tuþuna basýnýz
+IDC_AUTOCAPTURE = 10s Sonra Otomatik Yakala
+
+[DlgOption1]
+-1 = Genel
+IDC_TRESIZEBIGPIC = Büyük resimleri yeniden boyutlandýr::
+IDC_NOBWRESIZE = S&B resimleri yeniden boyutlandýrma
+IDC_TLANGUAGE = Dil:
+IDC_TDEFROTATION = Standart döndürme::
+IDC_OPENINFULLSCREEN = Görüntü modu olarak tam ekran kullan (resim yerine)
+IDC_ONECLICK = Görüntü ve tarayýcý modu arasýnda geçiþ için tek týklama yap
+
+[DlgOption2]
+-1 = Küçük Resimler
+IDC_USEEMBEDDED = Gömülü küçük resmi kullan
+IDC_USEHIGHQUALITY = Küçük resmi düzelt
+IDC_ADDBOTTOM = Yeni dosyalar ekle
+IDC_USECACHE = Use thumbnail cache
+
+[DlgOption3]
+-1 = Slayt Gösterisi
+IDC_TDELAY = Gecikme (sn)
+IDC_USEEFFECT = Efekt geçiþi kullan
+IDC_USELOOP = Bitince tekrar göster
+
+[DlgOption4]
+-1 = Dosya Türleri
+IDC_OPT4TEXT = XnView ile açmak istediðiniz dosya türlerini seçin
+
+[String]
+IDS_NAME                = Ýsim
+IDS_PROPERTIES          = Özellikler
+IDS_TYPE                = Tür
+IDS_SIZE                = Boyut
+IDS_DATE                = Tarih
+IDS_BYTES               = Byte
+IDS_KB                  = Kb
+IDS_MB                  = Mb
+IDS_GB                  = Gb
+IDS_ACTION              = Davranýþ
+IDS_VIEW                = Göster
+IDS_FILENAME            = Dosya Ýsmi
+IDS_FILELOCATION        = Dosya Konumu
+IDS_FILEDATE            = Dosya Tarihi
+IDS_FORMATNAME          = Biçim
+IDS_IMAGESIZE           = Resim Boyutu
+IDS_DPI                 = DPI
+IDS_BITS                = # Bit
+IDS_COMMENT             = Yorum
+IDS_FILESIZE            = Dosya Boyutu
+IDS_SELECT              = Seç
+IDS_BLACK_WHITE         = Siyah&Beyaz
+IDS_16COLORS            = 16 renk
+IDS_256COLORS           = 256 renk
+IDS_24BITS              = 24 Bit
+IDS_EXIST               = Zaten bu isimde bir dosya var, üzerine yazýlsýn mý?
+IDS_PROBLEM_SAVING      = Dosya kaydetme problemi!
+IDS_TREEROOT            = Telefonum
+IDS_OPTGENERAL          = Genel
+IDS_OPTTHUMBNAIL        = Küçük Resimler
+IDS_OPTSLIDESHOW        = Slayt Gösterisi
+IDS_NONE                = Hiçbiri
+IDS_AUTOLEFT            = Otomatik Sola
+IDS_AUTORIGHT           = Otomatik Saða
+IDS_LEFT                = Sol
+IDS_RIGHT               = Saða
+IDS_OPTASSOCIATIONS     = Dosya Türleri
+IDS_REBOOT              = Deðiþikliklerin etkin olabilmesi için XnView uygulamasýný yeniden baþlatmalýsýnýz.
+IDS_DELETEFILE			= Bu dosyayý gerçekten silmek istiyor musunuz?
+IDS_CAPTURE_OK			= Yakalanan görüntü kaydedildi, þimdi görmek ister misiniz?

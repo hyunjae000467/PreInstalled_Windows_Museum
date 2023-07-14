@@ -1,0 +1,541 @@
+Language=繁體中文
+
+[Menu]
+File=檔案
+Go to=跳到
+Home Folder=首頁
+Up=上一層
+Browse Flash card=瀏覽記憶卡
+Add to favorites...=加入我的最愛...
+New folder...=新資料夾...
+Rename folder...=重新命名資料夾...
+Delete folder=刪除資料夾
+Cut=剪下
+Copy=複製
+Paste=貼上
+Delete=刪除
+Rename...=重新命名...
+Selection=選擇
+All=全部
+None=無
+Invert=反向選擇
+Multiple selection=多重選擇
+About...=關於...
+Quit=離開
+View=檢視
+Mode=模式
+Thumbnails=縮圖
+List=清單
+Details=詳細資料
+Strip=帶狀預覽
+Image=影像
+Full screen=全螢幕
+Slideshow=幻燈片
+Sort by=排列方式
+Name=名稱
+Date=日期
+Type=類型
+Size=檔案大小
+Image resolution=影像尺寸
+Ascending=由小到大
+Descending=由大到小
+Zoom up=放大
+Zoom down=縮小
+Original size=原始尺寸
+Automatic rotation=自動旋轉
+Fit to window (all)=填滿視窗(全部影像)
+Fit to window (large only)=填滿視窗(僅大圖)
+Tools=工具
+Convert...=轉換...
+Crop...=裁剪...
+Resize...=調整尺寸...
+Adjust...=校正...
+Rotate...=旋轉...
+Sharpen/Smooth...=銳利化/柔化...
+Send by Email...=發送 Email...
+Capture...=螢幕抓圖...
+Create EXE slideshow...=建立幻燈片執行檔...
+Information...=檔案資訊...
+Options...=選項
+Batch rename...=批次重新命名...
+Create Album...=建立相簿...
+Cancel=取消
+<Previous=<上一步
+Next>=下一步>
+IPTC edit...=IPTC 編輯...
+Zoom in=放大
+Zoom out= 縮小
+Fit to screen=填滿全螢幕
+Misc.=雜項.
+Send via Infrared...=以紅外線傳輸...
+Receive via infrared here=接收紅外線傳輸
+Show filename (thumbnail)=顯示檔名(縮圖)
+Recursive=包含子資料夾
+Search...=搜尋...
+Previous page=上一頁
+Next page=下一頁
+Fill the screen=填滿螢幕
+Lock zoom=Lock zoom
+
+[DlgAbout]
+IDC_TEXT = Translated by threesecond
+
+[DlgNewFolder]
+IDC_APPLY = 建立
+IDC_NF_TFOLDER = 資料夾位置：
+IDC_NF_TNEWFOLDER = 新資料夾：
+
+[DlgEmail]
+IDC_SEND = 發送
+IDC_EM_TTO = 接收人：
+IDC_EM_TSIZE = 尺寸：
+IDC_EM_TFORMAT = 格式：
+IDC_EM_TSERVICES = 服務：
+
+[DlgConvert]
+IDC_CN_JPEG = JPEG 檔案
+IDC_CN_GIF = GIF 檔案
+IDC_CN_BMP = Bitmap 檔案
+IDC_CN_PNG = PNG 檔案
+IDC_QUALITY = 品質
+IDC_COMPRESSION = 壓縮率
+IDC_CN_JPEGTEXT1 = 低(檔案最小)
+IDC_CN_JPEGTEXT2 = 最佳品質
+IDC_CN_TGA = TGA 檔案
+
+[DlgCrop]
+IDC_TWIDTH = 寬度：
+IDC_THEIGHT = 高度：
+IDC_APPLY = 裁剪
+
+[DlgFolder]
+IDC_FD_TEXT = 選擇目標資料夾：
+IDC_FD_TPREFIX = 檔名前綴：
+IDC_FD_TSUFFIX = 檔名後綴：
+
+[DlgResize]
+IDC_RZ_TEXT = 調整尺寸為：
+IDC_RZ_WIDTH = 寬度：
+IDC_RZ_HEIGHT = 高度：
+IDC_RZ_RATIO = 維持比例
+IDC_APPLY = 調整尺寸
+IDC_APPLYALL = 全部調整
+IDC_RZ_BOX = 調整大小
+
+[DlgAdjust]
+IDC_APPLY = 校正
+IDC_APPLYALL = 全部校正
+IDC_AD_TBRIGHTNESS = 亮度
+IDC_AD_TCONTRAST = 對比
+IDC_AD_TGAMMA = 伽瑪值
+IDC_AUTOLEVELS = 自動調整等級
+IDC_AUTOCONTRAST = 自動調整對比
+
+[DlgPreview]
+IDC_PP_TTYPE = 類型：
+IDC_PP_TDIM = 維度：
+IDC_PP_TDEPTH = 色彩：
+IDC_PP_TDPI = DPI:
+IDC_PP_TPIXELS = 像素
+IDC_PP_TIMAGE = 影像
+IDC_APPLY = 轉換
+IDC_APPLYALL = 全部轉換
+
+[DlgProp1]
+IDC_PP_TTYPE = 類型：
+IDC_PP_TDIM = 維度：
+IDC_PP_TDEPTH = 顏色數：
+IDC_PP_TFOLDER = 資料夾：
+IDC_PP_TDATE = 日期：
+IDC_PP_TSIZE = 尺寸：
+IDC_PP_TFILENAME = 檔案名稱：
+IDC_PP_TDPI = DPI：
+IDC_PP_TPIXELS = 像素
+IDC_PP_TCOMMENT = 備註：
+IDC_PP_FILE = 檔案
+IDC_PP_IMAGE = 影像
+
+[DlgRename]
+IDC_APPLY = 重新命名
+IDC_REN_TFOLDER = 資料夾：
+IDC_REN_TFILENAME = 檔案名稱：
+IDC_REN_TNEWNAME = 命名為：
+
+[DlgRotate]
+IDC_RZ_LOSSLESS = 盡可能無失真旋轉(JPEG)
+IDC_APPLY = 套用
+IDC_APPLYALL = 全部套用
+IDC_ROT_N90 = -90度(逆時針)
+IDC_ROT_180 = 180度
+IDC_ROT_90 = +90度(順時針)
+IDC_ROT_HFLIP = 水平翻轉
+IDC_ROT_VFLIP = 垂直翻轉
+
+[DlgCapture]
+IDC_APPLY = 抓圖
+IDC_DELAY = 延遲(秒)
+
+[DlgOption1]
+IDC_STARTSPLASH = 開始精靈模式
+IDC_USEARROW = 指定上/下鍵為上/下一張影像
+IDC_THOMEFOLDER = 起始資料夾
+IDC_TVIEWMODE = 顯示模式
+IDC_TLANGUAGE = 介面語言
+IDC_OPENINFULLSCREEN = 檢視模式使用全螢幕
+IDC_ONECLICK = 使用單擊功能在瀏覽和檢視模式之間切換
+
+[DlgOption2]
+IDC_HIGHQUALITY = 高品質縮圖
+IDC_TTHUMBSIZE = 縮圖尺寸
+IDC_SHOWNAME = 顯示檔名
+IDC_FONTSIZE = 字型大小
+IDC_TFONT1 = 樹狀資料夾
+IDC_TFONT2 = 縮圖清單
+IDC_SHOWEXT = 顯示副檔名
+IDC_ADDBOTTOM = 新增檔案到底部
+IDC_USECACHE = 使用縮圖快取
+
+[DlgOption3]
+IDC_VIEWMOVE = 以觸控筆移動
+IDC_USESCROLL = 使用捲軸
+IDC_ROTATELEFT = 全螢幕時圖片左轉(取消則為右轉)
+IDC_TVIEWBACK = 背景顏色
+IDC_SHOWFILENAME = 全螢幕時顯示檔名
+IDC_ANIMATEDGIF = 播放 GIF 動畫
+
+[DlgOption4]
+IDC_TDELAY = 幻燈片間隔
+IDC_TSECONDS = 秒
+IDC_TSLIDEBACK = 背景顏色
+IDC_USETRANSITION = 使用換場特效
+IDC_LANDSCAPE = 橫向觀景模式
+IDC_USESOUNDFILE = 音效檔
+IDC_USELOOP = 幻燈片循環播放
+
+[DlgOption5]
+IDC_TEXT = 指定按鍵動作
+IDC_TACTION = 設定按鍵指定：
+IDC_RESTORE = 還原
+
+[DlgOption6]
+IDC_TEXT = 設定您希望用 XnView 開啟的檔案類型。
+
+[DlgFavorites]
+IDC_DELETE = 刪除
+IDC_MODIFY = 重新命名
+
+[DlgAddFavorites]
+IDCANCEL = 取消
+IDC_TFOLDER = 資料夾：
+IDC_TLABEL = 標籤：
+
+[DlgFolder2]
+IDC_TEXT = 請選擇包含圖片的資料夾：
+IDCANCEL = 取消
+
+[DlgMisc]
+IDC_APPLY = 校正
+IDC_APPLYALL = 全部校正
+IDC_TSHARPEN = 銳化
+IDC_REDUCENOISE = 降噪
+IDC_TSMOOTH = 平滑度
+
+[DlgRenFolder]
+IDC_APPLY = 重新命名
+IDC_REN_TLOCATION = 位置：
+IDC_REN_TFOLDER = 資料夾：
+IDC_REN_TNEWNAME = 命名為：
+
+[DlgEdit]
+IDOK = 確定
+IDCANCEL = 取消
+IDC_UNDO = 還原
+
+[DlgJpegQuality]
+IDOK = 儲存
+IDCANCEL = 取消
+IDC_TQUALITY = JPEG 品質
+
+[DlgBatchRename]
+IDC_APPLY = 重新命名：
+IDC_REN_TNEWNAME = 新名稱：
+IDC_REN_TEXT =  副檔名：
+IDC_REN_TSTART = 開始數字：
+IDC_REN_TDIGIT = 數字位數：
+
+[DlgAlbum0]
+IDC_AL_TEXT1 = 您要選用哪些影像？
+IDC_AL_SEL1 = 已選的影像
+IDC_AL_SEL2 = 此資料夾下的所有影像
+IDC_AL_SEL3 = 所有可用的影像
+
+[DlgAlbum1]
+IDC_SELECTNONE = 全部不選
+IDC_SELECTALL = 全部選擇
+
+[DlgAlbum2]
+IDC_AL_TEXT1 = 影像尺寸：
+IDC_AL_TEXT3 = 旋轉：
+IDC_AL_TEXT4 = 亮度/對比度校正：
+IDC_FITALL = 套用到全部(包括較小影像)
+
+[DlgAlbum3]
+IDC_TDELAY = 延遲
+IDC_TSECONDS = 秒
+IDC_USESOUNDFILE = 聲音檔案
+IDC_USETRANSITION = 使用換場特效
+IDC_LOOP = 重複播放
+
+[DlgAlbum4]
+IDC_SELECT_TEXT = 請選擇輸出資料夾：
+IDC_AL_TEXT = 檔案名稱：
+
+[DlgAlbum5]
+IDC_JPEG_TEXT = JPEG品質：
+IDC_JPEGTEXT1 = 低(檔案較小)
+IDC_JPEGTEXT2 = 最佳
+
+[DlgAlbum6]
+IDC_STOP = 停止
+IDC_CREATE = 建立
+
+[DlgIptc1]
+IDC_TFILENAME = 檔案名稱：
+IDC_TTYPE = 類型：
+IDC_TDIM = 維度：
+IDC_TDEPTH = 色彩：
+IDC_TPIXELS = 像素
+IDC_TINFO = 資訊
+IDC_LOAD = 載入
+IDC_SAVE = 儲存
+IDC_CLEAR = 清除
+
+[DlgIptc2]
+IDC_TBYLINE = 作者
+IDC_TBYLINET = 作者標題
+IDC_TCREDIT = 製作小組
+IDC_TSOURCE = 來源
+IDC_TCOPYRIGHT = 著作權
+IDC_TSTATUS = 編輯狀態
+IDC_TPRIORITY = 優先權
+
+[DlgIptc3]
+IDC_TCAPTION = 主題
+IDC_TCAPTIONW = 主題作者
+IDC_THEADLINE = 標題
+IDC_TINSTR = 特別說明
+
+[DlgIptc4]
+IDC_KEYADD = 新增
+IDC_KEYDEL = 移除
+
+[DlgIptc5]
+IDC_TCAT = 類別(最多3個字元)
+IDC_TSUPCAT = 補充類別
+IDC_SCATADD = 新增
+IDC_SCATDEL = 移除
+
+[DlgIptc6]
+IDC_TOBJECTN = 物件名稱
+IDC_TCREATED = 建立日期
+IDC_TCITY = 城市
+IDC_TSUBLOCATION = 次要位置
+IDC_TSTATE = 州/省
+IDC_TCOUNTRY = 國家
+IDC_TCCODE = 國別碼
+IDC_TORIGINALREF = 原始傳輸參考值
+IDC_TODAY = 今天
+
+[DlgIptcList]
+IDC_APPLY = 儲存
+IDC_LOAD = 載入
+IDC_IPTCDEL = 移除
+
+[DlgIrda]
+IDC_IR_TEXT = 以紅外線接收(OBEX-Protocol)\n請由其他裝置開始傳送。
+IDCANCEL = 取消
+
+[DlgIrda2]
+IDC_IR_TEXT = 以紅外線傳送(OBEX-Protocol)\n請由其他裝置開始接收。
+IDCANCEL = 取消
+
+[DlgSearch]
+IDC_SCH_TFOLDER = 搜尋資料夾：
+IDC_SCH_TFILENAME = 檔名包含：
+IDC_SCH_TFILESIZE = 檔案大小：
+IDC_SCH_TFILETYPE = 檔案類型：
+IDC_SCH_SUBFOLDER = 搜尋子資料夾
+IDC_APPLY = 搜尋
+
+[String]
+
+IDS_CAP_AFFICH =           檔案
+IDS_CAP_TOOLS =            工具
+
+IDS_NAME =                 名稱
+IDS_PROPERTIES =           屬性
+IDS_TYPE =                 類型
+IDS_SIZE =                 大小
+IDS_DATE =                 日期
+IDS_BYTES =                Bytes
+IDS_KB =                   KB
+IDS_MB =                   MB
+IDS_GB =                   GB
+IDS_ERROR_LOADING =        載入 %s 時發生問題。
+IDS_ERROR =                錯誤
+IDS_NEWFOLDER =            新資料夾
+IDS_DELETEFOLDER =         您確定要刪除此資料夾嗎？
+IDS_DELETEFILE =           您確定要刪除這些檔案嗎？
+IDS_TREEROOT =             我的 Pocket PC
+
+IDS_COPY1 =                sCopy of %s
+IDS_COPY2 =                %sCopy (%d) of %s
+IDS_DELREADONLY =          這個檔案是唯讀，您確定要刪除嗎？
+IDS_VALUE =                值
+IDS_TAG =                  標籤
+IDS_JPEG25 =               25 (極低)
+IDS_JPEG50 =               50 (低)
+IDS_JPEG75 =               75 (一般)
+IDS_JPEG100 =              100 (高)
+IDS_BW =                   黑白
+IDS_16COLS =               16 色
+IDS_256COLS =              256 色
+IDS_EMAIL_SUBJECT =        由 XnView Pocket 接收的照片
+
+IDM_SLIDESHOW =            幻燈片
+IDM_VIEW =                 全螢幕
+IDM_DELETE =               刪除
+IDM_PROP =                 資訊
+
+IDS_16M =                  24-bits
+IDS_COMP1 =                1 (低)
+IDS_COMP7 =                7 (一般)
+IDS_COMP9 =                9 (高)
+IDS_CROP =                 裁剪
+IDS_FORMAT =               格式
+IDS_FOLDER =               資料夾
+IDS_PROBLEM_SAVING =       儲存檔案時出現錯誤！
+IDS_CROP_OK =              圖片 %s 已成功裁剪並儲存為 %s。
+
+IDS_EXISTS =               檔案已經存在，您確定要覆蓋嗎？
+IDS_FITSCREEN =            填滿螢幕
+IDS_USERSIZE =             使用者自訂大小
+IDS_RESIZE_OK =            圖片 %s 已經調整大小並儲存為 %s。
+IDS_INFO_WIDTH =           寬度：%d
+IDS_INFO_HEIGHT =          高度：%d
+IDS_RESIZE =               調整大小
+IDS_240_ =                 240 x ? 像素
+IDS_240_180 =              240 x 180 像素
+IDS_640_480 =              640 x 480 像素
+IDS_800_600 =              800 x 600 像素
+IDS_1024_768 =             1024 x 768 像素
+IDS_320_240 =              320 x 240 像素
+IDS_240_320 =              240 x 320 像素
+IDS_480_640 =              480 x 640 像素
+IDS_160_120 =              120 x 160 像素 (MMS)
+IDS_ADJUST =               校正
+IDS_ADJUST_OK =            圖片 %s 已經校正並儲存為 %s。
+IDS_INFOS =                資訊
+IDS_CONVERT_OK =           圖片 %s 已經儲存為 %s。
+
+IDS_EMAIL_BODY =           照片以 XnView Pocket 發送：http://www.xnview.com
+IDS_ORIGINAL_SIZE =        原始大小
+IDS_ORIGINAL_FORMAT =      原始格式
+IDS_JPEG_LOWQUALITY =      JPEG (低品質)
+IDS_JPEG_NORMALQUALITY =   JPEG (一般品質)
+IDS_JPEG_HIGHQUALITY =     JPEG (高品質)
+IDS_ROTATE_OK =            圖片 %s 已經旋轉並儲存為 %s。
+IDS_ROTATE =               旋轉
+IDS_CAPTURE =              抓圖
+IDS_CAPTURE_OK =           抓圖已經儲存為 %s。
+IDS_GENERAL =              一般
+IDS_SLIDESHOW =            幻燈片
+IDS_BROWSER =              瀏覽
+IDS_VIEWER =              檢視
+
+IDS_FAVORITES =            我的最愛
+
+IDS_OPEN =                 開啟
+IDS_DELETE_MODIFY =        刪除/修改
+IDS_FAVORITESENTRY1 =      我的最愛...
+IDS_FAVORITESENTRY2 =      下一個/我的最愛...
+IDS_ASSOCIATIONS =         檔案關聯
+IDS_SOUNDFILENAME =        聲音檔案
+IDS_EXEFILENAME =          執行檔
+IDS_THUMBNAIL =            縮圖
+IDS_LIST =                 清單
+IDS_DETAIL =               詳細資料
+IDS_STRIP =                帶狀預覽
+IDS_LASTMODE =             上一次的模式
+IDS_ERROR_MEMORY =         記憶體不足
+
+IDS_REBOOT =               您必須重新啟動 XnView 才能使變更生效。
+
+IDS_BRIGHTNESS =                        亮度
+IDS_CONTRAST =                          對比度
+IDS_GAMMA =                                     伽瑪值
+IDS_RED =                                       紅
+IDS_GREEN =                                     綠
+IDS_BLUE =                                      藍
+
+IDS_SAVERESULT =                    您確定要儲存結果，並覆蓋檔案嗎？
+
+IDS_NO_ROTATE =             不要旋轉
+IDS_NO_BRIGHTNESS =         原始亮度與對比
+IDS_AUTO_BRIGHTNESS =       自動調整亮度與對比
+IDS_ROTATE_LEFT =           向左旋轉(如果有必要)
+IDS_ROTATE_RIGHT =          向右旋轉(如果有必要)
+
+IDS_ALBUM =                 相簿
+IDS_ALBUM_EXISTS =			相同名稱的相簿已經存在，您確定要覆蓋嗎？
+
+IDS_THUMB_HUGE =			極大
+IDS_THUMB_LARGE =			大
+IDS_THUMB_NORMAL =			一般
+IDS_THUMB_SMALL =			小
+IDS_THUMB_TINY =			極小
+
+IDS_WIZARD1 =				瀏覽\n資料夾
+IDS_WIZARD2 =				開啟\n相簿
+IDS_WIZARD3 =				建立\n相簿
+IDS_WIZARD4 =				建立\n幻燈片
+IDS_WIZARD5 =				瀏覽\n記憶卡
+IDS_WIZARD6 =				變更\n選項
+
+IDS_BUTTONS =				按鍵
+IDS_BUTTON =				按鍵
+IDS_ASSIGNMENT =			指定
+IDS_NONE =					無動作
+IDS_NEXTIMAGE =				下一張
+IDS_PREVIMAGE =				上一張
+IDS_FULLSCREEN =			全螢幕
+IDS_ZOOMIN =				放大
+IDS_ZOOMOUT =				縮小
+IDS_KEYUP =					向上
+IDS_KEYDOWN =				向下
+IDS_KEYLEFT =				向左
+IDS_KEYRIGHT =				向右
+IDS_KEYRETURN =				進入
+
+IDS_CAPTION =				標題
+IDS_CREDIT =				開發者
+IDS_KEYWORD =				關鍵字
+IDS_CATEGORY =				分類
+IDS_ORIGIN =				來源
+IDS_FILE =					檔案
+IDS_IPTC_0 =				0 : 無
+IDS_IPTC_1 =				1 : 高
+IDS_IPTC_5 =				5 : 普通
+IDS_IPTC_8 =				8 : 低
+IDS_IPTCQUESTION =			確定要寫入 IPTC 資料嗎?
+
+IDS_SEARCHDEV =                         搜尋裝置：#%d
+
+IDS_IGNORED =                           忽略
+IDS_JPEG_FILES =                        JPEG 檔案 (*.jpg)
+IDS_GIF_FILES =                         GIF 檔案 (*.gif)
+IDS_BMP_FILES =                         BMP 檔案 (*.bmp)
+IDS_PNG_FILES =                         PNG 檔案 (*.png)
+IDS_TGA_FILES =                         TARGA 檔案 (*.tga)
+IDS_FOUND_FILES =                               發現 %d 檔案...
+IDS_SHOW_FILES =                                您是否要檢視已發現的檔案？

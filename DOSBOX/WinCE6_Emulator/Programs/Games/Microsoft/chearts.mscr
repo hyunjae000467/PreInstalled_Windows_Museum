@@ -1,0 +1,25 @@
+ErrorLevel("off")
+
+cwd = SystemPath("ScriptPath")
+exe = cwd\"chearts.exe"
+saveFile = "hearts.dat"
+
+If(FileExists(cwd\saveFile))
+	Copy(cwd\saveFile, "\"&saveFile, TRUE)
+	Sleep(500)
+ElseIf(FileExists("\"&savefile))
+	Move("\"&saveFile, cwd\saveFile, TRUE)
+	Sleep(500)
+EndIf
+
+RegWriteString("HKCU", "Software\Microsoft\Hearts", "name", "Guest")
+
+Run(exe)
+WaitFor("Hearts", 10)
+SendOK()
+
+While(WndExists("Hearts"))
+	Sleep(10000)
+EndWhile
+Sleep(1000)
+Rename("\"&saveFile, cwd\saveFile, TRUE)

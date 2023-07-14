@@ -1,0 +1,283 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+<meta http-equiv="Htm-Help" content="taskmgr.htm#MAIN_CONTENTS">
+<title>PHM Task Manager Help</title>
+<!-- by Philippe Majerus -->
+<!-- Copyright (C) 2000  -->
+</head>
+
+<body bgcolor=#FFFFFF text=#000000>
+<!-- PegHelp -->
+
+<p><a name="MAIN_CONTENTS"></a><b>PHM Task Manager Help</b></p>
+<br>
+<b>Concepts</b><br>
+<a href="taskmgr.htm#overview">Task Manager Overview</a><br>
+<a href="taskmgr.htm#tray">The tray icon</a><br>
+<br>
+<b>How to</b><br>
+<a href="taskmgr.htm#newtask">Start a new task (application or process)</a><br>
+<a href="taskmgr.htm#display">Change display options</a><br>
+<a href="taskmgr.htm#refresh">Update Task Manager data</a><br>
+<a href="taskmgr.htm#applications">Activate, Hibernate or Stop a running application</a><br>
+<a href="taskmgr.htm#processes">Display information and terminate processes</a><br>
+<a href="taskmgr.htm#shutdown">Suspend, Reset or Hard Reset your Pocket PC</a><br>
+<br>
+<b>References</b><br>
+<a href="taskmgr.htm#DlgSelCols">process counter column headings</a><br>
+<a href="taskmgr.htm#PPCprocesses">Standard Pocket PC processes</a><br>
+
+<br clear=all>
+<!-- PegHelp --><hr>
+
+<!-- ************************Topic Break************************* -->
+
+<a name="overview"></a><b>Task Manager Overview</b><br>
+<br>
+<p>
+Task Manager enables you to monitor and control your Pocket PC and what's running on it.<br>
+It can be used as a simple task switcher or as an advanced monitoring tool.<br>
+<ul>
+<li>View and manage running applications</li>
+<li>View and manage running processes</li>
+<li>Suspend, Reset or Hard Reset</li>
+</ul>
+</p>
+
+<!-- PegHelp --><hr>
+
+<!-- ************************Topic Break************************* -->
+
+<a name="tray"></a><b>The tray icon</b><br>
+<br>
+<p>
+<table><tr>
+<td align="center" valign="bottom"><img src="taskmgr1.bmp" width=50 height=50></td>
+<td align="left" valign="bottom">Task Manager display an icon in the system tray (on the Today page).</td>
+</tr></table>
+This gives you a quick access to the task manager window.<br>
+<br>
+When you click on the OK button or switch to an application from the task manager,
+it is still available on the background.<br>
+Clicking on the tray icon or the menu shortcut,
+or pressing the hardware key if you assigned one to Task Manager
+will bring it back to front so you can continue to manage your running applications and processes.<br>
+</p>
+
+<!-- PegHelp --><hr>
+
+<!-- ************************Topic Break************************* -->
+
+<a name="newtask"></a><b>Start a new task (application or process)</b><br>
+<br>
+<p>
+<ol>
+<li>On the <B>File</B> menu, tap <B>New Task</B>.</li>
+<li>Type in the filename and parameters.</li>
+<li>Tap the <B>OK</B> button.</li>
+</ol>
+<br>
+<b>Known issue:</b><br>
+The New Task (Run) dialog seach for the space after the last "\" to split the 
+program file name from its parameters, because of this it doesn't execute 
+properly commands that have a "\" in the parameters.<br>
+</p>
+
+<!-- PegHelp --><hr>
+
+<!-- ************************Topic Break************************* -->
+
+<a name="display"></a><b>Change display options</b><br>
+<br>
+<p>
+Task Manager can display information about applications or about processes.<br>
+Tap the tab corresponding to the information you want to display.<br>
+<br>
+<u>Applications</u><br>
+Display running application and activate, hibernate, close or teminate them.<br>
+Use the <b>View</b> menu to display large icons, small icons or details.<br>
+<br>
+<u>Processes</u><br>
+Display information about running processes (applications and services modules) and terminate them.<br>
+Use the <b>View</b> > <b>Select Columns</b> option to select which columns of information to display.<br>
+</p>
+
+<!-- PegHelp --><hr>
+
+<!-- ************************Topic Break************************* -->
+
+<a name="refresh"></a><b>Update Task Manager data</b><br>
+<br>
+<p>
+<ul>
+<li>On the <b>View</b> menu, tap <b>Refresh Now</b>.</li>
+</ul>
+<br>
+<b>Notes:</b><br>
+To update the data automatically, tap <b>View</b> > <b>Update Speed</b> and select a refresh speed.<br>
+<br>
+<b>Known issue</b><br>
+the selection is lost when the display is refreshed.<br>
+</p>
+
+<!-- PegHelp --><hr>
+
+<!-- ************************Topic Break************************* -->
+
+<a name="shutdown"></a><b>Suspend, Reset or Hard Reset</b><br>
+<br>
+<p>
+The <b>Shut Down</b> menu provides several options:<br>
+<br>
+<u>Suspend</u><br>
+Suspend the Pocket PC like the power button does, this is the standard shutdown option on Pocket PC devices.<br>
+<br>
+<u>Reset</u><br>
+Soft reset the Pocket PC, this will clear Program RAM and restart Windows CE, but the Storage RAM will be maintained and so all your documents, installed applications and settings will be kept.<br>
+This is the same as pressing the reset button on your device.<br>
+<br>
+<u>Hard Reset</u><br>
+Hard reset the Pocket PC, this will clear both Program and Storage RAM and restart Windows CE, restoring the device to its out-of-factory state, all your documents, installed applications and settings will be cleared.<br>
+</p>
+
+<!-- PegHelp --><hr>
+
+<!-- ************************Topic Break************************* -->
+
+<a name="applications"></a><b>Activate, Hibernate or Stop a running application</b><br>
+<br>
+<p>
+Tap & hold an application name and select the option you want in the popup menu:<br>
+<br>
+<u>Activate</u><br>
+Bring this application back to front.<br>
+<br>
+<u>Hibernate</u><br>
+Ask the application to free as much Program RAM as possible so other application can use it.<br>
+<br>
+<u>Stop</u><br>
+Close the application.<br>
+<br>
+<u>Terminate</u><br>
+Terminate the application process, it will not be given the chance to save its state or data.<br>
+<br>
+<u>Stop all but this one</u><br>
+This will stop all other running applications, all system resources will be available for the selected application.<br>
+<br>
+<u>Go To Process</u><br>
+Switch to the processes tab and select the process this application belongs to.<br>
+<br>
+More options are available in the <b>Windows</b> menu:<br>
+<br>
+<u>Minimize All</u><br>
+Minimize all windows and display the Today screen.</br>
+<br>
+<u>Hibernate All</u><br>
+Ask all the running applications to free as much Program RAM as possible.<br>
+<br>
+<u>Stop All</u><br>
+Close all the running applications.<br>
+</p>
+
+<!-- PegHelp --><hr>
+
+<!-- ************************Topic Break************************* -->
+
+<a name="processes"></a><b>Display information and terminate processes</b><br>
+<br>
+<p>
+<u>Terminate a process</u><br>
+Tap & hold a process name and select <b>End Process</b> in the popup menu.<br>
+<br>
+<u>Display information about processes</u><br>
+On the <b>View</b> menu, tap <b>Select Columns</b>.<br>
+check the boxes next to the columns you want to display.<br>
+View the <a href="taskmgr.htm#DlgSelCols">process counter column headings</a> for information about the columns you can choose from.<br>
+</p>
+
+<!-- PegHelp --><hr>
+
+<!-- ************************Topic Break************************* -->
+
+<a name="PPCprocesses"></a><b>Standard Pocket PC processes</b><br>
+<br>
+<p>
+<b>NK.EXE</b><br>
+Windows CE Kernel (New Kernel).<br>
+<br>
+<b>filesys.exe</b><br>
+File system (Storage Memory), Registry and System Databases (CEDB).<br>
+<br>
+<b>gwes.exe</b><br>
+Graphics, Windowing and Events Sybsystem (GWES).<br>
+Combines the Microsoft Win32 API (Application Programming Interface), UI (User Interface) and GDI (Graphics Device Interface).<br>
+<br>
+<b>device.exe</b><br>
+Device drivers services.<br>
+Loads and maintains device drivers for the system.<br>
+<br>
+<b>shell32.exe</b><br>
+Pocket PC Shell.<br>
+Provides the Today screen, Start menu, Programs and Settings windows and other shell functions.<br>
+This replace explorer.exe used on Handheld PCs and desktop versions of Windows.<br>
+</p>
+
+<!-- PegHelp --><hr>
+
+
+<!-- ************************Topic Break************************* -->
+
+<a name="DlgNewTask"></a><b>Create New Task</b><br>
+<br>
+<p>
+To start a new task, type in the task name.<br>
+</p>
+
+<!-- PegHelp --><hr>
+
+<!-- ************************Topic Break************************* -->
+
+<a name="DlgSelCols"></a><b>Select Columns</b><br>
+<br>
+<p>
+The Select Columns dialog box allow you to select which information to display about running processes:<br>
+<br>
+<u>Image Name</u><br>
+Name of the process module.<br>
+<br>
+<u>PID (Process Identifier)</u><br>
+Process Identifier,
+Windows CE supports 32 processes,
+each of them is assigned an unique identifier by the system.<br>
+<br>
+<u>CPU Time</u><br>
+Total time of CPU consumed by this process since it started.<br>
+<br>
+<u>Base Priority</u><br>
+Priority level of the main thread of the process, other threads can have other priority levels.<br>
+<br>
+<u>Thread Count</u><br>
+Number of threads in this process.<br>
+<br>
+<u>Path</u><br>
+Complete path and file name of the process module.<br>
+</p>
+
+<!-- PegHelp --><hr>
+
+<!-- ************************Topic Break************************* -->
+
+<a name="DlgHardReset"></a><b>Hard Reset</b><br>
+<br>
+<p>
+A Hard Reset clear the RAM and reset the device, restoring the device to its manufacturing state.<br>
+All files and applications stored in Storage RAM, as well as the registry and system databases, will be erased in the process, make sure you have a backup !<br>
+<br>
+To perform the hard reset, type the device name in the textbox and tap the OK button.<br>
+</p>
+
+<!-- PegHelp -->
+
+</body>
+</html>

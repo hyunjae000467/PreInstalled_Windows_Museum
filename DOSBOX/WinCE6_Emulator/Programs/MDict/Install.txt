@@ -1,0 +1,59 @@
+安装:
+
+Smartphone版本
+1. 自动安装版
+a) 安装程序
+b) 将数据文件放到内存或者存储卡上的任意目录里
+c) 运行MDict, 选Library->Search all. 程序会自动查找所有".mdx"结尾的文件，并在Library菜单下显示。
+d) 在Library菜单里选择你需要使用的数据文件
+e) 可以开始使用, 用Back键可以切换到输入状态, Enter键进行查找.
+
+2. 手动安装版
+a) 选择对应你的机器的安装包，在存储卡上建一个MDict的目录，然后将安装包解压到那个目录下
+b) 剩下的和自动安装包的步骤一样。
+
+
+PPC/HPC版本
+1. 自动安装版
+a) 安装程序
+b) 将数据文件放到内存或者存储卡上的"My Documents"目录里
+c) 运行MDict, 选Library->Open Library来打开文件.或者"Library->Search all" 程序会自动查找所有".mdx"结尾的文件，并在Library菜单下显示。
+d) 在Library菜单里选择你需要使用的数据文件
+e) 开始使用
+
+2. 手动安装版
+a) 选择对应你的机器的安装包，在存储卡上建一个MDict的目录，然后将安装包解压到那个目录下
+b) 剩下的和自动安装包的步骤一样。
+
+
+Install:
+
+SmartPhone Version:
+1. Automatic install:
+a) install program
+b) Put library files into any directory in your smartphone memory or storage card
+c) Run MDict, Menu: "Library->Search all". The program will search all file with ".mdx" file extension, and lists them under "Library" menu.
+d) Select library file under "Library" menu.
+e) Use "Back" key to switch to input mode, "Enter" key to lookup.
+
+2. Manual install:
+a) Select the right package for your smartphone. Create a "MDict" Directory in your storage card, and unpack the installation package into it.
+b) and reset steps are the same as Automatic install process.
+
+PPC/HPC Version:
+1. Automatic install:
+a) install program
+b) Put library files into any directory in your PPC/HPC memory or storage card
+c) Run MDict, Use "Library->Open Library" to open library file.Or use "Library->Search all", The program will search all file with ".mdx" file extension, and lists them under "Library" menu.
+d) Select library file under "Library" menu.
+e) Begin to use.
+
+2. Manual install:
+a) Select the right package for your device. Create a "MDict" Directory in your storage card, and unpack the installation package into it.
+b) and reset steps are the same as Automatic install process.
+
+
+Author:
+Rayman Zhang
+rayman@octopus-studio.com or rayman@21cn.com
+http://www.octopus-studio.com

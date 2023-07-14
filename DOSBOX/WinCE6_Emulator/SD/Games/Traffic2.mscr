@@ -1,0 +1,34 @@
+ErrorLevel("off")
+
+If(ProcExists("TrafficMore.exe"))
+	Kill("TrafficMore.exe")
+EndIf
+If(ProcExists("Traffic.exe"))
+	Kill("Traffic.exe")
+EndIf
+
+Copy(SystemPath("ScriptPath")\SystemPath("ScriptName")&".htm", "\Windows\"&"MSS"&SystemPath("ScriptName")&".htm")
+
+
+TrafficMoreContent = ReadFile(SystemPath("ScriptPath")\"TrafficMore2.ini")
+
+TrafficMoreContent = Replace(TrafficMoreContent, "Next 40", "Prev 40")
+
+TrafficMoreContent = Replace(TrafficMoreContent, "Traffic2.mscr", "Traffic.mscr")
+
+WriteFile(SystemPath("ScriptPath")\"TrafficMore2.ini", TrafficMoreContent, FALSE, "unicode-prefix")
+
+Sleep(100)
+
+If(FileExists(SystemPath("ScriptPath")\"TrafficMore.exe"))
+	Run(SystemPath("ScriptPath")\"TrafficMore.exe")
+EndIf
+
+
+RunWait(SystemPath("ScriptPath")\SystemPath("ScriptName")&".exe")
+
+
+If(ProcExists("TrafficMore.exe"))
+	Kill("TrafficMore.exe")
+EndIf
+

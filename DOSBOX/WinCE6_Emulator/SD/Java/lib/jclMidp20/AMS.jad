@@ -1,0 +1,6 @@
+MIDlet-Version: 0.0.1
+MIDlet-Name: AMSMidlet
+MIDlet-Jar-Size: 
+MIDlet-Jar-URL: 
+MIDlet-Vendor: IBM
+MIDlet-1: AmsMidlet,,com.ibm.ive.midp.ams.ui.AmsMidlet

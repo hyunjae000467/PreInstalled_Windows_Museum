@@ -1,0 +1,15 @@
+Note: This override was originally designed for the 5/12/2008 version of Jerry's skin. It ought to still work with future versions, but, if it doesn't, then that may be why.
+
+For 480x272 devices running MioMap 3.3 (mainly the Mio c320, c520 and c720), Jerry's skin (http://miopassion.com) opens up a lot of functionality to MioMap. One of the features is his "StopWord panel", a floating toolbar of links to external applications, made for a pre-MioPocket unlock designed by Stopword. MioPocket comes with an override (a form of patch) to point these links to MioPocket's applications, instead.
+
+To apply the override...
+1. Make sure that you're using Jerry's MioMap skin and that it's installed as data.zip in your MioMap folder. If you simply copied it to a \Skin folder, then you'll need to move it out and name it as data.zip in the MioMap folder, since you can't have more than one data zip file in the \Skin folder.
+2. If you used the override from an earlier MioPocket release, remove it.
+3. Install MioPocket. Installation will change paths in the override files to match your installation directory.
+4. Go to MioPocket's Navigation page, choose "MioMap Manager", then "Skin Manager", and, finally, "Load new override". If all goes well, you should see "Override_Jerry_MioPocket" listed. Select it to apply the override to your MioMap. If you do NOT see "Override_Jerry_MioPocket listed, jump down below to Step 4a.
+5. Load up MioMap, go into the menu, find "My MioMap" and cycle through the options for "Extra button" (in the lower-left corner) until you get to "StopWord Panel". Return to the map screen and you should see a green orb with the Windows logo on it in the lower left. Pressing that will open the panel that now has icons correctly pointing to MioPocket programs and scripts. You are now done.
+
+The following is ONLY for if "Override_Jerry_MioPocket" is NOT listed in Skin Manager.
+4a. Go to "MioAutoRun\Programs\MioMap\Override for Jerry's skin" and zip up the two folders (\common and \mio) inside.
+4b. Copy the zip to a "Skin" folder under your MioMap folder (ex. \My Flash Disk\MioMap\MioMap\Skin). If the "Skin" folder does not exist, create it. Proceed to Step 5 above.
+

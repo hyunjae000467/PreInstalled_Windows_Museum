@@ -1,0 +1,13 @@
+Vol = Volume() - 51
+If(Vol < 0)
+	Vol = 0
+EndIf
+SetVolume(Vol)
+
+nextScript = "VolOSD.mscr"
+If(ScriptProcExists(nextScript))
+	KillScript(nextScript)
+EndIf
+
+cwd = SystemPath("ScriptPath")
+Run(cwd\nextScript)

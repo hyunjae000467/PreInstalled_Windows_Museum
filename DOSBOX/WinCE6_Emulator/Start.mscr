@@ -1,0 +1,44 @@
+# Device Emulator
+
+SetChoiceEntryFormat(24, 18)
+
+Call "Video"
+Sub Video
+Switch(Choice("Select Video Size...", "Select Video Size...", "", "", "320x240", "480x272", "800x480"))
+Case (0)
+Call "ROM"
+Case (1)
+VideoImage = "320x240"
+Call "Memory"
+Case (2)
+VideoImage = "480x272"
+Call "Memory"
+Case (3)
+VideoImage = "800x480"
+Call "Memory"
+Call "Video"
+EndSwitch
+EndSub
+Call "Memory"
+Sub Memory
+Switch(Choice("Select Memory Size...", "Select Memory Size...", "", "", "64MB", "128MB","256MB"))
+Case (0)
+Call "Video"
+Case (1)
+MemSize = "64"
+Call "Start"
+Case (2)
+MemSize = "128"
+Call "Start"
+Case (3)
+MemSize = "256"
+Call "Start"
+EndSwitch
+EndSub
+Sub Start
+ROMImage =1
+WriteFile (SystemPath("ScriptPath")\"W6E.dat", ROMImage&".bin /memsize "&MemSize&" /sharedfolder SD /video "&VideoImage&"x16", FALSE)
+Run (SystemPath("ScriptPath")\"W6E.exe", ROMImage&".bin /memsize "&MemSize&" /sharedfolder SD /video "&VideoImage&"x16")
+Exit
+EndSub
+

@@ -1,0 +1,269 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Htm-Help" CONTENT="SCEHlpFT.htm#Main_Contents">
+<title>SpreadCE Help</title>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<!-- PegHelp -->
+<p><A NAME="Main_Contents"></A><b>Date/time functions</b></p><UL></UL>
+<p>[ ] indicates optional parameters</p>
+<A HREF="SCEHlpFT.htm#date">DATE(year, month, day)</A><BR>
+<A HREF="SCEHlpFT.htm#datedif">DATEDIF(date1, date2, units)</A><BR>
+<A HREF="SCEHlpFT.htm#datevalue">DATEVALUE(date_text)</A><BR>
+<A HREF="SCEHlpFT.htm#day">DAY(serial_number)</A><BR>
+<A HREF="SCEHlpFT.htm#days360">DAYS360(start_date, end_date, [method])</A><BR>
+<A HREF="SCEHlpFT.htm#edate">EDATE(start_date, months)</A><BR>
+<A HREF="SCEHlpFT.htm#eomonth">EOMONTH(start_date, months)</A><BR>
+<A HREF="SCEHlpFT.htm#hour">HOUR(serial_number)</A><BR>
+<A HREF="SCEHlpFT.htm#minute">MINUTE(serial_number)</A><BR>
+<A HREF="SCEHlpFT.htm#month">MONTH(serial_number)</A><BR>
+<A HREF="SCEHlpFT.htm#networkdays">NETWORKDAYS(start_date, end_date, [holidays])</A><BR>
+<A HREF="SCEHlpFT.htm#now">NOW()</A><BR>
+<A HREF="SCEHlpFT.htm#second">SECOND(serial_number)</A><BR>
+<A HREF="SCEHlpFT.htm#time">TIME(hour, minute, second)</A><BR>
+<A HREF="SCEHlpFT.htm#timevalue">TIMEVALUE(time_text)</A><BR>
+<A HREF="SCEHlpFT.htm#today">TODAY()</A><BR>
+<A HREF="SCEHlpFT.htm#weekday">WEEKDAY(serial_number, [return_type])</A><BR>
+<A HREF="SCEHlpFT.htm#weeknum">WEEKNUM(serial_number, [return_type])</A><BR>
+<A HREF="SCEHlpFT.htm#workday">WORKDAY(start_date, number_days, [holidays])</A><BR>
+<A HREF="SCEHlpFT.htm#year">YEAR(serial_number)</A><BR>
+<A HREF="SCEHlpFT.htm#yearfrac">YEARFRAC(start_date, end_date, [basis])</A><BR>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="date"></a><b>DATE(year, month, day)</b></p><UL></UL>
+<P>Returns the date value corresponding to a specified year, month and day. Note that only dates from 1900 onwards can be used.</P>
+<table width=100%>
+<tr><td width=20% valign="top">year</td><td>The year number. If you enter a number less than 1900 then 1900 will be added to the value.</td></tr>
+<tr><td width=20% valign="top">month</td><td>The month number. Preferably between 1 and 12.</td></tr>
+<tr><td width=20% valign="top">day</td><td>The day number. Preferably between 1 and 31.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="datedif"></a><b>DATEDIF(date1, date2, units)</b></p><UL></UL>
+<P>Returns the difference between two dates in the units that you specify.</P>
+<table width=100%>
+<tr><td width=20% valign="top">date1</td><td>The 'from' date.</td></tr>
+<tr><td width=20% valign="top">date2</td><td>The 'to' date. This should be greater than or equal to the 'from' date.</td></tr>
+<tr><td width=20% valign="top">units</td><td>The units in which you want the difference expressed. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">"y"</td><td>The difference in years.</td></tr>
+	<tr><td width=10% valign="top">"m"</td><td>The difference in months.</td></tr>
+	<tr><td width=10% valign="top">"d"</td><td>The difference in days.</td></tr>
+	<tr><td width=10% valign="top">"ym"</td><td>The difference in months, dropping any whole years (the result will always be between 0 and 11).</td></tr>
+	<tr><td width=10% valign="top">"yd"</td><td>The difference in days, dropping any whole years (the result will always be between 0 and 365).</td></tr>
+	<tr><td width=10% valign="top">"md"</td><td>The difference in days, dropping any whole months (the result will always be between 0 and 30).</td></tr>
+	</table></td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="datevalue"></a><b>DATEVALUE(date_text)</b></p><UL></UL>
+<P>Returns the date value that corresponds to a date in text form. Note that only dates from 1900 onwards can be used. You should not need to use this function, as dates are automatically converted from text to date values when they are used in formulas.</P>
+<table width=100%>
+<tr><td width=20% valign="top">date_text</td><td>The date that you want to convert. It can contain date separators and/or a month name. If only the day and month is supplied then the year will default to the current year.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="day"></a><b>DAY(serial_number)</b></p><UL></UL>
+<P>Returns the day number (between 1 and 31) from the specified date value.</P>
+<table width=100%>
+<tr><td width=20% valign="top">serial_number</td><td>The date value from which you want to extract the day number.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="days360"></a><b>DAYS360(start_date, end_date, [method])</b></p><UL></UL>
+<P>Returns the number of days between two dates using a 360-day year (30 day months).</P>
+<table width=100%>
+<tr><td width=20% valign="top">start_date</td><td>The 'from' date.</td></tr>
+<tr><td width=20% valign="top">end_date</td><td>The 'to' date.</td></tr>
+<tr><td width=20% valign="top">method</td><td>Indicates how to deal with end dates that are the 31<SUP>st</SUP> of the month (the start date will always be moved from the 31<SUP>st</SUP> to the 30<SUP>th</SUP>). The options are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">FALSE</td><td>US (NASD) method (if start date is less than the 30th then set end date to 1st of next month, else set end date to 30th).</td></tr>
+	<tr><td width=10% valign="top">TRUE</td><td>European method (end date moved form 31st to 30th).</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to FALSE.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="edate"></a><b>EDATE(start_date, months)</b></p><UL></UL>
+<P>Returns the date that is the start date plus or minus a number of months.</P>
+<table width=100%>
+<tr><td width=20% valign="top">start_date</td><td>The 'from' date.</td></tr>
+<tr><td width=20% valign="top">months</td><td>The number of months to be added or subtracted.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="eomonth"></a><b>EOMONTH(start_date, months)</b></p><UL></UL>
+<P>Returns the date that is the last day of the month calculated from the start date plus or minus a number of months.</P>
+<table width=100%>
+<tr><td width=20% valign="top">start_date</td><td>The 'from' date.</td></tr>
+<tr><td width=20% valign="top">months</td><td>The number of months to be added or subtracted.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="hour"></a><b>HOUR(serial_number)</b></p><UL></UL>
+<P>Returns the hour number (between 0 and 23) from the specified date/time value.</P>
+<table width=100%>
+<tr><td width=20% valign="top">serial_number</td><td>The date/time value from which you want to extract the hour number.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="minute"></a><b>MINUTE(serial_number)</b></p><UL></UL>
+<P>Returns the minute number (between 0 and 59) from the specified date/time value.</P>
+<table width=100%>
+<tr><td width=20% valign="top">serial_number</td><td>The date/time value from which you want to extract the minute number.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="month"></a><b>MONTH(serial_number)</b></p><UL></UL>
+<P>Returns the month number (between 1 and 12) from the specified date/time value.</P>
+<table width=100%>
+<tr><td width=20% valign="top">serial_number</td><td>The date/time value from which you want to extract the month number.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="networkdays"></a><b>NETWORKDAYS(start_date, end_date, [holidays])</b></p><UL></UL>
+<P>Returns the number of working days (weekdays) between the start and end dates, excluding any holidays.</P>
+<table width=100%>
+<tr><td width=20% valign="top">start_date</td><td>The 'from' date.</td></tr>
+<tr><td width=20% valign="top">end_date</td><td>The 'to' date.</td></tr>
+<tr><td width=20% valign="top">holidays</td><td>A date or array of dates or a reference to a list of dates that are to be treated as non-working days.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="now"></a><b>NOW()</b></p><UL></UL>
+<P>Returns the serial number corresponding to the current date and time.</P>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="second"></a><b>SECOND(serial_number)</b></p><UL></UL>
+<P>Returns the second number (between 0 and 59) from the specified date/time value.</P>
+<table width=100%>
+<tr><td width=20% valign="top">serial_number</td><td>The date/time value from which you want to extract the second number.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="time"></a><b>TIME(hour, minute, second)</b></p><UL></UL>
+<P>Returns the serial number corresponding to a specified hour, minute and second.</P>
+<table width=100%>
+<tr><td width=20% valign="top">hour</td><td>The hour number. Preferably between 0 and 23.</td></tr>
+<tr><td width=20% valign="top">minute</td><td>The minute number. Preferably between 0 and 59.</td></tr>
+<tr><td width=20% valign="top">second</td><td>The second number. Preferably between 0 and 59.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="timevalue"></a><b>TIMEVALUE(time_text)</b></p><UL></UL>
+<P>Returns the time value that corresponds to a time in text form. You should not need to use this function, as times are automatically converted from text to time values when they are used in formulas.</P>
+<table width=100%>
+<tr><td width=20% valign="top">time_text</td><td>The time that you want to convert. It can contain time separators and/or AM/PM designators. If seconds or minutes and seconds are not specified then they will default to zero.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="today"></a><b>TODAY()</b></p><UL></UL>
+<P>Returns the serial number corresponding to the current date.</P>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="weekday"></a><b>WEEKDAY(serial_number, [return_type])</b></p>
+<P>Returns a number representing the day of the week of a given date.</P>
+<table width=100%>
+<tr><td width=20% valign="top">serial_number</td><td>The date/time value from which you want the day of the week.</td></tr>
+<tr><td width=20% valign="top">return_type</td><td>The range of values returned and what they represent. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">1</td><td>From 1 to 7, where 1 = Sunday and 7 = Saturday.</td></tr>
+	<tr><td width=10% valign="top">2</td><td>From 1 to 7, where 1 = Monday and 7 = Sunday.</td></tr>
+	<tr><td width=10% valign="top">3</td><td>From 0 to 6, where 0 = Monday and 6 = Sunday.</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 1.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="weeknum"></a><b>WEEKNUM(serial_number, [return_type])</b></p><UL></UL>
+<P>Returns the week of the year of a given date.</P>
+<table width=100%>
+<tr><td width=20% valign="top">serial_number</td><td>The date/time value from which you want the week number.</td></tr>
+<tr><td width=20% valign="top">return_type</td><td>The method used to calculate the week number. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>International Standard (ISO) week numbers. Weeks begin on Monday. Week 1 is the first week where 4 or more days are in the specified year.</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Microsoft week numbers. Weeks begin on Sunday. Week 1 is the week that contains January 1<SUP>st</SUP>.</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Microsoft week numbers. Weeks begin on Monday. Week 1 is the week that contains January 1<SUP>st</SUP>.</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 1.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="workday"></a><b>WORKDAY(start_date, number_days, [holidays])</b></p><UL></UL>
+<P>Returns the working day that is the start date plus or minus a number of working days (weekdays), excluding any holidays.</P>
+<table width=100%>
+<tr><td width=20% valign="top">start_date</td><td>The 'from' date.</td></tr>
+<tr><td width=20% valign="top">number_days</td><td>The number of working days to add or subtract.</td></tr>
+<tr><td width=20% valign="top">holidays</td><td>A date or array of dates or a reference to a list of dates that are to be treated as non-working days.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="year"></a><b>YEAR(serial_number)</b></p><UL></UL>
+<P>Returns the year number (greater than or equal to 1900) from the specified date/time value.</P>
+<table width=100%>
+<tr><td width=20% valign="top">serial_number</td><td>The date/time value from which you want to extract the year number.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="yearfrac"></a><b>YEARFRAC(start_date, end_date, [basis])</b></p><UL></UL>
+<P>Returns the fraction of a year represented by the difference between two dates.</P>
+<table width=100%>
+<tr><td width=20% valign="top">start_date</td><td>The 'from' date.</td></tr>
+<tr><td width=20% valign="top">end_date</td><td>The 'to' date.</td></tr>
+<tr><td width=20% valign="top">basis</td><td>The method used to represent the number of days in the period versus the number of days in a year. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>US (NASD) 30/360</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Actual/actual</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Actual/360</td></tr>
+	<tr><td width=10% valign="top">3</td><td>Actual/365</td></tr>
+	<tr><td width=10% valign="top">4</td><td>European 30/360</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+</BODY>
+</HTML>

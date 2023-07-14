@@ -1,0 +1,230 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Htm-Help" CONTENT="SCEHlpFC.htm#Main_Contents">
+<title>SpreadCE Help</title>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<!-- PegHelp -->
+<p><A NAME="Main_Contents"></A><b>Macro control functions</b></p><UL></UL>
+<p>[ ] indicates optional parameters</p>
+<A HREF="SCEHlpFC.htm#argument">ARGUMENT([name_text], [type], [reference])</A><BR>
+<A HREF="SCEHlpFC.htm#break">BREAK()</A><BR>
+<A HREF="SCEHlpFC.htm#else">ELSE()</A><BR>
+<A HREF="SCEHlpFC.htm#elseif">ELSE.IF(logical_test)</A><BR>
+<A HREF="SCEHlpFC.htm#endif">END.IF()</A><BR>
+<A HREF="SCEHlpFC.htm#for">FOR(counter_text, start_num, end_num, [step_num])</A><BR>
+<A HREF="SCEHlpFC.htm#forcell">FOR.CELL(ref_name, [area_ref], [skip_blanks])</A><BR>
+<A HREF="SCEHlpFC.htm#goto">GOTO(reference)</A><BR>
+<A HREF="SCEHlpFC.htm#halt">HALT([cancel_close])</A><BR>
+<A HREF="SCEHlpFC.htm#macro_if">IF(logical_test)</A><BR>
+<A HREF="SCEHlpFC.htm#next">NEXT()</A><BR>
+<A HREF="SCEHlpFC.htm#restart">RESTART([level_num])</A><BR>
+<A HREF="SCEHlpFC.htm#result">RESULT([type_num])</A><BR>
+<A HREF="SCEHlpFC.htm#return">RETURN([value])</A><BR>
+<A HREF="SCEHlpFC.htm#setname">SET.NAME(name_text, [value])</A><BR>
+<A HREF="SCEHlpFC.htm#setvalue">SET.VALUE(reference, values)</A><BR>
+<A HREF="SCEHlpFC.htm#volatile">VOLATILE([logical])</A><BR>
+<A HREF="SCEHlpFC.htm#wait">WAIT([serial_number])</A><BR>
+<A HREF="SCEHlpFC.htm#while">WHILE(logical_test)</A><BR>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="argument"></a><b>ARGUMENT([name_text], [type], [reference])</b></p><UL></UL>
+<P>Defines an argument for a custom function.</P>
+<table width=100%>
+<tr><td width=20% valign="top">name_text</td><td>The defined name that will be assigned to the argument. If this parameter is omitted then no name will be assigned.</td></tr>
+<tr><td width=20% valign="top">type</td><td>The acceptable data type(s) for the argument value. It can be any combination of the following (to specify more than one value, add the numbers together):</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">1</td><td>Number</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Text</td></tr>
+	<tr><td width=10% valign="top">4</td><td>Logical</td></tr>
+	<tr><td width=10% valign="top">8</td><td>Reference</td></tr>
+	<tr><td width=10% valign="top">16</td><td>Error</td></tr>
+	<tr><td width=10% valign="top">64</td><td>Array</td></tr>
+	</table></td></tr>
+<tr><td width=20% valign="top"></td><td>If this parameter is omitted it defaults to 7.</td></tr>
+<tr><td width=20% valign="top">reference</td><td>The cell reference where the argument value will be stored. If this parameter is omitted then the argument value will not be stored.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="break"></a><b>BREAK()</b></p><UL></UL>
+<P>Ends the processing of a FOR, FOR.CELL or WHILE loop. The macro will continue with the statement after the NEXT function.</P>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="else"></a><b>ELSE()</b></p><UL></UL>
+<P>Introduces the block of statements to be processed when the corresponding IF or ELSE.IF condition is false.</P>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="elseif"></a><b>ELSE.IF(logical_test)</b></p><UL></UL>
+<P>Specifies another logical test that conditions a block of statements when the corresponding IF or ELSE.IF condition is false.</P>
+<table width=100%>
+<tr><td width=20% valign="top">logical_test</td><td>An expression that results in TRUE or FALSE.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="endif"></a><b>END.IF()</b></p><UL></UL>
+<P>Specifies the end of the block of statements conditioned by the corresponding IF or ELSE.IF.</P>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="for"></a><b>FOR(counter_text, start_num, end_num, [step_num])</b></p><UL></UL>
+<p>Performs a group of instructions a specified number of times. The end of the group is indicated by a NEXT function.</P>
+<table width=100%>
+<tr><td width=20% valign="top">counter_text</td><td>A defined name that will be used to store the current index.</td></tr>
+<tr><td width=20% valign="top">start_num</td><td>The initial value to be assigned to the counter.</td></tr>
+<tr><td width=20% valign="top">end_num</td><td>The last value to be assigned to the counter.</td></tr>
+<tr><td width=20% valign="top">step_num</td><td>The value to be added to the counter each time around the loop. If this parameter is omitted it defaults to 1.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="forcell"></a><b>FOR.CELL(ref_name, [area_ref], [skip_blanks])</b></p><UL></UL>
+<p>Performs a group of instructions for each cell in a specified area. The end of the group is indicated by a NEXT function.</P>
+<table width=100%>
+<tr><td width=20% valign="top">ref_name</td><td>A defined name that will be used to store the current reference.</td></tr>
+<tr><td width=20% valign="top">area_ref</td><td>The range of cells to be processed.</td></tr>
+<tr><td width=20% valign="top"></td><td>If this parameter is omitted it defaults to the current selection.</td></tr>
+<tr><td width=20% valign="top">skip_blanks</td><td>Whether blank cells are to be skipped. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">FALSE</td><td>All cells in the area are processed</td></tr>
+	<tr><td width=10% valign="top">TRUE</td><td>Only the non-blank cells in the area are processed</td></tr>
+	</table></td></tr>
+<tr><td width=20% valign="top"></td><td>If this parameter is omitted it defaults to FALSE.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="goto"></a><b>GOTO(reference)</b></p><UL></UL>
+<P>Forces the macro to continue with the statement at the reference.</P>
+<table width=100%>
+<tr><td width=20% valign="top">reference</td><td>The reference of the cell where macro execution is to continue.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="halt"></a><b>HALT([cancel_close])</b></p><UL></UL>
+<P>Terminates all running macros.</P>
+<table width=100%>
+<tr><td width=20% valign="top">cancel_close</td><td>Whether, in an Auto_Close macro, to prevent the workbook from being closed (not currently implemented).</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="macro_if"></a><b>IF(logical_test)</b></p><UL></UL>
+<P>Specifies a logical test that conditions the execution of a block of statements.</P>
+<table width=100%>
+<tr><td width=20% valign="top">logical_test</td><td>An expression that results in TRUE or FALSE.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="next"></a><b>NEXT()</b></p><UL></UL>
+<P>Specifies the end of the block of statements contained in a FOR, FOR.CELL or WHILE loop.</P>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="restart"></a><b>RESTART([level_num])</b></p><UL></UL>
+<P>Specifies the number of levels that will be skipped when this macro returns.</P>
+<table width=100%>
+<tr><td width=20% valign="top">level_num</td><td>The number of levels to skip. If this parameter is omitted then all levels are skipped.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="result"></a><b>RESULT([type_num])</b></p><UL></UL>
+<P>Specifies the return type of a user-defined function.</P>
+<table width=100%>
+<tr><td width=20% valign="top">type_num</td><td>The preferred data type(s) for the return value. It can be any combination of the following (to specify more than one value, add the numbers together):</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">1</td><td>Number</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Text</td></tr>
+	<tr><td width=10% valign="top">4</td><td>Logical</td></tr>
+	<tr><td width=10% valign="top">8</td><td>Reference</td></tr>
+	<tr><td width=10% valign="top">16</td><td>Error</td></tr>
+	<tr><td width=10% valign="top">64</td><td>Array</td></tr>
+	</table></td></tr>
+<tr><td width=20% valign="top"></td><td>If this parameter is omitted it defaults to 7.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="return"></a><b>RETURN([value])</b></p><UL></UL>
+<P>Forces the macro to end, and if it is a custom function then to return the specified value.</P>
+<table width=100%>
+<tr><td width=20% valign="top">value</td><td>For custom functions, the value to be returned.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="setname"></a><b>SET.NAME(name_text, [value])</b></p><UL></UL>
+<P>Assigns a defined name to the specified value.</P>
+<table width=100%>
+<tr><td width=20% valign="top">name_text</td><td>The defined name to use.</td></tr>
+<tr><td width=20% valign="top">value</td><td>The value to be associated with the name. If this parameter is omitted then the name is deleted.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="setvalue"></a><b>SET.VALUE(reference, values)</b></p><UL></UL>
+<P>Stores the specified values in the specified cells on the macro sheet. Do not use this function to try to update cells on a worksheet.</P>
+<table width=100%>
+<tr><td width=20% valign="top">reference</td><td>The cells where the values are to be stored.</td></tr>
+<tr><td width=20% valign="top">values</td><td>The values to be stored.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="volatile"></a><b>VOLATILE([logical])</b></p><UL></UL>
+<P>Specifies whether a user-defined function is to be recalculated each time the worksheet changes.</P>
+<table width=100%>
+<tr><td width=20% valign="top">logical</td><td>Whether the function is volatile. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">FALSE</td><td>The function is not volatile</td></tr>
+	<tr><td width=10% valign="top">TRUE</td><td>The function is volatile</td></tr>
+	</table></td></tr>
+<tr><td width=20% valign="top"></td><td>If this parameter is omitted it defaults to TRUE.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="wait"></a><b>WAIT([serial_number])</b></p><UL></UL>
+<P>Forces the macro to wait until the date/time specified by the serial number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">serial_number</td><td>The date/time when the macro is to resume. If this parameter is omitted the macro does not wait.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="while"></a><b>WHILE(logical_test)</b></p><UL></UL>
+<P>Specifies a logical test that conditions the execution of a block of statements multiple times. The statements between the WHILE and NEXT functions will be repeated as long as the logical test returns the value TRUE.</P>
+<table width=100%>
+<tr><td width=20% valign="top">logical_test</td><td>An expression that results in TRUE or FALSE.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+</BODY>
+</HTML>

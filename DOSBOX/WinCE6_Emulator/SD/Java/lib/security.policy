@@ -1,0 +1,67 @@
+alias: NetAccess
+ javax.microedition.io.Connector.http,
+ javax.microedition.io.Connector.https,
+ javax.microedition.io.Connector.datagram,
+ javax.microedition.io.Connector.datagramreceiver,
+ javax.microedition.io.Connector.socket,
+ javax.microedition.io.Connector.serversocket, 
+ javax.microedition.io.Connector.ssl
+
+alias: LocalConnectivity
+ javax.microedition.io.Connector.comm
+
+alias: AppAutoInvoke
+ javax.microedition.io.PushRegistry
+
+alias: ReadUserData
+ javax.microedition.pim.ContactList.read,
+ javax.microedition.pim.EventList.read, 
+ javax.microedition.pim.ToDoList.read
+
+alias: WriteUserData
+ javax.microedition.pim.ContactList.write,
+ javax.microedition.pim.EventList.write, 
+ javax.microedition.pim.ToDoList.write
+
+alias: FileConnection
+ javax.microedition.io.Connector.file.read,
+ javax.microedition.io.Connector.file.write
+
+alias: MMVideo
+ javax.microedition.media.control.VideoControl.getSnapshot
+ 
+domain: manufacturer
+allow: NetAccess
+allow: ReadUserData
+allow: WriteUserData
+allow: FileConnection
+allow: LocalConnectivity
+allow: AppAutoInvoke
+allow: MMVideo
+
+domain: operator
+allow: NetAccess
+allow: ReadUserData
+allow: WriteUserData
+allow: FileConnection
+allow: LocalConnectivity
+allow: AppAutoInvoke
+allow: MMVideo
+
+domain: ThirdParty
+blanket(session): NetAccess
+blanket(session): LocalConnectivity
+blanket(oneshot): ReadUserData
+blanket(oneshot): WriteUserData
+blanket(session): FileConnection
+blanket(oneshot): AppAutoInvoke
+blanket(session): MMVideo
+
+domain: untrusted
+session(session): NetAccess
+blanket(session): LocalConnectivity
+session(session): WriteUserData
+session(session): ReadUserData
+blanket(session): FileConnection
+oneshot(oneshot): AppAutoInvoke
+session(oneshot): MMVideo

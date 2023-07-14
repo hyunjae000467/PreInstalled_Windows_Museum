@@ -1,0 +1,34 @@
+ErrorLevel("off")
+
+ScriptsFolder = "\" & Part(SystemPath("ScriptPath"),"\",2) \ Part(SystemPath("ScriptPath"),"\",3) \ "Scripts"
+
+If(not DirExists("\Program Files"))
+	MkDir("\Program Files")
+EndIf
+If(not DirExists("\Program Files\Crosswords"))
+	MkDir("\Program Files\Crosswords")
+EndIf
+
+Copy(SystemPath("ScriptPath")\"BasEnglish2to8.xwd", "\Program Files\Crosswords\BasEnglish2to8.xwd")
+
+Call("KillMiniBar")
+
+CallScript(ScriptsFolder\"OrientationToggle.mscr", SystemPath("ScriptPath")\SystemPath("ScriptName")&".exe")
+
+Call("RunMiniBar")
+
+
+Sub KillMiniBar
+	#If the MiniBar is running, kill it
+	If(ProcExists("MiniBar.exe"))
+		MiniBarExists = TRUE
+		Kill("MiniBar.exe")
+	EndIf
+EndSub
+
+Sub RunMiniBar
+	#If the MiniBar was running earlier, re-run it
+	If(MiniBarExists AND not ProcExists("MiniBar.exe"))
+		Run(SkinFolder\"MiniBar\MiniBar.exe")
+	EndIf
+EndSub

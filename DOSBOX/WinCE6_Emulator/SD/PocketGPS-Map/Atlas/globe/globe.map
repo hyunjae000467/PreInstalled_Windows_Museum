@@ -1,0 +1,8 @@
+Simple Calibration v1
+SIZE 640 320
+IMG globe.png
+CAL -180 90	0 0
+CAL 180 90	639 0
+CAL -180 -90	0 319
+CAL 180 -90	639 319
+CAL 0 0	320 160

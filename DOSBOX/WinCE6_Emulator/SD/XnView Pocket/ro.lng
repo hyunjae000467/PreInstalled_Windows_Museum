@@ -1,0 +1,541 @@
+Language=Romanian (without diacritics)
+
+[Menu]
+File=Fisier
+Go to=Mergi la
+Home Folder=Directorul Home
+Up=Sus
+Browse Flash card=Vizioneaza cardul flash
+Add to favorites...=Adauga la favorite...
+New folder...=Director nou...
+Rename folder...=Redenumeste director...
+Delete folder=Sterge director
+Cut=Decupeaza
+Copy=Copiaza
+Paste=Lipeste
+Delete=Sterge
+Rename...=Redenumeste...
+Selection=Selectie
+All=Toate
+None=Nici unul
+Invert=Inverseaza
+Multiple selection=Selectie multipla
+About...=Despre...
+Quit=Iesire
+View=Vizualizare
+Mode=Mod
+Thumbnails=Iconite
+List=Lista
+Details=Detailii
+Strip=Fasie
+Image=Imagine
+Full screen=Pe tot ecranul
+Slideshow=Diapozitive
+Sort by=Sorteaza dupa
+Name=Nume
+Date=Data
+Type=Tip
+Size=Marime
+Image resolution=Rezolutia imaginii
+Ascending=Crescator
+Descending=Descrescator
+Zoom up=Mareste
+Zoom down=Micsoreaza
+Original size=Marime originala
+Automatic rotation=Rotire automata
+Fit to window (all)=Potriveste in fereastra (toate)
+Fit to window (large only)=Potriveste in fereastra (cele mari)
+Tools=Unelte
+Convert...=Converteste...
+Crop...=Taie...
+Resize...=Redimensioneaza...
+Adjust...=Ajusteaza...
+Rotate...=Roteste...
+Sharpen/Smooth...=Ascute/netezeste...
+Send by Email...=Trimite prin email...
+Capture...=Captureaza...
+Create EXE slideshow...=Creeaza diapozitive EXE...
+Information...=Informatie...
+Options...=Optiuni...
+Batch rename...=Redenumire in serie...
+Create Album...=Creeaza album...
+Cancel=Anulare
+<Previous=<Anterior
+Next>=Urmator>
+IPTC edit...=Editare IPTC...
+Zoom in=Mareste
+Zoom out=Micsoreaza
+Fit to screen=Potriveste in ecran
+Misc.=Altele
+Send via Infrared...=Trimite prin infrarosu...
+Receive via infrared here=Primeste prin infrarosu aici
+Show filename (thumbnail)=Arata nume fisier (iconita)
+Recursive=Recursiv
+Search...=Cauta...
+Previous page=Pagina anterioara
+Next page=Pagina urmatoare
+Fill the screen=Umple ecranul
+Lock zoom=Lock zoom
+
+[DlgAbout]
+IDC_TEXT = Distribuit de
+
+[DlgNewFolder]
+IDC_APPLY = Creeaza
+IDC_NF_TFOLDER = Director:
+IDC_NF_TNEWFOLDER = Director nou:
+
+[DlgEmail]
+IDC_SEND = Trimite
+IDC_EM_TTO = Destinatar:
+IDC_EM_TSIZE = Marime:
+IDC_EM_TFORMAT = Format:
+IDC_EM_TSERVICES = Serviciu:
+
+[DlgConvert]
+IDC_CN_JPEG = Fisier JPEG
+IDC_CN_GIF = Fisier GIF
+IDC_CN_BMP = Fisier Bitmap
+IDC_CN_PNG = Fisier PNG
+IDC_QUALITY = Calitate
+IDC_COMPRESSION = Compresie
+IDC_CN_JPEGTEXT1 = Mica (fisier mic)
+IDC_CN_JPEGTEXT2 = Cea mai buna calitate
+IDC_CN_TGA = Fisier TGA
+
+[DlgCrop]
+IDC_TWIDTH = Latime:
+IDC_THEIGHT = Inaltime:
+IDC_APPLY = Taie
+
+[DlgFolder]
+IDC_FD_TEXT = Selecteaza un director destinatie:
+IDC_FD_TPREFIX = Prefix:
+IDC_FD_TSUFFIX = Sufix:
+
+[DlgResize]
+IDC_RZ_TEXT = Redimensioneaza la:
+IDC_RZ_WIDTH = Latime:
+IDC_RZ_HEIGHT = Inaltime:
+IDC_RZ_RATIO = Pastreaza aspectul
+IDC_APPLY = Redimensioneaza
+IDC_APPLYALL = Redimensioneaza toate
+IDC_RZ_BOX = Dimensiune stabilita de utilizator
+
+[DlgAdjust]
+IDC_APPLY = Ajusteaza
+IDC_APPLYALL = Ajusteaza toate
+IDC_AD_TBRIGHTNESS = Luminozitate
+IDC_AD_TCONTRAST = Contrast
+IDC_AD_TGAMMA = Gama
+IDC_AUTOLEVELS = Auto-nivele
+IDC_AUTOCONTRAST = Auto-contrast
+
+[DlgPreview]
+IDC_PP_TTYPE = Tip:
+IDC_PP_TDIM = Dimensiuni:
+IDC_PP_TDEPTH = Culori:
+IDC_PP_TDPI = Dpi:
+IDC_PP_TPIXELS = pixeli
+IDC_PP_TIMAGE = Imagine
+IDC_APPLY = Converteste
+IDC_APPLYALL = Converteste toate
+
+[DlgProp1]
+IDC_PP_TTYPE = Tip:
+IDC_PP_TDIM = Dimensiuni:
+IDC_PP_TDEPTH = Culori:
+IDC_PP_TFOLDER = Director:
+IDC_PP_TDATE = Data:
+IDC_PP_TSIZE = Dimensiune:
+IDC_PP_TFILENAME = Nume fisier:
+IDC_PP_TDPI = Dpi:
+IDC_PP_TPIXELS = pixeli
+IDC_PP_TCOMMENT = Comentariu:
+IDC_PP_FILE = Fisier
+IDC_PP_IMAGE = Imagine
+
+[DlgRename]
+IDC_APPLY = Redenumeste
+IDC_REN_TFOLDER = Director:
+IDC_REN_TFILENAME = Fisier:
+IDC_REN_TNEWNAME = Redenumeste in:
+
+[DlgRotate]
+IDC_RZ_LOSSLESS = Rotire fara pierdere daca e posibila (JPEG)
+IDC_APPLY = Aplica
+IDC_APPLYALL = Aplica toate
+IDC_ROT_N90 = -90° (in sens orar)
+IDC_ROT_180 = 180°
+IDC_ROT_90 = 90° (in sens orar)
+IDC_ROT_HFLIP = Rasucire orizontala
+IDC_ROT_VFLIP = Rasucire verticala
+
+[DlgCapture]
+IDC_APPLY = Captureaza
+IDC_DELAY = Intarziere [sec]
+
+[DlgOption1]
+IDC_STARTSPLASH = Porneste ecranul wizard
+IDC_USEARROW = Asociaza sus/jos la imaginile anterioara/urmatoare
+IDC_THOMEFOLDER = Directorul Home
+IDC_TVIEWMODE = Mod de afisare
+IDC_TLANGUAGE = Limba
+IDC_OPENINFULLSCREEN = Foloseste modul 'pe tot ecranul; (in loc de modul imagine)
+IDC_ONECLICK = Comuta cu un singur click intre modul vizualizare si cel rasfoire
+
+[DlgOption2]
+IDC_HIGHQUALITY = Iconite de calitate mare
+IDC_TTHUMBSIZE = Dimensiunea iconitelor
+IDC_SHOWNAME = Afiseaza numele fisierelor
+IDC_FONTSIZE = Dimensiune font
+IDC_TFONT1 = Arbore de directoare
+IDC_TFONT2 = Lista iconite
+IDC_SHOWEXT = Afiseaza extensia fisierului
+IDC_ADDBOTTOM = Adauga fisierele noi la sfarsit
+IDC_USECACHE = Use thumbnail cache
+
+[DlgOption3]
+IDC_VIEWMOVE = Stilusul misca imaginea
+IDC_USESCROLL = Foloseste bara de derulare
+IDC_ROTATELEFT = Roteste la stanga (in loc de la dreapta)
+IDC_TVIEWBACK = Culoare fundal
+IDC_SHOWFILENAME = Afiseaza nume fisier in modul pe tot ecranul
+IDC_ANIMATEDGIF = Reda GIF-urile animate
+
+[DlgOption4]
+IDC_TDELAY = Intarziere intre diapozitive
+IDC_TSECONDS = secunde
+IDC_TSLIDEBACK = Culoare fundal
+IDC_USETRANSITION = Foloseste efecte de tranzitii
+IDC_LANDSCAPE = Mod landscape
+IDC_USESOUNDFILE = Fisier audio
+IDC_USELOOP = Diapozitive in bucla
+
+[DlgOption5]
+IDC_TEXT = Atribuie actiuni butoanelor
+IDC_TACTION = Seteaza actiune butonului:
+IDC_RESTORE = Restaureaza
+
+[DlgOption6]
+IDC_TEXT = Selecteaza extensile ce se doresc asociate cu XnView Pocket
+
+[DlgFavorites]
+IDC_DELETE = Sterge
+IDC_MODIFY = Redenumeste
+
+[DlgAddFavorites]
+IDCANCEL = Anulare
+IDC_TFOLDER = Director:
+IDC_TLABEL = Eticheta:
+
+[DlgFolder2]
+IDC_TEXT = Selecteaza directorul cu pozele tale:
+IDCANCEL = Anulare
+
+[DlgMisc]
+IDC_APPLY = Ajusteaza
+IDC_APPLYALL = Ajusteaza toate
+IDC_TSHARPEN = Ascute
+IDC_REDUCENOISE = Redu zgomotul
+IDC_TSMOOTH = Netezeste
+
+[DlgRenFolder]
+IDC_APPLY = Redenumeste
+IDC_REN_TLOCATION = Locatie:
+IDC_REN_TFOLDER = Director:
+IDC_REN_TNEWNAME = Redenumeste in:
+
+[DlgEdit]
+IDOK = Ok
+IDCANCEL = Anuleaza
+IDC_UNDO = Revoca
+
+[DlgJpegQuality]
+IDOK = Salveaza
+IDCANCEL = Anuleaza
+IDC_TQUALITY = Calitate JPEG
+
+[DlgBatchRename]
+IDC_APPLY = Redenumeste:
+IDC_REN_TNEWNAME = Nume nou:
+IDC_REN_TEXT = Extensie:
+IDC_REN_TSTART = Numar start:
+IDC_REN_TDIGIT = Numar de cifre:
+
+[DlgAlbum0]
+IDC_AL_TEXT1 = Ce imagini doriti sa folositi?
+IDC_AL_SEL1 = Imaginile selectate
+IDC_AL_SEL2 = Toate imaginile din acest director
+IDC_AL_SEL3 = Toate imaginile disponibile
+
+[DlgAlbum1]
+IDC_SELECTNONE = Nici o selectie
+IDC_SELECTALL = Selecteaza toate
+
+[DlgAlbum2]
+IDC_AL_TEXT1 = Dimensiune imagine:
+IDC_AL_TEXT3 = Roteste:
+IDC_AL_TEXT4 = Corectie Luminozitate/Contrast:
+IDC_FITALL = Sa incapa toate (inclusiv imaginile mici)
+
+[DlgAlbum3]
+IDC_TDELAY = Intarziere
+IDC_TSECONDS = secunde
+IDC_USESOUNDFILE = Fisier audio
+IDC_USETRANSITION = Foloseste efecte de tranzitie
+IDC_LOOP = Bucla
+
+[DlgAlbum4]
+IDC_SELECT_TEXT = Selectati directorul de iesire:
+IDC_AL_TEXT = Nume fisier:
+
+[DlgAlbum5]
+IDC_JPEG_TEXT = Calitate JPEG:
+IDC_JPEGTEXT1 = Mica (fisier mic)
+IDC_JPEGTEXT2 = Cea mai buna
+
+[DlgAlbum6]
+IDC_STOP = Stop
+IDC_CREATE = Creeaza
+
+[DlgIptc1]
+IDC_TFILENAME = Nume fisier:
+IDC_TTYPE = Tip:
+IDC_TDIM = Dimensiuni:
+IDC_TDEPTH = Culori:
+IDC_TPIXELS = pixeli
+IDC_TINFO = Informatie
+IDC_LOAD = Incarca
+IDC_SAVE = Salveaza
+IDC_CLEAR = Curata
+
+[DlgIptc2]
+IDC_TBYLINE = Dupa linie
+IDC_TBYLINET = Dupa titlu
+IDC_TCREDIT = Credit
+IDC_TSOURCE = Sursa
+IDC_TCOPYRIGHT = Copyright
+IDC_TSTATUS = Editeaza stare
+IDC_TPRIORITY = Prioritate
+
+[DlgIptc3]
+IDC_TCAPTION = Eticheta
+IDC_TCAPTIONW = Scriitor eticheta
+IDC_THEADLINE = Titlu
+IDC_TINSTR = Instructiuni speciale
+
+[DlgIptc4]
+IDC_KEYADD = Adauga
+IDC_KEYDEL = Sterge
+
+[DlgIptc5]
+IDC_TCAT = Categorie (maxim 3 caractere)
+IDC_TSUPCAT = Categorii suplimentare
+IDC_SCATADD = Adauga
+IDC_SCATDEL = Sterge
+
+[DlgIptc6]
+IDC_TOBJECTN = Nume obiect
+IDC_TCREATED = Data creere
+IDC_TCITY = Oras
+IDC_TSUBLOCATION = Sublocatie
+IDC_TSTATE = Stat/Provincie
+IDC_TCOUNTRY = Tara
+IDC_TCCODE = Cod tara
+IDC_TORIGINALREF = Referinta originala a transmisiei
+IDC_TODAY = Azi
+
+[DlgIptcList]
+IDC_APPLY = Salveaza
+IDC_LOAD = Incarca
+IDC_IPTCDEL = Sterge
+
+[DlgIrda]
+IDC_IR_TEXT = Primeste prin Irda (OBEX-Protocol)\nPorniti transmisia pe celalalt dispozitiv.
+IDCANCEL = Anulare
+
+[DlgIrda2]
+IDC_IR_TEXT = Trimite prin Irda (OBEX-Protocol)\nPorniti primirea pe celalalt dispozitiv.
+IDCANCEL = Anulare
+
+[DlgSearch]
+IDC_SCH_TFOLDER = Cauta in director:
+IDC_SCH_TFILENAME = Numele fisierului contine:
+IDC_SCH_TFILESIZE = Dimensiunea fisierului:
+IDC_SCH_TFILETYPE = Tipul fisierului:
+IDC_SCH_SUBFOLDER = Cauta in subdirectoare
+IDC_APPLY = Cauta
+
+[String]
+
+IDS_CAP_AFFICH =           Fisier
+IDS_CAP_TOOLS =            Unelte
+
+IDS_NAME =                 Nume
+IDS_PROPERTIES =           Proprietati
+IDS_TYPE =                 Tip
+IDS_SIZE =                 Dimensiune
+IDS_DATE =                 Data
+IDS_BYTES =                Bytes
+IDS_KB =                   KB
+IDS_MB =                   MB
+IDS_GB =                   GB
+IDS_ERROR_LOADING =        Probleme la incarcarea %s.
+IDS_ERROR =                Eroare
+IDS_NEWFOLDER =            Director nou
+IDS_DELETEFOLDER =         Doriti stergea acestui director?
+IDS_DELETEFILE =           Doriti stergea acestui(acestor) fisier(e)?
+IDS_TREEROOT =             Pocket PC-ul meu
+
+IDS_COPY1 =                %sCopie din %s
+IDS_COPY2 =                %sCopie (%d) din %s
+IDS_DELREADONLY =          Acest fisier este marcat read-only. Doriti stergea lui?
+IDS_VALUE =                Valoare
+IDS_TAG =                  Eticheta
+IDS_JPEG25 =               25 (Foarte mica)
+IDS_JPEG50 =               50 (Mica)
+IDS_JPEG75 =               75 (Normala)
+IDS_JPEG100 =              100 (Mare)
+IDS_BW =                   Alb&Negru
+IDS_16COLS =               16 culori
+IDS_256COLS =              256 culori
+IDS_EMAIL_SUBJECT =        Primiti poze din XnView Pocket
+
+IDM_SLIDESHOW =            Diapozitive
+IDM_VIEW =                 Pe tot ecranul
+IDM_DELETE =               Sterge
+IDM_PROP =                 Informatie
+
+IDS_16M =                  24-bits
+IDS_COMP1 =                1 (Mica)
+IDS_COMP7 =                7 (Normala)
+IDS_COMP9 =                9 (Mare)
+IDS_CROP =                 Taie
+IDS_FORMAT =               Format
+IDS_FOLDER =               Director
+IDS_PROBLEM_SAVING =       Problema la salvarea fisierului!
+IDS_CROP_OK =              Imaginea %s a fost taiata si salvata in %s.
+
+IDS_EXISTS =               Fisierul exista. Doriti sa-l suprascrieti?
+IDS_FITSCREEN =            Potriveste pe ecran
+IDS_USERSIZE =             Dimensiune definita de utilizator
+IDS_RESIZE_OK =            Imaginea %s a fost redimensionata si salvata in %s.
+IDS_INFO_WIDTH =           Latime : %d
+IDS_INFO_HEIGHT =          Inaltime : %d
+IDS_RESIZE =               Redimensioneaza
+IDS_240_ =                 240 x ? pixeli
+IDS_240_180 =              240 x 180 pixeli
+IDS_640_480 =              640 x 480 pixeli
+IDS_800_600 =              800 x 600 pixeli
+IDS_1024_768 =             1024 x 768 pixeli
+IDS_320_240 =              320 x 240 pixeli (QVGA)
+IDS_240_320 =              240 x 320 pixeli (QVGA)
+IDS_480_640 =              480 x 640 pixeli
+IDS_160_120 =              120 x 160 pixeli (MMS)
+IDS_ADJUST =               Ajusteaza
+IDS_ADJUST_OK =            Imaginea %s a fost ajustata si salvata in %s.
+IDS_INFOS =                Informatie
+IDS_CONVERT_OK =           Imaginea %s a fost salvata in %s.
+
+IDS_EMAIL_BODY =           Imagini trimise cu XnView Pocket : http://www.xnview.fr
+IDS_ORIGINAL_SIZE =        Dimensiune originala
+IDS_ORIGINAL_FORMAT =      Format original
+IDS_JPEG_LOWQUALITY =      JPEG (Calitate mica)
+IDS_JPEG_NORMALQUALITY =   JPEG (Calitate normala)
+IDS_JPEG_HIGHQUALITY =     JPEG (Calitate mare)
+IDS_ROTATE_OK =            Imaginea %s a fost rotita si salvata in %s.
+IDS_ROTATE =               Rotire
+IDS_CAPTURE =              Capturare
+IDS_CAPTURE_OK =           Captura a fost salvata in %s%s.
+IDS_GENERAL =              General
+IDS_SLIDESHOW =            Diapozitive
+IDS_BROWSER =              Navigare
+IDS_VIEWER =               Vizualizare
+
+IDS_FAVORITES =            Favorite
+
+IDS_OPEN =                 Deschide
+IDS_DELETE_MODIFY =        Sterge/Modifica
+IDS_FAVORITESENTRY1 =      Favorite...
+IDS_FAVORITESENTRY2 =      Urmatorul/Favorite...
+IDS_ASSOCIATIONS =         Asociatii
+IDS_SOUNDFILENAME =        Fisiere audio
+IDS_EXEFILENAME =          Fisiere EXE
+IDS_THUMBNAIL =            Iconite
+IDS_LIST =                 Lista
+IDS_DETAIL =               Detaii
+IDS_STRIP =                Fasie
+IDS_LASTMODE =             Ultimul mod folosit
+IDS_ERROR_MEMORY =         Nu mai e memorie
+
+IDS_REBOOT =               Trebuie sa reporniti XnView pentru a aplica schimbarile.
+
+IDS_BRIGHTNESS =			Luminozitate
+IDS_CONTRAST =				Contrast
+IDS_GAMMA =					Gama
+IDS_RED =					Rosu
+IDS_GREEN =					Verde
+IDS_BLUE =					Albastru
+
+IDS_SAVERESULT =		    Vreti sa salvati rezultatul si sa suprascrieti fisierul?
+
+IDS_NO_ROTATE =             Nici o rotire
+IDS_NO_BRIGHTNESS =         Luminozitatea & contrastul original
+IDS_AUTO_BRIGHTNESS =       Luminozitate & contrast automat
+IDS_ROTATE_LEFT =           Roteste la stanga (daca e nevoie)
+IDS_ROTATE_RIGHT =          Roteste la dreapta (daca e nevoie)
+
+IDS_ALBUM =                 Album
+IDS_ALBUM_EXISTS =			Un album cu acelasi nume exista. Doriti sa il suprascrieti?
+
+IDS_THUMB_HUGE =			Imensa
+IDS_THUMB_LARGE =			Mare
+IDS_THUMB_NORMAL =			Normala
+IDS_THUMB_SMALL =			Mica
+IDS_THUMB_TINY =			Foarte mica
+
+IDS_WIZARD1 =				Alege\nDirector
+IDS_WIZARD2 =				Deschide\nAlbum
+IDS_WIZARD3 =				Creeaza\nAlbum
+IDS_WIZARD4 =				Creeaza\nDiapozitive
+IDS_WIZARD5 =				Alege\nFlashcard
+IDS_WIZARD6 =				Schimba\nOptiuni
+
+IDS_BUTTONS =				Butoane
+IDS_BUTTON =				Buton
+IDS_ASSIGNMENT =			Atribuire
+IDS_NONE =					Nici una
+IDS_NEXTIMAGE =				Imaginea urmatoare
+IDS_PREVIMAGE =				Imaginea anterioara
+IDS_FULLSCREEN =			Pe tot ecranul
+IDS_ZOOMIN =				Mareste
+IDS_ZOOMOUT =				Micsoreaza
+IDS_KEYUP =					Sus
+IDS_KEYDOWN =				Jos
+IDS_KEYLEFT =				Stanga
+IDS_KEYRIGHT =				Dreapta
+IDS_KEYRETURN =				Enter
+
+IDS_CAPTION =				Eticheta
+IDS_CREDIT =				Credit
+IDS_KEYWORD =				Cuvant cheie
+IDS_CATEGORY =				Categorie
+IDS_ORIGIN =				Origine
+IDS_FILE =					Fisier
+IDS_IPTC_0 =				0 : Nici una
+IDS_IPTC_1 =				1 : Mare
+IDS_IPTC_5 =				5 : Normala
+IDS_IPTC_8 =				8 : Mica
+IDS_IPTCQUESTION =			Doriti scrierea datelor IPTC?
+
+IDS_SEARCHDEV =				Cautare dispozitiv: #%d
+
+IDS_IGNORED =				Ignorat
+IDS_JPEG_FILES =			Fisiere JPEG (*.jpg)
+IDS_GIF_FILES =				Fisiere GIF (*.gif)
+IDS_BMP_FILES =				Fisiere BMP (*.bmp)
+IDS_PNG_FILES =				Fisiere PNG (*.png)
+IDS_TGA_FILES =				Fisiere TARGA (*.tga)
+IDS_FOUND_FILES =				Am gasit %d fisiere...
+IDS_SHOW_FILES =				Doriti vizualizarea fisierelor gasite?

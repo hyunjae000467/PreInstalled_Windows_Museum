@@ -1,0 +1,29 @@
+ErrorLevel("off")
+
+ProgramsFolder = "\" & Part(SystemPath("ScriptPath"),"\",2) \ Part(SystemPath("ScriptPath"),"\",3) \ "Programs"
+ScriptsFolder = "\" & Part(SystemPath("ScriptPath"),"\",2) \ Part(SystemPath("ScriptPath"),"\",3) \ "Scripts"
+
+isScreenLandscape = Screen("landscape")
+If(isScreenLandscape)
+	CallScript(ScriptsFolder\"OrientationToggle.mscr", "", FALSE)
+EndIf
+
+Run(SystemPath("ScriptPath")\SystemPath("ScriptName")&".exe")
+
+AW = "Pocket Uno"
+WaitFor(AW, 15)
+
+Run(ProgramsFolder\"TroNik\WindowMove.exe", """" & AW & """ " & 0 & " " & 0 & " " & ScreenWidth() & " " & ScreenHeight() - 24)
+
+Run(ProgramsFolder\"TroNik\ToolbarMove.exe", """" & AW & """ " & ScreenWidth() - 50 & " 0")
+
+Minimize(AW)
+Show(AW)
+
+While(WndExists(AW))
+	Sleep(1000)
+EndWhile
+
+If(isScreenLandscape)
+	CallScript(ScriptsFolder\"OrientationToggle.mscr")
+EndIf

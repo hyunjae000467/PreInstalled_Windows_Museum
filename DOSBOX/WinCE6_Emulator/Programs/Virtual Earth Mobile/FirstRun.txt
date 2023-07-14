@@ -1,0 +1,10 @@
+Instructions for Virtual Earth Mobile
+Note: Some of the following also pertains to Live Search and Map24 Mobile, which, too, need an initial internet connection.
+
+Virtual Earth Mobile uses GPS to determine your position, but it needs to download its maps over the internet. If you don't have a WiFi card, you will need to use ActiveSync. Connect your device to your computer and, if using Vista/7 and the green Windows Mobile Device Center window appears, choose "Connect without setting up your device." Simply closing the window without choosing anything will not provide the device (and Virtual Earth Mobile) with an internet connection.
+
+Next, run Virtual Earth Mobile and go to Menu->Options->GPS to configure your GPS COM port and baudrate. After that, wait a little bit, then go to Menu->Locate Me->GPS. If it tells you "Unable to obtain a location from a GPS device," wait a little bit longer and try again. Though it may not appear to be doing anything, it is trying to get a satellite lock and, like other GPS apps, that takes time (ex. 30 seconds to several minutes). If it still gives the error after several minutes of waiting, consider that you may have chosen incorrect COM port and baudrate settings.
+
+Once the app has downloaded a map, as long as there's room in the cache, the map will be available for offline use. From Menu->Options, you can increase the map cache size in order to keep more of the maps that you download. You can also change the cache location to the SD card (which you may want to do if you substantially increase the cache size).
+
+You will not see this message again. If you need these instructions in the future, look for them in the MioPocket Readme.

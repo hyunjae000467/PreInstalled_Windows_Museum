@@ -1,0 +1,6 @@
+To add programs simple drop them into the "SD" folder.
+Do not change the folder name otherwise no programs will be detected.To find your programs inside the emulation: Go to 'My Device' or 'Windows Explorer' and look open the drive: Storage Card your programs will be in that folder. The programs in the 'Optional Programs' folder are from MioPocket.
+_______________________________________________________________________________________________________________________________________________
+
+Note: The programs you add must be WinCE compatible to run. Programs that are for use on non WindowsCE operating systems will not run.
+______________________________________________________________________________________________________________________________________

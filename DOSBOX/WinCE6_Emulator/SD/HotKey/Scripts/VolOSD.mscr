@@ -1,0 +1,11 @@
+VolEXE = "..\..\VolumeCtrl.exe"
+VolTitle = "VolumeCtrl"
+
+If(WndExists(VolTitle))
+	Close(VolTitle)
+EndIf
+Run(SystemPath("ScriptPath")\VolEXE)
+Sleep(1500)
+If(WndExists(VolTitle))
+	Close(VolTitle)
+EndIf

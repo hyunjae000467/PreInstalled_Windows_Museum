@@ -1,0 +1,23 @@
+ErrorLevel("off")
+
+ScriptsFolder = "\" & Part(SystemPath("ScriptPath"),"\",2) \ Part(SystemPath("ScriptPath"),"\",3) \ "Scripts"
+
+#CallScript(ScriptsFolder\"OrientationToggle.mscr", SystemPath("ScriptPath")\SystemPath("ScriptName")&".exe")
+
+Run(SystemPath("ScriptPath")\"Shift.exe")
+
+isScreenLandscape = Screen("landscape")
+If(isScreenLandscape)
+	CallScript(ScriptsFolder\"OrientationToggle.mscr")
+EndIf
+
+#While(ProcExists("Shift.exe"))
+While(WndExists("Shift"))
+	Sleep(1000)
+EndWhile
+
+If(isScreenLandscape)
+	CallScript(ScriptsFolder\"OrientationToggle.mscr")
+EndIf
+
+Kill("Shift.exe")

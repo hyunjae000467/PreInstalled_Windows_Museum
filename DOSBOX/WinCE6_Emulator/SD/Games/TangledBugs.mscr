@@ -1,0 +1,6 @@
+ErrorLevel("off")
+
+ScriptsFolder = "\" & Part(SystemPath("ScriptPath"),"\",2) \ Part(SystemPath("ScriptPath"),"\",3) \ "Scripts"
+
+#CallScript(ScriptsFolder\"OrientationToggle.mscr", SystemPath("ScriptPath")\SystemPath("ScriptName")&".exe")
+Run(SystemPath("ScriptPath")\SystemPath("ScriptName")&".exe")

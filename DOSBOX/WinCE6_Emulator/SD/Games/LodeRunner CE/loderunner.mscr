@@ -1,0 +1,4 @@
+ErrorLevel("off")
+
+RunWait(SystemPath("ScriptPath")\SystemPath("ScriptName")&".exe")
+Run(SystemPath("ScriptPath")\"..\..\..\Scripts\TaskbarHide.mscr")

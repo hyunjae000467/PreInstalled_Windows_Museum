@@ -1,0 +1,647 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Htm-Help" CONTENT="SCEHlpFM.htm#Main_Contents">
+<title>SpreadCE Help</title>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<!-- PegHelp -->
+<p><A NAME="Main_Contents"></A><b>Math/trigonometry functions</b></p><UL></UL>
+<p>[ ] indicates optional parameters</p>
+<A HREF="SCEHlpFM.htm#abs">ABS(number)</A><BR>
+<A HREF="SCEHlpFM.htm#acos">ACOS(number)</A><BR>
+<A HREF="SCEHlpFM.htm#acosh">ACOSH(number)</A><BR>
+<A HREF="SCEHlpFM.htm#asin">ASIN(number)</A><BR>
+<A HREF="SCEHlpFM.htm#asinh">ASINH(number)</A><BR>
+<A HREF="SCEHlpFM.htm#atan">ATAN(number)</A><BR>
+<A HREF="SCEHlpFM.htm#atan2">ATAN2(x_num, y_num)</A><BR>
+<A HREF="SCEHlpFM.htm#atanh">ATANH(number)</A><BR>
+<A HREF="SCEHlpFM.htm#ceiling">CEILING(number, significance)</A><BR>
+<A HREF="SCEHlpFM.htm#combin">COMBIN(number, number_chosen)</A><BR>
+<A HREF="SCEHlpFM.htm#cos">COS(number)</A><BR>
+<A HREF="SCEHlpFM.htm#cosh">COSH(number)</A><BR>
+<A HREF="SCEHlpFM.htm#countif">COUNTIF(range, criteria)</A><BR>
+<A HREF="SCEHlpFM.htm#degrees">DEGREES(angle)</A><BR>
+<A HREF="SCEHlpFM.htm#even">EVEN(number)</A><BR>
+<A HREF="SCEHlpFM.htm#exp">EXP(number)</A><BR>
+<A HREF="SCEHlpFM.htm#fact">FACT(number)</A><BR>
+<A HREF="SCEHlpFM.htm#floor">FLOOR(number, significance)</A><BR>
+<A HREF="SCEHlpFM.htm#gcd">GCD(number1, [number2, ...])</A><BR>
+<A HREF="SCEHlpFM.htm#int">INT(number)</A><BR>
+<A HREF="SCEHlpFM.htm#lcm">LCM(number1, [number2, ...])</A><BR>
+<A HREF="SCEHlpFM.htm#ln">LN(number)</A><BR>
+<A HREF="SCEHlpFM.htm#log">LOG(number, [base])</A><BR>
+<A HREF="SCEHlpFM.htm#log10">LOG10(number)</A><BR>
+<A HREF="SCEHlpFM.htm#mdeterm">MDETERM(array)</A><BR>
+<A HREF="SCEHlpFM.htm#minverse">MINVERSE(array)</A><BR>
+<A HREF="SCEHlpFM.htm#mmult">MMULT(array1, array2)</A><BR>
+<A HREF="SCEHlpFM.htm#mod">MOD(number, divisor)</A><BR>
+<A HREF="SCEHlpFM.htm#mround">MROUND(number, multiple)</A><BR>
+<A HREF="SCEHlpFM.htm#multinomial">MULTINOMIAL(number1, [number2, ...])</A><BR>
+<A HREF="SCEHlpFM.htm#odd">ODD(number)</A><BR>
+<A HREF="SCEHlpFM.htm#pi">PI()</A><BR>
+<A HREF="SCEHlpFM.htm#power">POWER(number, power)</A><BR>
+<A HREF="SCEHlpFM.htm#product">PRODUCT(number1, [number2, ...])</A><BR>
+<A HREF="SCEHlpFM.htm#quotient">QUOTIENT(numerator, denominator)</A><BR>
+<A HREF="SCEHlpFM.htm#radians">RADIANS(angle)</A><BR>
+<A HREF="SCEHlpFM.htm#rand">RAND()</A><BR>
+<A HREF="SCEHlpFM.htm#randbetween">RANDBETWEEN(smallest, largest)</A><BR>
+<A HREF="SCEHlpFM.htm#roman">ROMAN(number, [form])</A><BR>
+<A HREF="SCEHlpFM.htm#round">ROUND(number, num_digits)</A><BR>
+<A HREF="SCEHlpFM.htm#rounddown">ROUNDDOWN(number, [num_digits])</A><BR>
+<A HREF="SCEHlpFM.htm#roundup">ROUNDUP(number, [num_digits])</A><BR>
+<A HREF="SCEHlpFM.htm#seriessum">SERIESSUM(x, n, m, coefficients)</A><BR>
+<A HREF="SCEHlpFM.htm#sign">SIGN(number)</A><BR>
+<A HREF="SCEHlpFM.htm#sin">SIN(number)</A><BR>
+<A HREF="SCEHlpFM.htm#sinh">SINH(number)</A><BR>
+<A HREF="SCEHlpFM.htm#sqrt">SQRT(number)</A><BR>
+<A HREF="SCEHlpFM.htm#sqrtpi">SQRTPI(number)</A><BR>
+<A HREF="SCEHlpFM.htm#subtotal">SUBTOTAL(function_num, ref1, [ref2, ...])</A><BR>
+<A HREF="SCEHlpFM.htm#sum">SUM(number1, [number2, ...])</A><BR>
+<A HREF="SCEHlpFM.htm#sumif">SUMIF(range, criteria, [sum_range])</A><BR>
+<A HREF="SCEHlpFM.htm#sumproduct">SUMPRODUCT(array1, [array2, ...])</A><BR>
+<A HREF="SCEHlpFM.htm#sumsq">SUMSQ(number1, [number2, ...])</A><BR>
+<A HREF="SCEHlpFM.htm#sumx2my2">SUMX2MY2(array_x, array_y)</A><BR>
+<A HREF="SCEHlpFM.htm#sumx2py2">SUMX2PY2(array_x, array_y)</A><BR>
+<A HREF="SCEHlpFM.htm#sumxmy2">SUMXMY2(array_x, array_y)</A><BR>
+<A HREF="SCEHlpFM.htm#tan">TAN(number)</A><BR>
+<A HREF="SCEHlpFM.htm#tanh">TANH(number)</A><BR>
+<A HREF="SCEHlpFM.htm#trunc">TRUNC(number, [num_digits])</A><BR>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="abs"></a><b>ABS(number)</b></p><UL></UL>
+<P>Returns the absolute value of a number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number for which you want the absolute value.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="acos"></a><b>ACOS(number)</b></p><UL></UL>
+<P>Returns the angle in radians corresponding to the arccosine of a number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number for which you want the arccosine.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="acosh"></a><b>ACOSH(number)</b></p><UL></UL>
+<P>Returns the angle in radians corresponding to the inverse hyperbolic cosine of a number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number for which you want the inverse hyperbolic cosine.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="asin"></a><b>ASIN(number)</b></p><UL></UL>
+<P>Returns the angle in radians corresponding to the arcsine of a number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number for which you want the arcsine.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="asinh"></a><b>ASINH(number)</b></p><UL></UL>
+<P>Returns the angle in radians corresponding to the inverse hyperbolic sine of a number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number for which you want the inverse hyperbolic sine.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="atan"></a><b>ATAN(number)</b></p><UL></UL>
+<P>Returns the angle in radians corresponding to the arctangent of a number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number for which you want the arctangent.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="atan2"></a><b>ATAN2(x_num, y_num)</b></p><UL></UL>
+<P>Returns the angle in radians corresponding to a pair of co-ordinates.</P>
+<table width=100%>
+<tr><td width=20% valign="top">x_num</td><td>The x co-ordinate for which you want the angle.</td></tr>
+<tr><td width=20% valign="top">y_num</td><td>The y co-ordinate for which you want the angle.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="atanh"></a><b>ATANH(number)</b></p><UL></UL>
+<P>Returns the angle in radians corresponding to the inverse hyperbolic tangent of a number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number for which you want the inverse hyperbolic tangent.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="ceiling"></a><b>CEILING(number, significance)</b></p><UL></UL>
+<P>Returns the number rounded up (away from zero) to the next multiple of significance.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number which you want rounded.</td></tr>
+<tr><td width=20% valign="top">significance</td><td>The units you want to use for rounding.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="combin"></a><b>COMBIN(number, number_chosen)</b></p><UL></UL>
+<P>Returns the number of combinations in which a number of items can be chosen from a total number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The total number of items.</td></tr>
+<tr><td width=20% valign="top">number_chosen</td><td>The number of items chosen.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="cos"></a><b>COS(number)</b></p><UL></UL>
+<P>Returns the cosine of an angle.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The angle for which you want the cosine. It must be specified in radians.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="cosh"></a><b>COSH(number)</b></p><UL></UL>
+<P>Returns the hyperbolic cosine of an angle.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The angle for which you want the hyperbolic cosine. It must be specified in radians.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="countif"></a><b>COUNTIF(range, criteria)</b></p><UL></UL>
+<P>Returns the number of cells in a specified range that meet the specified criteria.</P>
+<table width=100%>
+<tr><td width=20% valign="top">range</td><td>A reference to the cells you want to count.</td></tr>
+<tr><td width=20% valign="top">criteria</td><td>A string containing a comparison expression.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="degrees"></a><b>DEGREES(angle)</b></p><UL></UL>
+<P>Converts an angle from radians to degrees.</P>
+<table width=100%>
+<tr><td width=20% valign="top">angle</td><td>The angle that you want to convert.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="even"></a><b>EVEN(number)</b></p><UL></UL>
+<P>Returns the number rounded up to the next even number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number which you want rounded.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="exp"></a><b>EXP(number)</b></p><UL></UL>
+<P>Returns the e raised to the power number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The power to which you want to raise e.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="fact"></a><b>FACT(number)</b></p><UL></UL>
+<P>Returns the factorial of a number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number of which you want the factorial.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="floor"></a><b>FLOOR(number, significance)</b></p><UL></UL>
+<P>Returns the number rounded down (towards zero) to the next multiple of significance.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number which you want rounded.</td></tr>
+<tr><td width=20% valign="top">significance</td><td>The units you want to use for rounding.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="gcd"></a><b>GCD(number1, [number2, ...])</b></p><UL></UL>
+<P>Returns the greatest common divisor of a set of numbers.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number1, ...</td><td>The numbers of which you want the greatest common divisor.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="int"></a><b>INT(number)</b></p><UL></UL>
+<P>Returns the number rounded down to the next integer.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number which you want rounded.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="lcm"></a><b>LCM(number1, [number2, ...])</b></p><UL></UL>
+<P>Returns the lowest common multiple of a set of numbers.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number1, ...</td><td>The numbers of which you want the lowest common multiple.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="ln"></a><b>LN(number)</b></p><UL></UL>
+<P>Returns the natural logarithm of a number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number for which you want the natural logarithm.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="log"></a><b>LOG(number, [base])</b></p><UL></UL>
+<P>Returns the logarithm of a number in a specified base.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number for which you want the logarithm.</td></tr>
+<tr><td width=20% valign="top">base</td><td>The base in which you want the logarithm. If this parameter is omitted it defaults to 10.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="log10"></a><b>LOG10(number)</b></p><UL></UL>
+<P>Returns the base 10 logarithm of a number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number for which you want the base 10 logarithm.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="mdeterm"></a><b>MDETERM(array)</b></p><UL></UL>
+<P>Returns the determinant of a matrix.</P>
+<table width=100%>
+<tr><td width=20% valign="top">array</td><td>An array or reference to cells containing the matrix.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="minverse"></a><b>MINVERSE(array)</b></p><UL></UL>
+<P>Returns the inverse of a matrix.</P>
+<table width=100%>
+<tr><td width=20% valign="top">array</td><td>An array or reference to cells containing the matrix.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="mmult"></a><b>MMULT(array1, array2)</b></p><UL></UL>
+<P>Returns the product of two matrices.</P>
+<table width=100%>
+<tr><td width=20% valign="top">array1</td><td>An array or reference to cells containing the first matrix.</td></tr>
+<tr><td width=20% valign="top">array2</td><td>An array or reference to cells containing the second matrix.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="mod"></a><b>MOD(number, divisor)</b></p><UL></UL>
+<P>Returns the remainder of a division.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The dividend.</td></tr>
+<tr><td width=20% valign="top">divisor</td><td>The divisor.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="mround"></a><b>MROUND(number, multiple)</b></p><UL></UL>
+<P>Returns the number rounded to a multiple.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number that you want rounded.</td></tr>
+<tr><td width=20% valign="top">multiple</td><td>The multiple to which you want the number rounded.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="multinomial"></a><b>MULTINOMIAL(number1, [number2, ...])</b></p><UL></UL>
+<P>Returns the factorial of the sum of the values divided by the product of their factorials.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number1, ...</td><td>The numbers of which you want the multinomial.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="odd"></a><b>ODD(number)</b></p><UL></UL>
+<P>Returns the number rounded up to the next odd number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number which you want rounded.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="pi"></a><b>PI()</b></p><UL></UL>
+<P>Returns the value of Pi.</P>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="power"></a><b>POWER(number, power)</b></p><UL></UL>
+<P>Returns the number raised to the power.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number which you want raised to a power.</td></tr>
+<tr><td width=20% valign="top">power</td><td>The power to which you want to raise the number.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="product"></a><b>PRODUCT(number1, [number2, ...])</b></p><UL></UL>
+<P>Returns the product of a list of numbers.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number1, ...</td><td>The numbers that you want to multiply together.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="quotient"></a><b>QUOTIENT(numerator, denominator)</b></p><UL></UL>
+<P>Returns the integer result of a division.</P>
+<table width=100%>
+<tr><td width=20% valign="top">numerator</td><td>The dividend.</td></tr>
+<tr><td width=20% valign="top">denominator</td><td>The divisor.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="radians"></a><b>RADIANS(angle)</b></p><UL></UL>
+<P>Converts an angle from degrees to radians.</P>
+<table width=100%>
+<tr><td width=20% valign="top">angle</td><td>The angle that you want to convert.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="rand"></a><b>RAND()</b></p><UL></UL>
+<P>Returns a random number between 0 and 1.</P>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="randbetween"></a><b>RANDBETWEEN(smallest, largest)</b></p><UL></UL>
+<P>Returns a random integer in the range you specify.</P>
+<table width=100%>
+<tr><td width=20% valign="top">smallest</td><td>The lower limit of the range.</td></tr>
+<tr><td width=20% valign="top">largest</td><td>The upper limit of the range.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="roman"></a><b>ROMAN(number, [form])</b></p><UL></UL>
+<P>Returns a string representing a number converted to roman numerals.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number that you want to convert.</td></tr>
+<tr><td width=20% valign="top">form</td><td>Specifies the compactness of the representation. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>Classic</td></tr>
+	<tr><td width=10% valign="top">1</td><td>More compact</td></tr>
+	<tr><td width=10% valign="top">2</td><td>More compact</td></tr>
+	<tr><td width=10% valign="top">3</td><td>More compact</td></tr>
+	<tr><td width=10% valign="top">4</td><td>Simplified</td></tr>
+	<tr><td width=10% valign="top">TRUE</td><td>Classic</td></tr>
+	<tr><td width=10% valign="top">FALSE</td><td>Simplified</td></tr>
+	</table></td></tr>
+<tr><td width=20% valign="top"></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="round"></a><b>ROUND(number, num_digits)</b></p><UL></UL>
+<P>Returns a number rounded to the number of decimal places specified.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number that you want rounded.</td></tr>
+<tr><td width=20% valign="top">num_digits</td><td>The number of decimal places to round to (may be negative).</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="rounddown"></a><b>ROUNDDOWN(number, [num_digits])</b></p><UL></UL>
+<P>Returns a number rounded down to the number of decimal places specified.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number that you want rounded.</td></tr>
+<tr><td width=20% valign="top">num_digits</td><td>The number of decimal places to round to (may be negative). If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="roundup"></a><b>ROUNDUP(number, [num_digits])</b></p><UL></UL>
+<P>Returns a number rounded up to the number of decimal places specified.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number that you want rounded.</td></tr>
+<tr><td width=20% valign="top">num_digits</td><td>The number of decimal places to round to (may be negative). If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="seriessum"></a><b>SERIESSUM(x, n, m, coefficients)</b></p><UL></UL>
+<P>Returns the value of a polynomial.</P>
+<table width=100%>
+<tr><td width=20% valign="top">x</td><td>The number to be raised to a power.</td></tr>
+<tr><td width=20% valign="top">n</td><td>The power of the first term in the series.</td></tr>
+<tr><td width=20% valign="top">m</td><td>The difference between successive powers in the series.</td></tr>
+<tr><td width=20% valign="top">coefficients</td><td>An array or reference to cells containing the coefficients.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="sign"></a><b>SIGN(number)</b></p><UL></UL>
+<P>Returns the sign of a number; 1 for positive, -1 for negative and 0 for zero.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number of which you want the sign.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="sin"></a><b>SIN(number)</b></p><UL></UL>
+<P>Returns the sine of an angle.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The angle for which you want the sine. It must be specified in radians.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="sinh"></a><b>SINH(number)</b></p><UL></UL>
+<P>Returns the hyperbolic sine of an angle.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The angle for which you want the hyperbolic sine. It must be specified in radians.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="sqrt"></a><b>SQRT(number)</b></p><UL></UL>
+<P>Returns the square root of a number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number of which you want the square root.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="sqrtpi"></a><b>SQRTPI(number)</b></p><UL></UL>
+<P>Returns the square root of a number after it is multiplied by Pi.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number which you want to multiply by Pi and then take the square root.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="subtotal"></a><b>SUBTOTAL(function_num, ref1, [ref2, ...])</b></p><UL></UL>
+<P>Returns the subtotal of values in one or more ranges, excluding other subtotal figures.</P>
+<table width=100%>
+<tr><td width=20% valign="top">function_num</td><td>The subtotal function that you want. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">1</td><td>AVERAGE</td></tr>
+	<tr><td width=10% valign="top">2</td><td>COUNT</td></tr>
+	<tr><td width=10% valign="top">3</td><td>COUNTA</td></tr>
+	<tr><td width=10% valign="top">4</td><td>MAX</td></tr>
+	<tr><td width=10% valign="top">5</td><td>MIN</td></tr>
+	<tr><td width=10% valign="top">6</td><td>PRODUCT</td></tr>
+	<tr><td width=10% valign="top">7</td><td>STDEV</td></tr>
+	<tr><td width=10% valign="top">8</td><td>STDEVP</td></tr>
+	<tr><td width=10% valign="top">9</td><td>SUM</td></tr>
+	<tr><td width=10% valign="top">10</td><td>VAR</td></tr>
+	<tr><td width=10% valign="top">11</td><td>VARP</td></tr>
+	</table></td></tr>
+<tr><td width=20% valign="top">ref1, ...</td><td>The ranges of cells that you want subtotalled.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="sum"></a><b>SUM(number1, [number2, ...])</b></p><UL></UL>
+<P>Returns the sum of a list of numbers.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number1, ...</td><td>The numbers that you want to add together.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="sumif"></a><b>SUMIF(range, criteria, [sum_range])</b></p><UL></UL>
+<P>Returns the sum of cells in a specified range that meet the specified criteria.</P>
+<table width=100%>
+<tr><td width=20% valign="top">range</td><td>A reference to the cells you want to check.</td></tr>
+<tr><td width=20% valign="top">criteria</td><td>A string containing a comparison expression.</td></tr>
+<tr><td width=20% valign="top">sum_range</td><td>A range containing values to be summed where the values in the first range meet the specified criteria. If this parameter is omitted then the values in the first range are summed.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="sumproduct"></a><b>SUMPRODUCT(array1, [array2, ...])</b></p><UL></UL>
+<P>Returns the sum of the products of the cells in one or more ranges.</P>
+<table width=100%>
+<tr><td width=20% valign="top">array1, ...</td><td>The ranges of cells where corresponding values are multiplied together and then summed.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="sumsq"></a><b>SUMSQ(number1, [number2, ...])</b></p><UL></UL>
+<P>Returns the sum of the squares of the numbers in the list.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number1, ...</td><td>The numbers that are to be squared and then summed.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="sumx2my2"></a><b>SUMX2MY2(array_x, array_y)</b></p><UL></UL>
+<P>Returns the sum of the differences of the squares of the numbers in the ranges.</P>
+<table width=100%>
+<tr><td width=20% valign="top">array_x</td><td>The first range of numbers.</td></tr>
+<tr><td width=20% valign="top">array_y</td><td>The second range of numbers.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="sumx2py2"></a><b>SUMX2PY2(array_x, array_y)</b></p><UL></UL>
+<P>Returns the sum of the sums of the squares of the numbers in the ranges.</P>
+<table width=100%>
+<tr><td width=20% valign="top">array_x</td><td>The first range of numbers.</td></tr>
+<tr><td width=20% valign="top">array_y</td><td>The second range of numbers.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="sumxmy2"></a><b>SUMXMY2(array_x, array_y)</b></p><UL></UL>
+<P>Returns the sum of the squares of the differences of the numbers in the ranges.</P>
+<table width=100%>
+<tr><td width=20% valign="top">array_x</td><td>The first range of numbers.</td></tr>
+<tr><td width=20% valign="top">array_y</td><td>The second range of numbers.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="tan"></a><b>TAN(number)</b></p><UL></UL>
+<P>Returns the tangent of an angle.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The angle for which you want the tangent. It must be specified in radians.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="tanh"></a><b>TANH(number)</b></p><UL></UL>
+<P>Returns the hyperbolic tangent of an angle.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The angle for which you want the hyperbolic tangent. It must be specified in radians.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="trunc"></a><b>TRUNC(number, [num_digits])</b></p><UL></UL>
+<P>Returns a number truncated to the number of decimal places specified.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number that you want truncated.</td></tr>
+<tr><td width=20% valign="top">num_digits</td><td>The number of decimal places to truncate to (may be negative).</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+</BODY>
+</HTML>

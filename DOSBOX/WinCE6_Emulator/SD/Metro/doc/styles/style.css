@@ -1,0 +1,370 @@
+/* Document (for IE bug with frames) */
+html
+{
+  overflow-y: scroll;
+}
+
+/* Body */
+body
+{
+  color: #000000;
+  background-color: #ffffff;
+  font-family: Helvetica, Arial, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 10pt;
+  margin: 2px 0px;
+}
+
+/* Links */
+a
+{
+  background-color: #dddddd;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:link
+{
+  color: #555555;
+}
+a:visited
+{
+  color: #333333;
+}
+a:hover
+{
+  color: #000000;
+  text-decoration: underline;
+}
+a:active
+{
+  color: #000000;
+}
+a img
+{
+  background-color: #ffffff;
+  border: 0px none #cccccc;
+}
+
+/* HTML tags */
+p
+{
+  margin: 12px 0px;
+}
+form
+{
+  margin: 0px;
+}
+
+pre
+{
+  background-color: #e9e9e9;
+  padding: 4px 0px;
+}
+
+/* Table */
+table
+{
+  border-collapse: collapse;
+  margin: 0px;
+  padding: 0px;
+  border: 0px none #cccccc;
+  text-align: left;
+}
+
+/* Bar */
+.bar
+{
+  background-color: #cccccc;
+  height: 2px;
+}
+
+/* Alignments */
+.middle
+{
+  vertical-align: middle;
+}
+.top
+{
+  vertical-align: top;
+}
+.bottom
+{
+  vertical-align: bottom;
+}
+.center
+{
+  text-align: center;
+}
+.left
+{
+  text-align: left;
+}
+.right
+{
+  text-align: right;
+}
+.justify
+{
+  text-align: justify;
+}
+.floatright
+{
+  float: right;
+}
+.floatleft
+{
+  float: left;
+}
+
+/* Text format */
+.txtnot
+{
+  font-size: 7pt;
+  color:#0000ff;
+}
+.super
+{
+  vertical-align: super;
+}
+.txtbig
+{
+  font-size: 12pt;
+}
+.txtsml
+{
+  font-size: 8pt;
+}
+.txtsmli
+{
+  font-size: 8pt;
+  font-style: italic;
+}
+.txtmed
+{
+  font-size: 9pt;
+}
+.txtita
+{
+  font-style: italic;
+}
+.txtbld
+{
+  font-weight: bold;
+}
+
+/* Colored text */
+.txtred
+{
+  color:#cc0000;
+}
+.txtblu
+{
+  color:#0000cc;
+}
+.txtgrn
+{
+  color:#006600;
+}
+
+/* Special sections */
+.footer
+{
+  margin: 0px;
+  padding: 0px;
+  border: 0px none #cccccc;
+}
+.version
+{
+  font-style: italic;
+}
+
+.imglink
+{
+  background-color: #ffffff;
+  border: 0px none #cccccc;
+}
+.code
+{
+  font-family: courier;
+  color:#000066;
+}
+.download
+{
+  font-size: 13pt;
+}
+.name
+{
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+/* Table cells */
+.cell
+{
+  text-align: justify;
+  vertical-align: top;
+  padding: 0px 4px;
+}
+.cellpad
+{
+  padding: 8px 4px;
+}
+.cellb
+{
+  text-align: justify;
+  vertical-align: top;
+  border: 1px solid #cccccc;
+  padding: 0px 4px;
+}
+.cellc
+{
+  text-align: center;
+  vertical-align: top;
+  border: 1px solid #cccccc;
+  padding: 0px 4px;
+}
+.cellf
+{
+  font-size: 8pt;
+  font-style: italic;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0px 8px;
+}
+.celln
+{
+  text-align: right;
+  vertical-align: middle;
+  padding: 4px;
+}
+.cellm
+{
+  text-align: center;
+  vertical-align: middle;
+  padding: 4px;
+}
+.cells
+{
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid #cccccc;
+  padding: 4px;
+}
+.cellg
+{
+  font-size: 12pt;
+  font-weight: bold;
+  vertical-align: top;
+  border: 1px solid #cccccc;
+  padding: 4px;
+  background-color: #cccccc;
+}
+.cellh
+{
+  text-align: left;
+  vertical-align: top;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  padding: 4px;
+}
+.celli
+{
+  text-align: left;
+  vertical-align: top;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  padding: 4px;
+}
+.cellsl
+{
+  text-align: justify;
+  vertical-align: top;
+  border-left: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  padding: 4px;
+}
+.cellsr
+{
+  text-align: justify;
+  vertical-align: top;
+  border-right: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  padding: 0px;
+}
+.cell-special
+{
+  text-align: left;
+  background-color: #eeeeee;
+  border: 1px solid #cc0000;
+  padding: 4px;
+}
+.vspace
+{
+  padding: 20px 0px;
+}
+
+/* Titles */
+.title
+{
+  font-size: 36pt;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+.subtitle
+{
+  font-size: 18pt;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+.title2
+{
+  font-size: 18pt;
+  font-weight: bold;
+  white-space: nowrap;
+  width: 100%;
+  vertical-align: middle;
+  color: #000000;
+  background-color: #cccccc;
+  padding: 0px 4px;
+}
+.title3
+{
+  font-size: 12pt;
+  font-weight: bold;
+  white-space: nowrap;
+  width: 100%;
+}
+
+/* Image formats */
+.imgframe
+{
+  vertical-align: top;
+  border: 1px solid #999999;
+  padding: 0px;
+  margin: 4px;
+}
+.imgspace
+{
+  vertical-align: top;
+  border: 0px none #999999;
+  padding: 0px;
+  margin: 4px;
+}
+.imgalign
+{
+  vertical-align: -4px;
+}
+.title2 .imgalign
+{
+  vertical-align: -3px;
+}
+.specialinfo
+{
+  text-align: center;
+  border: solid 2px #cc0000;
+  padding: 4px;
+}

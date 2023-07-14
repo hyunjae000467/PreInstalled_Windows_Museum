@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Htm-Help" CONTENT="SCEHlpCh.htm#Main_Contents">
+<title>SpreadCE Help</title>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<!-- PegHelp -->
+<p><A NAME="Main_Contents"></A><b>Charts</b></p><UL></UL>
+<p>To add a chart, use the Insert Chart menu option to add a new chart sheet. Then use the Format Chart menu option to display the dialog box that contains the following formatting options:</p>
+<a href="SCEHlpCh.htm#charttype">Type</a><br>
+<a href="SCEHlpCh.htm#chartseries">Series</a><br>
+<a href="SCEHlpCh.htm#charttitles">Titles</a><br>
+<a href="SCEHlpCh.htm#chartaxes">Axes</a><br>
+<a href="SCEHlpCh.htm#chartlegend">Legend</a><br>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="charttype"></a><b>Chart type</b></p><UL></UL>
+<p>The program currently supports the following chart types:</p>
+<table width=100%>
+<tr><td width=20% valign="top">Column</td><td>Displays vertical columns whose heights correspond to the data values.</td></tr>
+<tr><td width=20% valign="top">Bar</td><td>Displays horizontal bars whose lengths correspond to the data values.</td></tr>
+<tr><td width=20% valign="top">Line</td><td>Displays a line through points whose vertical positions correspond to the data values, the horizontal positions are evenly spaced.</td></tr>
+<tr><td width=20% valign="top">Pie</td><td>Displays a circle divided up into regions whose relative sizes correspond to the data values.</td></tr>
+<tr><td width=20% valign="top">Doughnut</td><td>Like the Pie chart but displays one or more series.</td></tr>
+<tr><td width=20% valign="top">Scatter</td><td>Displays a line through points whose x and y coordinates are given by the data values.</td></tr>
+<tr><td width=20% valign="top">Area</td><td>Like the line chart, but the area below the line is filled in, and the series values are stacked.</td></tr>
+<tr><td width=20% valign="top">Radar</td><td>Displays a line through points whose distances from a central point correspond to the data values.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="chartseries"></a><b>Chart series</b></p><UL></UL>
+<p>This allows you to specify the data values to be used for each series. To add a new series, press the 'New...' button. To change an existing series, select it in the list box and then press the 'Edit...' button. To remove an existing series, select it in the list box and press the 'Delete' button.</p>
+<p>Note that for Pie charts, only the first series will be displayed.</p>
+<p>When entering or changing a series, you are prompted for the following information:</p>
+<table><table width=100%>
+<tr><td width=10% valign="top">Data</td><td width=10% valign="top">Name</td><td>An optional name that is used to identify the series in the list box. It defaults to 'Series1', etc.</td></tr>
+<tr><td width=10% valign="top"></td><td width=10% valign="top">Y values</td><td>A reference to the cells that contain the data to be charted. You can specify more than one reference, separating them with commas, but they must all be from the same sheet. Alternatively you can specify this as an array of values.</td></tr>
+<tr><td width=10% valign="top"></td><td width=10% valign="top">X labels</td><td>For Column, Bar, Pie, Line and Area charts, you can specify a reference or array of values that will be used to label the categories. As there is only one set of labels, this must be the same for all the series on one chart. For Scatter charts, this item is labelled 'X values' and you must enter a reference or array of values to be used as the x co-ordinates of the line.</td></tr>
+<tr><td width=10% valign="top">Patterns</td><td width=10% valign="top">Line type</td><td>Allows you to choose a solid, dashed or dotted line.</td></tr>
+<tr><td width=10% valign="top"></td><td width=10% valign="top">Line color</td><td>Allows you to specify the color of the line.</td></tr>
+<tr><td width=10% valign="top"></td><td width=10% valign="top">Marker type</td><td>For Line, Scatter and Radar charts, allows you to choose a marker for the data points.</td></tr>
+<tr><td width=10% valign="top"></td><td width=10% valign="top">Marker colors</td><td>For Line, Scatter and Radar charts, allows you to choose the foreground and background colors for the marker.</td></tr>
+<tr><td width=10% valign="top"></td><td width=10% valign="top">Area color</td><td>For Column, Bar, Pie, Doughnut and Area charts, allows you to specify the colour that will be used to fill the interior.</td></tr>
+<tr><td width=10% valign="top">Labels</td><td width=10% valign="top">Label type</td><td>Allows you to display the x or y values next to the data points, and for Pie and Doughnut charts the percentages.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="charttitles"></a><b>Chart titles</b></p><UL></UL>
+<p>This allows you to specify the titles that will be used to label the chart itself and the x and y axes. Note that axis titles do not apply to Pie charts.</p>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="chartaxes"></a><b>Chart axes</b></p><UL></UL>
+<p>This allows you to specify the formatting of the x and y axes. The actual options that are available will depend on the currently selected chart type.</p>
+<table width=100%>
+<tr><td width=20% valign="top">Axis</td><td>Specifies whether the axis line will be drawn.</td></tr>
+<tr><td width=20% valign="top">Gridlines</td><td>Specifies whether the guidelines will be drawn.</td></tr>
+<tr><td width=20% valign="top">Ticks</td><td>Specifies whether the axis tick marks will be drawn.</td></tr>
+<tr><td width=20% valign="top">Values</td><td>Specifies whether the axis values will be displayed.</td></tr>
+<tr><td width=20% valign="top">Logarithmic</td><td>Specifies whether a linear or logarithmic scale is required.</td></tr>
+<tr><td width=20% valign="top">Minimum</td><td>Specifies the minimum value to be used on the scale.</td></tr>
+<tr><td width=20% valign="top">Maximum</td><td>Specifies the maximum value to be used on the scale.</td></tr>
+<tr><td width=20% valign="top">Step</td><td>Specifies the interval between the values on the scale.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="chartlegend"></a><b>Chart legend</b></p><UL></UL>
+<p>This allows you to specify whether and where to display the names that identify each series with its line and/or area color. For Pie charts, the information displayed will be the category names (from the 'X labels' entry in the series formatting dialog box), for other chart types it will be the Series names from the chart series list box.</p>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+</BODY>
+</HTML>

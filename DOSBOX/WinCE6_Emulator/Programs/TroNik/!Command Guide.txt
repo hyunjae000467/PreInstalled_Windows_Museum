@@ -1,0 +1,136 @@
+Notes
+=====
+
+1. Where no usage is given for a command, no parameters are taken. Simply run the command. In MortScript, use Run(ProgramsFolder\"TroNik\<command>")
+
+2. The MortScript examples assume that you are modifying an existing MioPocket script. If you are not, either replace "ProgramsFolder" in the examples with the path (in quotes) to the MioAutoRun\Programs folder or add Include("Variables.mscr") and Call("Variables_Common") on seperate lines to the top of your script and save your script to MioPocket's Scripts folder.
+
+3. Pay attention to the quotation marks in the examples, especially being careful to duplicate all in the MortScript examples, since missing even one mark will cause the command to fail. To make sense of all of the quotation marks in MortScript examples, realize that all parameters for a command need to be passed as a single parameter with MortScript, with a quotation mark at the start and one at the end. Also, any quotation marks needed by the command, according to the regular example, need to be represented by double quotation marks ("").
+
+
+Commands
+========
+AutoRunMgr.exe: Stays in memory and attempts to run <sd card>\2577\autorun.exe when an SD card is inserted.
+
+Backlight.exe: Sets the backlight intensity (from 1 to 8). May only work on pre-Moov Mio-brand GPS devices.
+Usage: Backlight.exe <intensity>
+Example: Backlight.exe 8
+MortScript example: Run(ProgramsFolder\"TroNik\Backlight.exe", 8)
+
+CeCreateDatabase_POOM.exe: Creates the databases required for Pocket Outlook Object Model (POOM).
+
+CeRunAppAtEvent.exe: Schedules a given app to run upon a given event.
+Usage: ceRunAppAtEvent.exe <filename> <event>
+Available events: DEVICE_CHANGE, IR_DISCOVERED, NET_CONNECT, NET_DISCONNECT, NONE, OFF_AC_POWER, ON_AC_POWER, RESTORE_END, RS232_DETECTED, SYNC_END, TIME_CHANGE, TZ_CHANGE, WAKEUP
+Example: ceRunAppAtEvent.exe "\Windows\App.exe" TIME_CHANGE
+MortScript example: Run(ProgramsFolder\"TroNik\CeRunAppAtEvent.exe", """\Windows\App.exe"" TIME_CHANGE")
+
+ControlPanel.exe: Replacement Control Panel that will scan any given folder for applets (unlike the built-in controlp.exe, which looks only in \Windows). If ControlPanel.ini exists in the same folder, it will use paths in that file; otherwise, \Windows and all paths defined in the SystemPath value in HKEY_LOCAL_MACHINE\Loader will be used.
+
+FontResourceAdd.exe: Adds a given font to the font table.
+Usage: FontResourceAdd.exe <filename>
+Example: FontResourceAdd.exe "\Storage Card\Arial.ttf"
+MortScript example: Run(ProgramsFolder\"TroNik\FontResourceAdd.exe", """\Storage Card\Arial.ttf""")
+
+FontResourceRemove.exe: Removes a given font from the font table
+Usage: FontResourceRemove.exe <filename>
+Example: FontResourceRemove.exe "\Storage Card\Arial.ttf"
+MortScript example: Run(ProgramsFolder\"TroNik\FontResourceRemove.exe", """\Storage Card\Arial.ttf""")
+
+GPSScan_Debug.exe: Scans for the GPS port and baudrate and displays them in a message window.
+
+GPSStatNavOn.exe: Turns static navigation on.
+GPSStatNavOn_Debug.exe: Turns static navigation on and displays a message window.
+
+GPSStatNavOff.exe: Turns static navigation off.
+GPSStatNavOff_Debug.exe: Turns static navigation off and displays a message window.
+
+GPSSwitchToNMEA.exe: Switches the mode of the GPS to NMEA silently.
+GPSSwitchToNMEA_Debug.exe: Switches the mode of the GPS to NMEA and displays a message window.
+
+GPSSwitchToSiRF.exe: Switches the mode of the GPS to SiRF silently.
+GPSSwitchToSiRF_Debug.exe: Switches the mode of the GPS to SiRF and displays a message window.
+
+GPSTimeSync.exe: Synchronizes the system time with that stored on the GPS chip..
+GPSTimeSync_Debug.exe: Synchronizes the system time with that stored on the GPS chip and displays it.
+
+Launch.exe: Waits for the existence of the command listed in Launch.ini (in same folder) and launches it.
+Note: If you rename Launch.exe then you have to rename Launch.ini too, so that both have the same base filename.
+
+LoadDLLs.exe: Searches for and loads any DLLs declared in LoadDLLs.ini.
+
+MainShellHide.exe: Minimizes the "MainShell" app on pre-Moov Mio GPS devices.
+MainShellShow.exe: Un-minimizes the "MainShell" app on pre-Moov Mio GPS devices.
+MainShellToggle.exe: Minimizes or un-minimizes the "MainShell" app on pre-Moov Mio GPS devices.
+
+PowerButton.exe: Controls the hardware power button according to the values in PowerButton.ini.
+PowerButtonTest.exe: Reports the value for the hardware power button. Must manually add to PowerButton.ini.
+
+RegFlushKey.exe: Saves registry changes for hive-based registries (ones that persist after hard resets)
+
+RunAtRs232Detect.exe: Schedules the given app to run upon USB connection.
+Usage: RunAtRs232Detect.exe <filename>
+Example: RunAtRs232Detect.exe "\Storage Card\App.exe"
+MortScript example: Run(ProgramsFolder\"TroNik\RunAtRs232Detect.exe", """\Storage Card\App.exe""")
+
+RunControlPanelApplet.exe: Runs the given Control Panel applet.
+Usage: RunControlPanelApplet.exe <filename> [<index>]
+Example: RunControlPanelApplet.exe "\Storage Card\Fonts.cpl"
+MortScript example: Run(ProgramsFolder\"TroNik\RunControlPanelApplet.exe", """\Storage Card\Fonts.cpl""")
+
+Run.exe: Loads all DLLs required by the given app and then runs it, optionally waiting (-w) for the app to exit
+Usage: Run.exe [-w] <filename> [parameters]
+Example: Run.exe "\Storage Card\App.exe"
+MortScript example: RunWait(ProgramsFolder\"TroNik\Run.exe", """\Storage Card\App.exe""")
+MortScript example: RunWait(ProgramsFolder\"TroNik\Run.exe", """\Storage Card\App.exe"" parameter")
+MortScript example: RunWait(ProgramsFolder\"TroNik\Run.exe", "-w ""\Storage Card\App.exe""")
+MortScript example: RunWait(ProgramsFolder\"TroNik\Run.exe", "-w ""\Storage Card\App.exe"" parameter")
+
+RunWait.exe: Runs the given app1, waits for it to exit, then runs the given app2 (useful when MortScript's "RunWait" command is not ideal)
+Usage: RunWait.exe <filename> <filename>
+Example: RunWait.exe "\Storage Card\App1.exe" "\Storage Card\App2.exe"
+MortScript example: Run(ProgramsFolder\"TroNik\RunWait.exe", """\Storage Card\App1.exe"" ""\Storage Card\App1.exe""")
+MortScript example #2: Run(ProgramsFolder\"TroNik\RunWait.exe", """" & ProgramsFolder\"TaskMgr.exe" & """ """ & ScriptsFolder\"MiniBar.mscr" & """")
+
+SetSystemMemoryDivisionKB.exe: Sets how much memory to allocate to the system drive (where \Windows is). The rest will be used as RAM for apps.
+Usage: SetSystemMemoryDivisionKB.exe <Size_in_Kilobytes>
+Example: SetSystemMemoryDivisionKB.exe 2048
+MortScript example: Run(ProgramsFolder\"TroNik\SetSystemMemoryDivisionKB.exe", 2048)
+
+SipTool.exe: Sets the Soft Input Method (SIP, aka keyboard). If no parameters are given, a menu is displayed.
+Usage: SipTool.exe [list|show|hide|toggle|select|load|save] [<sip name>] [x y]
+Example: SipTool.exe show "Keyboard" -10 -10
+MortScript example: Run(ProgramsFolder\"TroNik\SipTool.exe", "select ""Keyboard"" -10 -10")
+
+Suspend.exe: Suspends the device.
+
+TaskbarHide.exe: Hides the Windows CE taskbar.
+TaskbarShow.exe: Shows the Windows CE taskbar.
+TaskbarToggle.exe: Switches between hiding and showing the Windows CE taskbar.
+
+ToolbarHide.exe: Hides a window's toolbar.
+ToolbarShow.exe: Shows a window's toolbar.
+ToolbarToggle.exe: Toggles a window's toolbar.
+Usage: ToolbarXXXX.exe <WindowTitle>
+Example: ToolbarHide.exe "Windows Explorer"
+MortScript example: Run(ProgramsFolder\"TroNik\ToolbarHide.exe", """Windows Explorer""")
+
+ToolbarMove.exe: Moves a window's toolbar.
+Usage: ToolbarMove.exe <WindowTitle> <X> <Y>
+Example: ToolbarMove.exe "Windows Explorer" 100 0
+MortScript example: Run(ProgramsFolder\"TroNik\ToolbarMove.exe", """Windows Explorer"" 100 0 ")
+
+TouchScreenFix.exe: Deletes the HKLM\HARDWARE\TOUCH\DriverName registry value if the driver cannot be loaded, in an attempt to fix locked-up touchscreens.
+
+WindowHide.exe: Minimizes the given window (by title).
+Usage: WindowHide.exe <WindowTitle>
+Example: WindowHide.exe "Windows Explorer"
+MortScript example: Run(ProgramsFolder\"TroNik\WindowHide.exe", """Windows Explorer""")
+
+WindowShow.exe: Un-minimizes the given window (by title). See WindowHide.exe for usage.
+WindowToggle.exe: Minimizes or un-minimizes the given window (by title). See WindowHide.exe for usage.
+
+WindowMove: Moves and resizes the given window (by title).
+Usage: WindowMove.exe <WindowTitle> <X> <Y> [<Width> <Height>]
+Example: WindowMove.exe "Windows Explorer" 0 0 480 272
+MortScript example: Run(ProgramsFolder\"TroNik\WindowMove.exe", """Windows Explorer"" 0 0 " & ScreenWidth() & " " & ScreenHeight())

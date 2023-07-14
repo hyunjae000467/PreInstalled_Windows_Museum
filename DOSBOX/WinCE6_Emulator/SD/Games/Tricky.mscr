@@ -1,0 +1,5 @@
+ErrorLevel("off")
+
+Copy(SystemPath("ScriptPath")\SystemPath("ScriptName")&".htm", "\Windows\"&"MSS"&SystemPath("ScriptName")&".htm")
+
+Run(SystemPath("ScriptPath")\SystemPath("ScriptName")&".exe")

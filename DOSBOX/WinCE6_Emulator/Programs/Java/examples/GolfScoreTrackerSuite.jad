@@ -1,0 +1,6 @@
+MIDlet-Name: GolfScoreTrackerSuite
+MIDlet-Version: 5.7.2
+MIDlet-Vendor: IBM
+MIDlet-Jar-Size: 74808
+MIDlet-Jar-URL: GolfScoreTrackerSuite.jar
+MIDlet-1: GolfScoreTracker,,com.ibm.weme.examples.golftracker.lcdui.GolfScoreTracker

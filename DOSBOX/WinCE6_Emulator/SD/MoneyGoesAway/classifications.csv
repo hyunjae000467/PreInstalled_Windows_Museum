@@ -1,0 +1,14 @@
+5,Expense,Payment,Cash
+6,Expense,Payment,Check
+7,Expense,Payment,Credit
+8,Revenue,Payment,Cash
+9,Revenue,Payment,Check
+10,Revenue,Payment,Credit
+11,Expense,Category,Food
+12,Expense,Category,Gas
+13,Expense,Category,Hotel
+14,Expense,Category,Supplies
+15,Expense,Category,Fees
+16,Expense,Category,Fares
+17,Expense,Category,Rentals
+18,Expense,Category,Entertainment

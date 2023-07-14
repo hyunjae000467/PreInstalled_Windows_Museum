@@ -1,0 +1,106 @@
+<header>
+;====================================================================================
+; This file is used to keep custom configuration settings used by "the skin"
+; include this file in your DATA_custom.zip and place in ...\MIOMAP\SKIN\ folder
+; all values will override default settings found in the main DATA.zip
+;
+; Note: 
+; Only these variables should be changed. Other variables in Variable_def.ui are
+; declared as temporary and their initial values may change. 
+; Do not remove items from this file, just update values. 
+;====================================================================================
+; 2008.04.14
+;====================================================================================
+;===>   Toggle Hiding of Zoom Controls in case of speedcam warning ;JD default: 1-> 0
+	<var vHideZoomWhenSpeedCam=0 permanent>	
+
+;===>   Show speedometer at startup (1=show) ;JD default: 1-> 0
+        <Var vShowSpeedometer=0 permanent>
+        
+;===>   Show screen buttons (overriden by top-left corner click)
+	<var vBtnShow=1 permanent>
+;===>   Show/hide button circles (0=hide,1=show)
+        <var vShowCircle=1> 
+
+;===>   default sidepanel selection ("INFO", "POI", "TMC", "ROUTE")
+	<var vQuickPanelID= "INFO" permanent>
+	
+;===>   Show altitude on sidepanel (0= altitude + satellites + TMC, 1= altitude + satellites, 2= altitude)
+	<var show_alt=1 permanent>
+		
+;===>   Alpha settings for compass & corner buttons, set to =0 make invisible
+	<var vBtnAlpha=16> ; default
+	<var vBtnAlpha1=04> ; after top-left button clicked
+	<var vBtnAlpha2=08> ; top-left corner only
+	<var vBtnAlphaMax=32> ; when bottom quick panels pop-up
+	
+;===>   Force show always zoom and tilt buttons 0= auto, 1=manual
+	<var vBtnShowOverride=0 permanent> 
+               
+;===>   Next Turn Arrow box: 0 = route type  1 = repeat last voice prompt
+        <var vBtnNextCommand1=0>
+        
+;===>   Next Turn Distance box: 0 = quick menu  1 = repeat last voice prompt
+        <var vBtnNextCommand2=1> 
+
+;===>	Show side panel at startup { 1= full panel, 2= small panel, 0= no panel}
+	<var vSidePanelStatus=1>	
+
+;===>	Windows CE default application paths (vBtnCommon) - useful on C320
+	<var vWinCEPath04="\Windows\Calculator.exe">
+	<var vWinCEPath05="\Windows\Contact.exe">
+	<var vWinCEPath08="\Windows\Explorer.exe">
+	<var vWinCEPath12="\Windows\MP3Player.exe">
+	<var vWinCEPath15="\Windows\PictureViewer.exe">
+	<var vWinCEPath26="\Windows\WMPlayer.exe">
+			
+;===>	Windows Panel application paths (Default setting for [Extra] button)
+	<var vWinPath1="\Windows\Calculator.exe">
+	<var vWinPath2="\Windows\Contact.exe">
+	<var vWinPath3="\Windows\MP3Player.exe">
+	<var vWinPath4="\Windows\PictureViewer.exe">
+	<var vWinPath5="\Windows\WMPlayer.exe">
+	
+;===>   Common Button external applications (storage card icon)
+	<var vAppPath1="\SDMMC\MioAutoRun\Programs\ShowTaskbar.exe">
+	<var vAppPath2="\SDMMC\MioAutoRun\Programs\Off.exe">
+	
+;===>	StopWord Panel application paths
+	<var vStopPath1="\SDMMC\MioAutoRun\Scripts\WindowHide.mscr">
+	<var vStopPath2="\SDMMC\MioAutoRun\Programs\Calc98CE\Calc.exe">
+	<var vStopPath3="\SDMMC\MioAutoRun\Programs\FileManCE2\FileManCE.exe">
+	<var vStopPath4="\SDMMC\MioAutoRun\Programs\vSnap.exe">
+	<var vStopPath5="\SDMMC\MioAutoRun\Scripts\RouteManager.mscr">
+; 2008.03.31 +
+;===>   When using Stopword to manage routes (old version requires "1")
+	<var vRouteManagerExit=0>
+;===>   ; controls opacity of sidepanel text boxes (0=invisible -=- 16= 50% opacity 32= fully visible)
+	<var vSidePanelAlphaDaylight=24>
+	<var vSidePanelAlphaNight=32>
+; 2008.04.14
+;===> Require confirmation when hitting [STOP] on trip computer screen (set to 1)
+	<var vTripStopConfirm=0>
+	
+;===> Show navigation compass
+	<var vShowNavCompass=1>
+;----------- +
+;-=-=-   sample paths for reference only (not used)
+;	<var vWinPath="\Windows\">
+;	<var vCardPath="\SDMMC\">
+;	<var vDiskPath="\SDMMC\">
+;	<var vMioMapPath="\SDMMC\MioMap\MioMap\">
+;	<var vGfxMapPath="\SDMMC\MioMap\MioMap\Gfx\">	
+;===============================================================================
+; Dynamic font sizes (see main_scheme.ui)
+
+; 	speed display on sidepanel using fonttype font_speedlimit_below_number [number max size: 48 / 42 / 40] [metric max size: 16 / 14 / 12]
+; 	optimum/recommended sizes: [number: 44 / 40 / 36] [metric: 16 / 14 / 12]
+	<var fontsize_speedlimit_number_2=40>	
+	<var fontsize_speedlimit_number_1=36>	
+	<var fontsize_speedlimit_number_0=32>
+	<var fontsize_speedlimit_metric_2=14>	
+	<var fontsize_speedlimit_metric_1=12>	
+	<var fontsize_speedlimit_metric_0=10>
+
+;====================================================================================
+</header>

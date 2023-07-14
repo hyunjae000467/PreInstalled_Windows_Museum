@@ -1,0 +1,243 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Htm-Help" CONTENT="SCEHlpFI.htm#Main_Contents">
+<title>SpreadCE Help</title>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<!-- PegHelp -->
+<p><A NAME="Main_Contents"></A><b>Information functions</b></p><UL></UL>
+<p>[ ] indicates optional parameters</p>
+<A HREF="SCEHlpFI.htm#cell">CELL(info_type, [reference])</A><BR>
+<A HREF="SCEHlpFI.htm#countblank">COUNTBLANK(range)</A><BR>
+<A HREF="SCEHlpFI.htm#errortype">ERROR.TYPE(error_val)</A><BR>
+<A HREF="SCEHlpFI.htm#info">INFO(type_text)</A><BR>
+<A HREF="SCEHlpFI.htm#isblank">ISBLANK(value)</A><BR>
+<A HREF="SCEHlpFI.htm#iserr">ISERR(value)</A><BR>
+<A HREF="SCEHlpFI.htm#iserror">ISERROR(value)</A><BR>
+<A HREF="SCEHlpFI.htm#iseven">ISEVEN(number)</A><BR>
+<A HREF="SCEHlpFI.htm#islogical">ISLOGICAL(value)</A><BR>
+<A HREF="SCEHlpFI.htm#isna">ISNA(value)</A><BR>
+<A HREF="SCEHlpFI.htm#isnontext">ISNONTEXT(value)</A><BR>
+<A HREF="SCEHlpFI.htm#isnumber">ISNUMBER(value)</A><BR>
+<A HREF="SCEHlpFI.htm#isodd">ISODD(number)</A><BR>
+<A HREF="SCEHlpFI.htm#isref">ISREF(value)</A><BR>
+<A HREF="SCEHlpFI.htm#istext">ISTEXT(value)</A><BR>
+<A HREF="SCEHlpFI.htm#n">N(value)</A><BR>
+<A HREF="SCEHlpFI.htm#na">NA()</A><BR>
+<A HREF="SCEHlpFI.htm#type">TYPE(value)</A><BR>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="cell"></a><b>CELL(info_type, [reference])</b></p><UL></UL>
+<P>Returns information about a worksheet cell.</P>
+<table width=100%>
+<tr><td width=20% valign="top">info_type</td><td>The type of information you want returned. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">"address"</td><td>A string containing the cell reference</td></tr>
+	<tr><td width=10% valign="top">"col"</td><td>The column number of the cell</td></tr>
+	<tr><td width=10% valign="top">"color"</td><td>1 if the cell is formatted in color for negative values, otherwise 0 (not currently implemented)</td></tr>
+	<tr><td width=10% valign="top">"contents"</td><td>The result of the formula in the cell, or 0 if the cell is empty</td></tr>
+	<tr><td width=10% valign="top">"filename"</td><td>The path, filename and sheet name of the cell</td></tr>
+	<tr><td width=10% valign="top">"format"</td><td>The number format that has been applied to the cell</td></tr>
+	<tr><td width=10% valign="top">"parentheses"</td><td>1 if the cell is formatted in parentheses for positive values, otherwise 0 (not currently implemented)</td></tr>
+	<tr><td width=10% valign="top">"prefix"</td><td>The alignment of text in the cell:</td></tr>
+	<tr><td width=10% valign="top"></td><td><table width=100%>
+		<tr><td>'</td><td>left-aligned</td></tr>
+		<tr><td>"</td><td>right-aligned</td></tr>
+		<tr><td>^</td><td>centred</td></tr>
+		<tr><td>\</td><td>filled</td></tr>
+		</table></td></tr>
+	<tr><td width=10% valign="top">"protect"</td><td>1 if the cell is locked, otherwise 0</td></tr>
+	<tr><td width=10% valign="top">"row"</td><td>The row number of the cell</td></tr>
+	<tr><td width=10% valign="top">"type"</td><td>A string representing the type of the cell result: "b" for blank, "l" for label (string), otherwise "v"</td></tr>
+	<tr><td width=10% valign="top">"width"</td><td>The cell width in characters</td></tr>
+	</table></td></tr>
+<tr><td width=20% valign="top">reference</td><td>The cell about which you want information. If this parameter is omitted it defaults to the cell containing the formula.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="countblank"></a><b>COUNTBLANK(range)</b></p><UL></UL>
+<P>Returns the number of blank cells in a range.</P>
+<table width=100%>
+<tr><td width=20% valign="top">range</td><td>The reference of the cells you want to check.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="errortype"></a><b>ERROR.TYPE(error_val)</b></p><UL></UL>
+<P>Returns a number corresponding to the type of the error.</P>
+<table width=100%>
+<tr><td width=20% valign="top">error_val</td><td>The error value, or cell containing the error value, that you want to check.</td></tr>
+<tr><td width=20% valign="top"></td><td>The returned values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">#NULL!</td><td>1</td></tr>
+	<tr><td width=10% valign="top">#DIV/0!</td><td>2</td></tr>
+	<tr><td width=10% valign="top">#VALUE!</td><td>3</td></tr>
+	<tr><td width=10% valign="top">#REF!</td><td>4</td></tr>
+	<tr><td width=10% valign="top">#NAME?</td><td>5</td></tr>
+	<tr><td width=10% valign="top">#NUM!</td><td>6</td></tr>
+	<tr><td width=10% valign="top">#N/A</td><td>7</td></tr>
+	<tr><td width=10% valign="top">other</td><td>#N/A</td></tr>
+	</table></td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="info"></a><b>INFO(type_text)</b></p><UL></UL>
+<P>Returns information about the current spreadsheet.</P>
+<table width=100%>
+<tr><td width=20% valign="top">type_text</td><td>The type of information you want returned. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">"directory"</td><td>The path of the current directory</td></tr>
+	<tr><td width=10% valign="top">"memavail"</td><td>The number of bytes of memory available</td></tr>
+	<tr><td width=10% valign="top">"memused"</td><td>The number of bytes of memory used</td></tr>
+	<tr><td width=10% valign="top">"numfile"</td><td>The number of spreadsheet files that are open</td></tr>
+	<tr><td width=10% valign="top">"origin"</td><td>A string containing the address of the cell in the top-left corner of the scrollable region</td></tr>
+	<tr><td width=10% valign="top">"osversion"</td><td>The operating system version number</td></tr>
+	<tr><td width=10% valign="top">"recalc"</td><td>A string containing "Automatic" or "Manual", depending on the recalculation mode</td></tr>
+	<tr><td width=10% valign="top">"release"</td><td>The release version with which this program is compatible</td></tr>
+	<tr><td width=10% valign="top">"system"</td><td>The operating system type</td></tr>
+	<tr><td width=10% valign="top">"totmem"</td><td>The total number of bytes of memory</td></tr>
+	</table></td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="isblank"></a><b>ISBLANK(value)</b></p><UL></UL>
+<P>Returns TRUE if the value is a reference to an empty cell, otherwise FALSE.</P>
+<table width=100%>
+<tr><td width=20% valign="top">value</td><td>The cell whose value you want to check.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="iserr"></a><b>ISERR(value)</b></p><UL></UL>
+<P>Returns TRUE if the value is an error other than #N/A, otherwise FALSE.</P>
+<table width=100%>
+<tr><td width=20% valign="top">value</td><td>The expression whose result you want to check.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="iserror"></a><b>ISERROR(value)</b></p><UL></UL>
+<P>Returns TRUE if the value is an error, otherwise FALSE.</P>
+<table width=100%>
+<tr><td width=20% valign="top">value</td><td>The expression whose result you want to check.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="iseven"></a><b>ISEVEN(number)</b></p><UL></UL>
+<P>Returns TRUE if the number is even, otherwise FALSE.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number you want to check.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="islogical"></a><b>ISLOGICAL(value)</b></p><UL></UL>
+<P>Returns TRUE if the value is a logical value, otherwise FALSE.</P>
+<table width=100%>
+<tr><td width=20% valign="top">value</td><td>The expression whose result you want to check.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="isna"></a><b>ISNA(value)</b></p><UL></UL>
+<P>Returns TRUE if the value is the error #N/A, otherwise FALSE.</P>
+<table width=100%>
+<tr><td width=20% valign="top">value</td><td>The expression whose result you want to check.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="isnontext"></a><b>ISNONTEXT(value)</b></p><UL></UL>
+<P>Returns TRUE if the value is not a string, otherwise FALSE.</P>
+<table width=100%>
+<tr><td width=20% valign="top">value</td><td>The expression whose result you want to check.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="isnumber"></a><b>ISNUMBER(value)</b></p><UL></UL>
+<P>Returns TRUE if the value is a number, otherwise FALSE.</P>
+<table width=100%>
+<tr><td width=20% valign="top">value</td><td>The expression whose result you want to check.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="isodd"></a><b>ISODD(number)</b></p><UL></UL>
+<P>Returns TRUE if the number is odd, otherwise FALSE.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number you want to check.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="isref"></a><b>ISREF(value)</b></p><UL></UL>
+<P>Returns TRUE if the value is a reference, otherwise FALSE.</P>
+<table width=100%>
+<tr><td width=20% valign="top">value</td><td>The expression whose result you want to check.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="istext"></a><b>ISTEXT(value)</b></p><UL></UL>
+<P>Returns TRUE if the value is a string, otherwise FALSE.</P>
+<table width=100%>
+<tr><td width=20% valign="top">value</td><td>The expression whose result you want to check.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="n"></a><b>N(value)</b></p><UL></UL>
+<P>Returns a number corresponding to the input value, or 0 if the input value is a string. You should not need to use this function, as values are automatically converted where necessary when they are used in formulas.</P>
+<table width=100%>
+<tr><td width=20% valign="top">value</td><td>The value you want as a number.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="na"></a><b>NA()</b></p><UL></UL>
+<P>Returns the error value #N/A.</P>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="type"></a><b>TYPE(value)</b></p><UL></UL>
+<P>Returns a number corresponding to the type of the value.</P>
+<table width=100%>
+<tr><td width=20% valign="top">value</td><td>The value, or cell containing the value, that you want to check.</td></tr>
+<tr><td width=20% valign="top"></td><td>The returned values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">number</td><td>1</td></tr>
+	<tr><td width=10% valign="top">text</td><td>2</td></tr>
+	<tr><td width=10% valign="top">logical</td><td>4</td></tr>
+	<tr><td width=10% valign="top">error</td><td>16</td></tr>
+	<tr><td width=10% valign="top">array</td><td>64</td></tr>
+	</table></td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+</BODY>
+</HTML>

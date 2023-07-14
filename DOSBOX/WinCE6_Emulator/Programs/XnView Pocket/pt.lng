@@ -1,0 +1,533 @@
+Language=Portuguese by Ricardo Santos [bogas]
+
+[Menu]
+File=Ficheiro
+Go to=Ir para
+Home Folder=Pasta Principal
+Up=Para cima
+Browse Flash card=Explorar cartão de memória
+Add to favorites...=Adicionar aos favoritos...
+New folder...=Nova pasta...
+Rename folder...=Renomear pasta...
+Delete folder=Apagar pasta
+Cut=Cortar
+Copy=Copiar
+Paste=Colar
+Delete=Apagar
+Rename...=Renomear...
+Selection=Selecção
+All=Tudo
+None=Nada
+Invert=Inverter
+Multiple selection=Selecção múltipla
+About...=Acerca de...
+Quit=Sair
+View=Ver
+Mode=Modo
+Thumbnails=Miniaturas
+List=Lista
+Details=Detalhes
+Strip=Remover
+Image=Imagem
+Full screen=Ecrã completo
+Slideshow=Apresentação
+Sort by=Ordenar por
+Name=Nome
+Date=Data
+Type=Tipo
+Size=Tamanho
+Image resolution=Resolução de imagem
+Ascending=Ascendente
+Descending=Descendente
+Zoom up=Aumentar zoom
+Zoom down=Diminuir zoom
+Original size=Tamanho original
+Automatic rotation=Rotação automática
+Fit to window (all)=Ajustar à janela (todas)
+Fit to window (large only)=Ajustar à janela (só as grandes)
+Tools=Ferramentas
+Convert...=Converter...
+Crop...=Recortar...
+Resize...=Alterar tamanho...
+Adjust...=Ajustar...
+Rotate...=Rodar...
+Sharpen/Smooth...=Ênfase/Suavização...
+Send by Email...=Enviar por Email...
+Capture...=Capturar...
+Create EXE slideshow...=Criar apresentação EXE...
+Information...=Informações...
+Options...=Opções...
+Batch rename...=Renomear por lotes...
+Create Album...=Criar Álbum...
+Cancel=Cancelar
+<Previous=<Anterior
+Next>=Seguinte>
+IPTC edit...=editar IPTC...
+Zoom in=Aum. Zoom
+Zoom out=Dism. Zoom
+Fit to screen=Ajustar ao ecrã
+Misc.=Misc.
+Send via Infrared...=Enviar por Infravermelhos...
+Receive via infrared here=Receber por Infravermelhos aqui
+Show filename (thumbnail)=Mostrar nome do ficheiro (miniatura)
+Recursive=Recursivo
+Search...=Procurar...
+Previous page=Página anterior.
+Next page=Página Seguinte.
+
+[DlgAbout]
+IDC_TEXT = Distribuido por
+
+[DlgNewFolder]
+IDC_APPLY = Criar
+IDC_NF_TFOLDER = Pasta :
+IDC_NF_TNEWFOLDER = Nova pasta :
+
+[DlgEmail]
+IDC_SEND = Enviar
+IDC_EM_TTO = Receptor :
+IDC_EM_TSIZE = Tamanho :
+IDC_EM_TFORMAT = Formato :
+IDC_EM_TSERVICES = Serviço :
+
+[DlgConvert]
+IDC_CN_JPEG = Fich. JPEG
+IDC_CN_GIF = Fich. GIF
+IDC_CN_BMP = Fich. Bitmap
+IDC_CN_PNG = Fich. PNG
+IDC_QUALITY = Qualidade
+IDC_COMPRESSION = Compressão
+IDC_CN_JPEGTEXT1 = Baixa (ficheiro pequeno)
+IDC_CN_JPEGTEXT2 = Alta qualidade
+IDC_CN_TGA = Ficheiro TGA
+
+[DlgCrop]
+IDC_TWIDTH = Amplo :
+IDC_THEIGHT = Alto :
+IDC_APPLY = Recortar
+
+[DlgFolder]
+IDC_FD_TEXT = Seleccionar pasta destino :
+IDC_FD_TPREFIX = Prefixo :
+IDC_FD_TSUFFIX = Sufixo :
+
+[DlgResize]
+IDC_RZ_TEXT = Alterar tamanho para :
+IDC_RZ_WIDTH = Amplo :
+IDC_RZ_HEIGHT = Alto :
+IDC_RZ_RATIO = Manter relação
+IDC_APPLY = Alterar tamanho
+IDC_APPLYALL = Alterar todas
+IDC_RZ_BOX = Tamanho personalizado
+
+[DlgAdjust]
+IDC_APPLY = Ajustar
+IDC_APPLYALL = Ajustar todas
+IDC_AD_TBRIGHTNESS = Brilho
+IDC_AD_TCONTRAST = Contraste
+IDC_AD_TGAMMA = Gamma
+
+[DlgPreview]
+IDC_PP_TTYPE = Tipo :
+IDC_PP_TDIM = Dimensões :
+IDC_PP_TDEPTH = Cores :
+IDC_PP_TDPI = PPP :
+IDC_PP_TPIXELS = pixels
+IDC_PP_TIMAGE = Imagem
+IDC_APPLY = Converter
+IDC_APPLYALL = Converter todas
+
+[DlgProp1]
+IDC_PP_TTYPE = Tipo :
+IDC_PP_TDIM = Dimensões :
+IDC_PP_TDEPTH = Cores :
+IDC_PP_TFOLDER = Pasta :
+IDC_PP_TDATE = Data :
+IDC_PP_TSIZE = Tamanho :
+IDC_PP_TFILENAME = Nome fich. :
+IDC_PP_TDPI = PPP :
+IDC_PP_TPIXELS = pixels
+IDC_PP_TCOMMENT = Comentário :
+IDC_PP_FILE = Ficheiro
+IDC_PP_IMAGE = Imagem
+
+[DlgRename]
+IDC_APPLY = Renomear
+IDC_REN_TFOLDER = Pasta :
+IDC_REN_TFILENAME = Nome fich. :
+IDC_REN_TNEWNAME = Renomear a :
+
+[DlgRotate]
+IDC_RZ_LOSSLESS = Se puder, rotação sem perdas (JPEG)
+IDC_APPLY = Aplicar
+IDC_APPLYALL = Aplicar todas
+IDC_ROT_N90 = -90° (horário)
+IDC_ROT_180 = 180°
+IDC_ROT_90 = 90° (horário)
+IDC_ROT_HFLIP = Inverter horz.
+IDC_ROT_VFLIP = Inverter vert.
+
+[DlgCapture]
+IDC_APPLY = Capturar
+IDC_DELAY = Atrazo [seg]
+
+[DlgOption1]
+IDC_STARTSPLASH = Iniciar janela do assistente
+IDC_USEARROW = Associar aciba/abaixo a anterior/seguinte imagem
+IDC_THOMEFOLDER = Pasta raíz
+IDC_TVIEWMODE = Modo visualização
+IDC_TLANGUAGE = Lingua
+
+[DlgOption2]
+IDC_HIGHQUALITY = Miniaturas alta qualidade
+IDC_TTHUMBSIZE = Tamanho miniatura
+IDC_SHOWNAME = Mostrar nome fich.
+IDC_FONTSIZE = Tamanho da fonte
+IDC_TFONT1 = Árvore de Pastas
+IDC_TFONT2 = Lista miniaturas
+IDC_OPENINFULLSCREEN = Duplo clique em miniatura abre a janela completa
+IDC_SHOWEXT = Mostrar nome extensão fich.
+
+[DlgOption3]
+IDC_VIEWMOVE = Lápis move a imagem
+IDC_USESCROLL = Usar barras deslocamento
+IDC_ROTATELEFT = Rodar para a esquerda (em vez da direita)
+IDC_TVIEWBACK = Cor de fundo
+IDC_SHOWFILENAME = Mostrar nome ficheiro em janela completa
+IDC_ANIMATEDGIF = Reproduzir GIF animado
+
+[DlgOption4]
+IDC_TDELAY = Atrazo para mudar img.
+IDC_TSECONDS = segundos
+IDC_TSLIDEBACK = Cor fundo
+IDC_USETRANSITION = Usar efeitos de transição
+IDC_LANDSCAPE = Modo paisagem
+IDC_USESOUNDFILE = Ficheiro audio
+IDC_USELOOP = Loop em apresentação
+[DlgOption5]
+IDC_TEXT = Alocar acções para o programa
+IDC_TACTION = Establecer atribuição para o botão:
+IDC_RESTORE = Restaurar
+
+[DlgOption6]
+IDC_TEXT = Seleccionar tipos de ficheiros que queira associar com XnView Pocket
+
+[DlgFavorites]
+IDC_DELETE = Apagar
+IDC_MODIFY = Renomear
+
+[DlgAddFavorites]
+IDCANCEL = Cancelar
+IDC_TFOLDER = Pasta :
+IDC_TLABEL = Título :
+
+[DlgFolder2]
+IDC_TEXT = Seleccionar uma Pasta :
+IDCANCEL = Cancelar
+
+[DlgMisc]
+IDC_APPLY = Ajustar
+IDC_APPLYALL = Ajustar todas
+IDC_TSHARPEN = Enfatizar
+IDC_REDUCENOISE = Reduzir ruido
+IDC_TSMOOTH = Suavizar
+
+[DlgRenFolder]
+IDC_APPLY = Alterar nome
+IDC_REN_TLOCATION = Localização :
+IDC_REN_TFOLDER = Pasta :
+IDC_REN_TNEWNAME = Renomear como :
+
+[DlgEdit]
+IDOK = Aceitar
+IDCANCEL = Cancelar
+IDC_UNDO = Desfazer
+
+[DlgJpegQuality]
+IDOK = Guardar
+IDCANCEL = Cancelar
+IDC_TQUALITY = Qualidade JPEG
+
+[DlgBatchRename]
+IDC_APPLY = Renomear :
+IDC_REN_TNEWNAME = Novo nome :
+IDC_REN_TEXT = Extensão :
+IDC_REN_TSTART = Número inicial :
+IDC_REN_TDIGIT = Número dígitos :
+
+[DlgAlbum0]
+IDC_AL_TEXT1 = Que imagens queres usar?
+IDC_AL_SEL1 = Imagens seleccionadas
+IDC_AL_SEL2 = Todas as desta Pasta
+IDC_AL_SEL3 = Todas as imagens disponiveis
+
+[DlgAlbum1]
+IDC_SELECTNONE = Seleccionar nada
+IDC_SELECTALL = Seleccionar tudo
+
+[DlgAlbum2]
+IDC_AL_TEXT1 = Tamanho imagem :
+IDC_AL_TEXT3 = Rodar :
+IDC_AL_TEXT4 = Correcção brilho/contraste :
+IDC_FITALL = Ajustar todas (incl. imagens pequenas)
+
+[DlgAlbum3]
+IDC_TDELAY = Atrazo
+IDC_TSECONDS = segundos
+IDC_USESOUNDFILE = Fich. audio
+IDC_USETRANSITION = Usar efeitos transição
+IDC_LOOP = Bucle
+
+[DlgAlbum4]
+IDC_SELECT_TEXT = Seleccionar Pasta de saida:
+IDC_AL_TEXT = Nome fich. :
+
+[DlgAlbum5]
+IDC_JPEG_TEXT = Qualidade JPEG :
+IDC_JPEGTEXT1 = Baixa (pouco espaço)
+IDC_JPEGTEXT2 = A melhor
+
+[DlgAlbum6]
+IDC_STOP = Parar
+IDC_CREATE = Criar
+
+[DlgIptc1]
+IDC_TFILENAME = Nome ficheiro:
+IDC_TTYPE = Tipo :
+IDC_TDIM = Dimensões :
+IDC_TDEPTH = Cores :
+IDC_TPIXELS = pixels
+IDC_TINFO = Informação
+IDC_LOAD = Carregar
+IDC_SAVE = Salvar
+IDC_CLEAR = Limpar
+
+[DlgIptc2]
+IDC_TBYLINE = Por linha
+IDC_TBYLINET = Por linha de título
+IDC_TCREDIT = Crédito
+IDC_TSOURCE = Fonte
+IDC_TCOPYRIGHT = Copyright
+IDC_TSTATUS = Estado edição
+IDC_TPRIORITY = Prioridade
+
+[DlgIptc3]
+IDC_TCAPTION = Rótulo
+IDC_TCAPTIONW = Escr. Rótulo
+IDC_THEADLINE = Cabeçalho
+IDC_TINSTR = Instruções especiais
+
+[DlgIptc4]
+IDC_KEYADD = Adicionar
+IDC_KEYDEL = Remover
+
+[DlgIptc5]
+IDC_TCAT = Categoría (máx. 3 car.)
+IDC_TSUPCAT = Categorías Suplementares
+IDC_SCATADD = Adicionar
+IDC_SCATDEL = Remover
+
+[DlgIptc6]
+IDC_TOBJECTN = Nome objecto
+IDC_TCREATED = Data criação
+IDC_TCITY = Cidade
+IDC_TSUBLOCATION = Sub-localização
+IDC_TSTATE = Estado/provincia
+IDC_TCOUNTRY = País
+IDC_TCCODE = Cód. País
+IDC_TORIGINALREF = Ref. Transmissão Original
+IDC_TODAY = Hoje
+
+[DlgIptcList]
+IDC_APPLY = Salvar
+IDC_LOAD = Carregar
+IDC_IPTCDEL = Apagar
+
+[DlgIrda]
+IDC_IR_TEXT = Receber por IRDA (Prot. OBEX)\nPor favor começe a enviar no outro dispositivo.
+IDCANCEL = Cancelar
+
+[DlgIrda2]
+IDC_IR_TEXT = Enviar por IRDA (Prot. OBEX)\nPor favor começe a receber no outro dispositivo.
+IDCANCEL = Cancelar
+
+[DlgSearch]
+IDC_SCH_TFOLDER = Buscar Pasta :
+IDC_SCH_TFILENAME = Nombre fich. contiene:
+IDC_SCH_TFILESIZE = Tamaño fich.:
+IDC_SCH_TFILETYPE = Tipo fich.:
+IDC_SCH_SUBFOLDER = Buscar subPastas
+IDC_APPLY = Buscar
+
+[String]
+
+IDS_CAP_AFFICH =           Ficheiro
+IDS_CAP_TOOLS =            Ferramentas
+
+IDS_NAME =                 Nome
+IDS_PROPERTIES =           Propiedades
+IDS_TYPE =                 Tipo
+IDS_SIZE =                 Tamanho
+IDS_DATE =                 Data
+IDS_BYTES =                Bytes
+IDS_KB =                   KB
+IDS_MB =                   MB
+IDS_GB =                   GB
+IDS_ERROR_LOADING =        Problema ao carregar %s.
+IDS_ERROR =                Erro
+IDS_NEWFOLDER =            Nova Pasta
+IDS_DELETEFOLDER =         Quer apagar esta Pasta?
+IDS_DELETEFILE =           Quer apagar este/s ficheiro(s)?
+IDS_TREEROOT =             Meu Pocket PC
+
+IDS_COPY1 =                %sCopia de %s
+IDS_COPY2 =                %sCopia (%d) de %s
+IDS_DELREADONLY =          Este ficheiro é de "Só de Leitura" quer apagá-lo?
+IDS_VALUE =                Valor
+IDS_TAG =                  Etiqueta
+IDS_JPEG25 =               25 (Muito baixa)
+IDS_JPEG50 =               50 (Baixa)
+IDS_JPEG75 =               75 (Normal)
+IDS_JPEG100 =              100 (Alta)
+IDS_BW =                   Preto e Branco
+IDS_16COLS =               16 cores
+IDS_256COLS =              256 cores
+IDS_EMAIL_SUBJECT =        Receptor de Foto(s) apartir XnView Pocket
+
+IDM_SLIDESHOW =            Apresentação
+IDM_VIEW =                 Janela completa
+IDM_DELETE =               Apagar
+IDM_PROP =                 Informação
+
+IDS_16M =                  24-bits
+IDS_COMP1 =                1 (Baixa)
+IDS_COMP7 =                7 (Normal)
+IDS_COMP9 =                9 (Alta)
+IDS_CROP =                 Recortar
+IDS_FORMAT =               Formato
+IDS_FOLDER =               Pasta
+IDS_PROBLEM_SAVING =       Problema ao guardar o ficheiro!
+IDS_CROP_OK =              A imagem %s foi recortada e guardada em %s.
+
+IDS_EXISTS =               O ficheiro existe queres substitui-lo?
+IDS_FITSCREEN =            Ajustar á janela
+IDS_USERSIZE =             Tamanho personalizado
+IDS_RESIZE_OK =            A imagem %s foi alterada de tamanho e guardada em %s.
+IDS_INFO_WIDTH =           Largura : %d
+IDS_INFO_HEIGHT =          Altura : %d
+IDS_RESIZE =               Alterar tamanho
+IDS_240_ =                 240 x ? pixels
+IDS_240_180 =              240 x 180 pixels
+IDS_640_480 =              640 x 480 pixels
+IDS_800_600 =              800 x 600 pixels
+IDS_1024_768 =             1024 x 768 pixels
+IDS_320_240 =              320 x 240 pixels
+IDS_240_320 =              240 x 320 pixels
+IDS_480_640 =              480 x 640 pixels
+IDS_160_120 =              120 x 160 pixels (MMS)
+IDS_ADJUST =               Ajustar
+IDS_ADJUST_OK =            A imagem %s foi ajustada e guardada em %s.
+IDS_INFOS =                Informação
+IDS_CONVERT_OK =           A imagem %s foi guardada em %s.
+
+IDS_EMAIL_BODY =           Foto(s) enviada(s) com XnView Pocket : http://www.xnview.fr
+IDS_ORIGINAL_SIZE =        Tamanho original
+IDS_ORIGINAL_FORMAT =      Formato original
+IDS_JPEG_LOWQUALITY =      JPEG (Qualidade baja)
+IDS_JPEG_NORMALQUALITY =   JPEG (Qualidade normal)
+IDS_JPEG_HIGHQUALITY =     JPEG (Qualidade alta)
+IDS_ROTATE_OK =            A imagem %s foi rodada e guardada em %s.
+IDS_ROTATE =               Rotação
+IDS_CAPTURE =              Capturar
+IDS_CAPTURE_OK =           A captura foi guardada em %s%s.
+IDS_GENERAL =              Geral
+IDS_SLIDESHOW =            Apresentação
+IDS_BROWSER =              Explorador
+IDS_VIEWER =               Ver
+
+IDS_FAVORITES =            Favoritos
+
+IDS_OPEN =                 Abrir
+IDS_DELETE_MODIFY =        Apagar/Modificar
+IDS_FAVORITESENTRY1 =      Favoritos...
+IDS_FAVORITESENTRY2 =      Seguinte/Favoritos...
+IDS_ASSOCIATIONS =         Associações
+IDS_SOUNDFILENAME =        Ficheiros de audio
+IDS_EXEFILENAME =          Ficheiros EXE
+IDS_THUMBNAIL =            Miniaturas
+IDS_LIST =                 Lista
+IDS_DETAIL =               Detalhes
+IDS_STRIP =                Remover
+IDS_LASTMODE =             Último modo usado
+IDS_ERROR_MEMORY =         Não há mais memória
+
+IDS_REBOOT =               Deve reiniciar XnView para aplicar as alterações.
+
+IDS_BRIGHTNESS =	Brilho
+IDS_CONTRAST =		Contraste
+IDS_GAMMA =	        Gamma
+IDS_RED =		Vermelho
+IDS_GREEN =		Verde
+IDS_BLUE =		Azul
+
+IDS_SAVERESULT =		    Quer guardar o resultado e substituir o ficheiro?
+
+IDS_NO_ROTATE =             Não rodar
+IDS_NO_BRIGHTNESS =         Brilho e contraste original
+IDS_AUTO_BRIGHTNESS =       Brilho e contraste automático
+IDS_ROTATE_LEFT =           Rodar à esquerda (se for necessário)
+IDS_ROTATE_RIGHT =          Rodar à direita (se for necessário)
+
+IDS_ALBUM =                 Álbum
+IDS_ALBUM_EXISTS =			Já existe um álbum com este nome. Queres substitui-lo?
+
+IDS_THUMB_HUGE =			Enorme
+IDS_THUMB_LARGE =			Grande
+IDS_THUMB_NORMAL =			Normal
+IDS_THUMB_SMALL =			Pequena
+IDS_THUMB_TINY =		    Mini
+
+IDS_WIZARD1 =				Explorar\nPasta
+IDS_WIZARD2 =				Abrir\nÁlbum
+IDS_WIZARD3 =				Criar\nÁlbum
+IDS_WIZARD4 =				Criar\nApresentação
+IDS_WIZARD5 =				Explorar CF
+IDS_WIZARD6 =				Opções
+
+IDS_BUTTONS =				Botões
+IDS_BUTTON =				Botão
+IDS_ASSIGNMENT =			Atribuição
+IDS_NONE =					Ninguém
+IDS_NEXTIMAGE =				Imagem Seguinte
+IDS_PREVIMAGE =				Imagem Anterior
+IDS_FULLSCREEN =			Janela completa
+IDS_ZOOMIN =				Aumentar Zoom
+IDS_ZOOMOUT =				Diminuir Zoom
+IDS_KEYUP =					Acima
+IDS_KEYDOWN =				Abaixo
+IDS_KEYLEFT =				Esquerda
+IDS_KEYRIGHT =				Direita
+IDS_KEYRETURN =				Regressar
+
+IDS_CAPTION =			    Rótulo
+IDS_CREDIT =				Crédito
+IDS_KEYWORD =				Palavra chave
+IDS_CATEGORY =				Categoria
+IDS_ORIGIN =				Origem
+IDS_FILE =					Ficheiro
+IDS_IPTC_0 =				0 : Ninguém
+IDS_IPTC_1 =				1 : Alto
+IDS_IPTC_5 =				5 : Normal
+IDS_IPTC_8 =				8 : Baixo
+IDS_IPTCQUESTION =			Queres escrever dados IPTC?
+
+IDS_SEARCHDEV =				Pesquisando o dispositivo: #%d
+
+IDS_IGNORED =			Ignorado	
+IDS_JPEG_FILES =			Ficheiros JPEG (*.jpg)
+IDS_GIF_FILES =				Ficheiros GIF (*.gif)
+IDS_BMP_FILES =				Ficheiros BMP (*.bmp)
+IDS_PNG_FILES =				Ficheiros PNG (*.png)
+IDS_TGA_FILES =				Ficheiros TARGA (*.tga)
+IDS_FOUND_FILES =				Encontrados %d ficheiros...
+IDS_SHOW_FILES =				Queres ver os ficheiros encontrados?

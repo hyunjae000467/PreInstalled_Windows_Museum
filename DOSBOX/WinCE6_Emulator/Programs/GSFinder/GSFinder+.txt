@@ -1,0 +1,322 @@
+------------------------------------------------------------------------------
+	GSFinder+ for Handheld PC/Palm-size PC  Ver. 1.04
+		Copyright(C) 2004-2005 M.Toda
+
+	[Original Version]
+	GSFinder for Handheld PC Ver.1.28/Pocket PC Ver.1.99
+		Copyright(C) 2000-2005 Y.Nagamidori
+------------------------------------------------------------------------------
+Small User Guide for GSFinder+ on HandheldPCs/Palm-sizePCs:
+
+GSFinder+ is a great freeware File Manager and a perfect replacement for the
+default Windows CE/PocketPC File Explorer.
+GSFinder was first created by Y. Nagamidori as an open source application;
+GSFinder+ is an advanced version of GSFinder made by M.Toda
+(E-Mail:todamitsu@hotmail.com) introducing some new features like ZIP archives
+management, Drag-and-Drop , network options, file search and "automatic refresh".
+
+The main features of GSFinder+ for HandheldPCs are:
+
+-1) Small size, quick
+
+-2) Familiar interface using intuitive context menus
+  (for example: copy or move any file to any folder, create a shortcut anywhere);
+  context menus may be invoked either by "Alt+Tap" or by
+  "Tap and Hold" (just like PocketPCs); optional folder tree;
+  familiar 'look and feel';
+
+-3) Drag and Drop:
+  Drag-and-Drop is activated by default. To facilitate some operations,
+  you may disable "Drag-and-Drop" if you uncheck the "Drag and Drop" Menu item
+  (Edit menu).
+  * default behavior: moves the file to the destination folder
+  * Ctrl Key + 'Drag and Drop' : makes a copy of the file to the new folder
+  * Shift Key + 'Drag and Drop' : opens a popup menu with different options
+    (copy, move or shortcut creation)
+
+-4) ZIP/LHA Archives Management:
+  you can create new ZIP/LHA archives from the 'File' menu (or context menu) and
+  extract them.
+  IMPORTANT: to use the compression features, it is necessary to install
+  an additional Dll (unzip.dll/unlha.dll) available from here:
+  http://hp.vector.co.jp/authors/VA023546/soft/unXXXce.html.
+
+  Just place UNZIP.DLL/UNLHA.DLL in the same folder as GSFinder.exe
+  (or in the'Windows'folder of your device).
+  
+  WARNING: after the installation of Unzip.dll/UnLHA.dll,
+  enable the ZIP/LHA compression in the Options Dialog (Compression tab)
+  and soft-reset your device before trying
+  to compress a file with GSFinder+.
+  According to the compression settings (see options dialog) you can either
+  extract archives automatically, or from the 'File' menu or context menu
+  (Open / Extract).
+  Files and folders can be compressed either from the 'File' menu or from
+  the context menu (Send to: ZIP/LHA Archive).
+
+-5) Open any file with different applications
+  (you may override the default file associations):
+
+ - FIRST METHOD: This method is exactly the same as the "open with..." feature
+   found in desktop PCs.
+   From the 'File' Menu (or the context menu), tap Open/Choose Program :
+   A dialog with a choice of registered applications appears. You may select
+   any of them to open the selected file. You can also use the 'Browse' button
+   to select any other executable on your device.
+   If you select the checkbox ("always use this program to open these files"),
+   the default file association will be changed.
+
+ - SECOND METHOD: using the popup menu of any file or the 'File' Menu
+   (File/Send To), you can open any file with your preferred applications.
+   To enable this feature, you must place shortcuts of your preferred
+   applications in a specific folder (default : \Windows\Sendto ; see the
+   "Shell Options" dialog).
+   You need to close and restart GSFinder+ after any new shortcut.
+   After this, you can open any application with the applications listed
+   in the 'Send To' submenu (File Menu or Context Menu).
+
+-6) 'Go' Menu, containing a 'Favorites' Submenu, to quickly access your
+   favorite files, applications, internet favorites, etc.
+   This menu can point to the regular 'Internet Explorer Favorites' or to any
+   other specific folder
+   (you may choose this folder, using the 'Options' dialog, ' System Path' tab):
+   any shortcut placed in this folder will appear in the 'Favorites' menu
+   of GSFinder+. You can automatically add any file to your favorites using
+   the 'add' menu option.
+   'Organize' will open your 'favorites' folder in GSFinder+
+   (warning: if you manually alter the contents of your 'Favorites' Folder,
+   the changes won't appear until you use the 'Refresh' option of GSFinder+)
+
+  - Useful Locations: 
+  * this feature allows a quick access to some system paths like'Start Menu',
+    'Desktop', etc. Depending on the language of your OS, you can precise
+    the correct path of different system folders:
+    just use the 'Option' dialog, 'System Path' tab.
+  * User-determined locations: this feature allows "quick paths" to your
+    preferred folders:
+    a tap on 'User Path' will bring a dialog to add your current location
+    in this menu, or delete or edit your shortcuts.
+
+-7) Map 'Network'folders:
+  If you are on a local network (via wifi or any other network card),
+  GSFinder+ gives you the possibility to automatically setup a 'Network' Folder
+  to access your shares (soft-reset needed). When the 'Network' Folder has been
+  enabled, you can map a network connection from the 'View\Tools\Network Connect'
+  menu.
+  The 'remote path' should be something like: \\MyPC\shareddocs and the local
+  name of the network Folder can be any name.
+
+-8) File Search:
+  this feature has been dramatically improved in the 1.0 version of GSFinder+.
+  File Searches are now very quick.
+
+-9) File Associations:
+  you may choose and change file associations from the "File Types" option.
+
+-10) Automatic refresh feature (Sigmarion 3 /CE.Net only):
+  generally, it is no longer necessary to use the Refresh button.
+  GSFinder+ automaticaly detects new files and folders created or copied to
+  your device.
+
+-11) 5 Different "View styles".
+  "Detailed View" means that only the icon of a file can be selected;
+  "Detailed View(Line Select)" means that the full line of a given file can be
+  a selected.
+
+* Settings for "Network Connect", 
+  Remote Path: [\\<machine name>\<share folder name>]
+  Local Name: [<any name>]. 
+  Remote folders will be displayed under the [Network] tree.
+
+<Usage>
+	[Installation] 
+	- Copy the GSFinder.exe to your PocketPC and execute it with File Explorer.
+
+	[Uninstallation] 
+	- Uninstall GSFinder from the "Remove Programs" Control Applet of your
+	  PocketPC.
+
+[Version History]
+・06.05.2005 ver. 1.04
+	- favorite menu is not created. 
+
+・06.04.2005 ver. 1.03
+	- Change Focus Frame of File List. 
+	- By Upper Folder Movement, Item of Select and Focus is not in Agreement. 
+	- Setting Fault of Enable of Menu/Tool Bar of Address Bar 
+	- Setting Change of System Path is not Reflected. 
+	- If a blank is set as a system path, a program will not start. 
+	- Don't Give Extension of Linking Agency File Name to Shortcut File Name. 
+	- The [Go] Menu of the H/PC Version was Made into Tool Bar. 
+	- Time is not Displayed on File Time Display of Property. 
+	- Some Icons were Made New (Thanks: Mr.Alain Brasseur). 
+	- Add the Palm-size PC Version (Mr.Alain Brasseur Created is Corrected). 
+
+・05.20.2005 ver. 1.02
+	- Shortcut Key (Alt/Ctl+Key) Does Not Function (WM2003/PocketPC).
+	- Displays without Program Which is Carrying Out Association by
+	  [Choose Program] Scrolling.
+	- Sorts by Tap of Title Header of the [File Types] Option.
+	- Icon (DefaltIcon) of Program is not Set as Association.
+	- Path Error when Memory Card is Extracted (WM2003/CE.NET).
+	- Path Error of Shortcut File Created from File Search.
+	- Starting Parameter Path is Bundled with "", Don't Open Path.
+	- [Copy]/[Paste] Does Not Operate from [Rename] Menu and Address Bar.
+	- [Detail]/[Detail(Line Select)] Does Not Function Correctly.
+	  ([View Style] Menu)
+	- Select the folder if it moves to a Upper folder, before moving. 
+
+・11.16.2004 ver. 1.01
+	<A functional addition and improvements>
+	- LHA Compress/Uncompress
+	- Enclose UnLHA.dll the bug of was fixed (Unofficial Version)
+	- Improve a display icon (Thanks: Mr. Alain Brasseur)
+	<Repair of fault>
+	- File operation of a file search result is looked over again
+
+・11.12.2004 ver. 1.00
+	<A functional addition and improvements> 
+	- Source code integration (HPC/PPC)
+	- Enclose UnZip.dll the bug of was fixed (Unofficial Version)
+	- automatic refresh at the time of being changed by other filers
+	  (WM2003/SigIII)
+	- File Associations ([File]-[Open]-[Choose program], [Option]-[File Types]) 
+	- Update a [Send To] menu subordinate by [refresh]
+	- Menu composition change
+	  (The contents of a "Send To" folder are moved to a [Send To] menu
+	   subordinate.
+       The "Unconpress" menu is moved to [Open] from [Send To]. 
+       [Network] menu subordinate is moved to a [File]-[Tools] menu (PPC).)
+	- When folder shortcut is created to the "Send To" folder,
+	  create shortcut to a linking agency folder. 
+	- [Edit]-[Drag-and-drop mode] menu addition
+	  (check-on  ... old Drag-and-drop
+	   check-off ... Drag range selection)   
+	- Divide [Detail] of [View Style] into [Detail] and [Detail (Line Select)].
+	  ([Detail] ... only the file name of a list selection
+					(range selection is possible also at [Drag-and-drop mode])
+	   [Detail (Line Select)] ... All one lines of a list are chosen
+	   							  (it is the same as former))
+	- Improvement in the speed (file list sort / folder tree / file search) 
+	- Optimize an execution file by execution speed priority (WM2003/SigIII)
+	- Suspension prevention under file copy / deletion 
+	- Change the message at the time of file deletion
+	- Change the [Go to] button (tool bar) into a button from a drop down (PPC)
+	- Automatic refresh of a memory card is delayed
+	  (incorrect recognition is mitigated)
+	- Improve a display icon (Thanks: Mr. Alain Brasseur)
+	
+	<Repair of fault>
+	- The abnormalities in window split size change (PPC) 
+	- Change the display form of a folder tree into a flat from 3D (PPC)
+	- The property display of a route folder cannot be performed
+	- Creation of the shortcut of a network does not display an icon
+	- The abnormalities in a StandardVGA display
+	  (an icon is small/tree is large (WM2003)
+	- The parameter reading error of shortcut
+	- A sorting error with a file type (an extension is used) 
+
+	* I was allowed to use the source code of GSFinder1.99 which
+	  Mr. Y.Nagamidori could offer, and the GSFinder+ improvement version
+	  into the above-mentioned contents of change. 
+	  Thank you very much. 
+
+	* WARNING: LHA support has been temporary disabled in this build, due to 
+	  some problems found with UNLHA.dll. This problem  is also encountered 
+	  with other applications using UNLHA.dll : it is not due to GSFinder+ 
+	  itself. Until a solution is found, only Zip compression is allowed 
+	  through UNZIP.dll.
+
+・10.04.2004 ver. 0.08
+	<A functional addition and an improvement>
+	- Shortcut key change of "Back" and "Forward"
+	  ([Alt] + [<-] and [->] are changed into [Home] and [End]).
+	- Move the position of the "Compress" and "UnCompress" menu
+	  to the "Advanced" subordinate from the "Open" subordinate
+	  (changing repeatedly I am sorry). 
+	- Name-change the "Send To" menu into "Advanced." 
+	- Change the display icon of ".LZH" and ".ZIP" file. 
+	- "Network" folder display setup
+	  (a registry is changed so that it may display in not displaying).
+	<Repair of fault> 
+	- The Enabled change of the "Compress" and "UnCompress" menu is amusing. 
+
+・09.26.2004 ver. 0.07
+	<A functional addition and an improvement>
+	- Automatic detection of a memory card.
+	- Change the icon of a network folder.
+	- Add a network folder to a "System Path" option.
+	- Correct the accelerator key notation of the English version menu
+	  (a parenthesis is deleted).
+	<Repair of fault> 
+	- When the movement place of a file is the sub folder of a moved material,
+	  a program carries out a permanent loop.
+	- A Windows folder will be able to move and delete.
+	- The background of a main part icon does not penetrate (HPC/Pro, HPC/2000).
+
+・09.22.2004 ver. 0.06
+	<A functional addition and an improvement> 
+	- Since a menu is not settled in HVGA, change composition. 
+	  ("Compress" and "UnCompress" are moved to the "Open" menu subordinate.
+	   "File Search" is moved to the "File" menu subordinate.)
+	- Change a tool bar and a display icon in the style of XP.
+	  (Thanks:Alain Brasseur)
+	<Repair of fault> 
+	- The upper folder" button does not move even " on a folder tree. 
+	- others -- an afterimage may remain in the screen lower part at the
+	  time of task switching with software.
+	- A context menu by the Alt+ tap after a tap & hold
+	  It may not be displayed. 
+	- A copy will be performed the case where chose no context menus
+	  for 'drag and drop', but they are closed. 
+
+・09.19.2004 ver. 0.05
+	<A functional addition and an improvement> 
+	- Processing improvement in the speed (based on a screen drawing portion).
+	- "File Search" addition.
+	- Tap & hold (Context menu open).
+	- "Forward"/"Back" button addition. (tool bar)
+	- "Network Connect""Network Disconnect" addition. (*)
+	- "SHIFT Key ON" "CTRL Key ON" Menu addition.
+	- "Always show a context menu for'drag and drop'" Option addition.
+	- Change a main part icon into 256 colors (Thanks:Alain Brasseur).
+	<Repair of fault> 
+	- A list item may not be displayed with an Address Bar. 
+	- Control keys, such as an arrow, cannot be inputted with an Address Bar. 
+	- Folder movement will be carried out in an Enter key input also in IME
+	  use with an Address Bar. 
+	- It will become amusing if a window becomes less active during
+	  drag and drop. 
+	- The synchronization of the display between a folder tree and a file list
+	  cannot be taken (at the time of file operation). 
+	- The contents of a status bar are not updated at the time of file deletion. 
+	
+・09.05.2004 ver. 0.04
+	- Acquire a 'System Path' from OS (only * SigmarionIII is effective). 
+	- Add the change option of a 'System Path'. 
+	- 'Favorites' functional addition.
+	- 'User Path' functional addition.
+	 (the registered path is added to a menu/
+	  Assignment of a shortcut key (Alt+0-9)) 
+	- Fault whose number of files of a status bar does not suit.
+	- Fault of visible / invisible change of a Menu.
+	- Menu composition change.
+	  (a [Go] menu is newly created and some [Tools] menus are moved) 
+
+・08.30.2004 ver. 0.03
+	- Display an exclusive menu by '[Shift]key+Drag and Drop'. 
+	- The icon of the file which carried out 'Drag and Drop' breaks. 
+	- When a folder tree is carried out an Alt+Tap,
+	  a selection folder does not highlight.
+	- Processing improvement in the speed
+	  (arrangement of sauce, processing execution deterrence)
+
+[Acknowledgement] 
+-It is easy to use, and in spite of being the outstanding filer,
+ I am thankful to Mr. Y.Nagamidori who is having you carry out to public
+ presentation of a source code. 
+-I am thankful to Mr. Uema2 who is having use permitted to public presentation
+ of UnZip.DLL/UnLHA.DLL which is the outstanding archiver,
+ and a software developer. 
+-I am thankful to Mr. Alain Brasseur who had offer of icon data,
+ and creation of an English version helped. 

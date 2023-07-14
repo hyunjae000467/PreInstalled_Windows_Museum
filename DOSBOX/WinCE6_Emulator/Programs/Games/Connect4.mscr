@@ -1,0 +1,41 @@
+ErrorLevel("off")
+
+ScriptsFolder = "\" & Part(SystemPath("ScriptPath"),"\",2) \ Part(SystemPath("ScriptPath"),"\",3) \ "Scripts"
+SkinFolder = "\" & Part(SystemPath("ScriptPath"),"\",2) \ Part(SystemPath("ScriptPath"),"\",3) \ "Skin"
+
+isScreenLandscape = Screen("landscape")
+If(isScreenLandscape)
+	CallScript(ScriptsFolder\"OrientationToggle.mscr")
+EndIf
+
+CallScript(ScriptsFolder\"Flash.mscr", SystemPath("ScriptPath")\SystemPath("ScriptName")&".swf")
+
+#Get and then mute the volume, to silence the annoying startup ad
+volume = Volume()
+SetVolume(0)
+
+If(WndExists("swFlash32"))
+	#Show All
+	SendCommand("swFlash32", 20034)
+
+	#Fullscreen
+	SendCommand("swFlash32", 20048)
+
+	#High quality (Low is 20035, Medium is 20036 and High is 20037)
+	SendCommand("swFlash32", 20037)
+EndIf
+
+Kill("MiniBar.exe")
+Run(SkinFolder\"MiniBar\MiniBar.exe")
+
+#Wait long enough for the startup ad to finish, then un-mute the volume
+Sleep(15000)
+SetVolume(volume)
+
+While(WndExists("swFlash32"))
+	Sleep(1000)
+EndWhile
+
+If(isScreenLandscape AND Screen("portrait"))
+	CallScript(ScriptsFolder\"OrientationToggle.mscr")
+EndIf

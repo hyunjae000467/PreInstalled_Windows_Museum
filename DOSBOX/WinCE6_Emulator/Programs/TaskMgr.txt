@@ -1,0 +1,157 @@
+Written by Frederic DE CLERCQ (dotfred@dotfred.net)
+
+This application may be redistributed by any means PROVIDING it is not sold for profit without the authors written consent, and providing that this notice and the authors name is included.
+
+This application is provided "as is" with no expressed or implied warranty. The author accepts no liability if it causes any damage to you or your windows mobile device whatsoever. It is a free application, and it should be considered like this only!
+
+Beware of bugs!
+
+Copyright © FdcSoft 2000 - 2010
+
+
+Features:
+
+- Process manager
+- CPU usage (with CPU graph)
+- Application Manager
+- Service Manager
+- Device Manager (only WM2005 and above)
+- Windows Manager
+- Notification Manager
+- IP Config utility
+- Ping utility
+- Net Stats utility
+- Registry Editor
+- Run program utility 
+Process manager:
+
+- Allows to stop or kill a given process.
+- Can activate the process if it has a window
+- Can see details of a process (via context menu)
+
+- modules (see exported functions)
+- threads (can kill threads, change priority)
+- windows (details, messages,...)
+
+
+CPU usage: 
+- Shows CPU usage of each process.
+- Shows CPU usage graph of the device. (Not process specific)
+- Can close a process
+
+Application Manager:
+
+
+- Activate an application
+- Close an application
+- Close all applications
+- Can see details of an application (via context menu)
+
+Service Manager:
+
+- Start/Stop service
+- Set automatic or manual
+- Enable/Disable
+- Find service settings in registry
+
+Device Manager: (only in WM2005 and above)
+
+- Start/Stop device
+- Set automatic or manual
+- Find device settings in registry
+
+Windows Manager:
+
+- Shows a tree containing all existing windows
+- Find a specific window via handle/title or class
+- Highlight window if visible
+- Activate, enable/disable, show/hide, close
+- properties of a window (rectangles, styles, process,...)
+- messages (v2.8) 
+
+
+- filtering messages mechanism
+- custom messages can be added
+Notification manager:
+
+- Shows the list of existing notifications
+- Add/remove edit a notification
+- remove duplicates and SCRIPT events
+- enable/disable notifications
+
+IP Config utility:
+
+- IPConfig, IPConfig/all
+- Renew/release, renew all/release all
+- Adapters infos
+
+Ping utility:
+
+- ping ip address or hostname (w/o dns resolution)
+- tracert ip address or hostname (w/o dns resolution)
+
+Net Stats:
+
+- Shows UDP/TCP table(w/o dns resolution)
+- Shows IP/ICMP/TCP/UDP Stats
+- Route table (w/o dns resolution)
+- Wake On LAN
+
+Registry editor:
+
+- full registry edition capability
+- import/export reg files (import Win2k and WinNT formats)
+- favorites
+- registry search functionality (returns all occurences found)
+- cut/copy/paste functionalities
+
+Run program utility:
+
+- Allows to launch a program, a file or an url like in windows
+- can add a file parameter and extra parameters
+
+Command line parameters:
+
+/cpuusage: begins with CPU Usage
+/regedit: begins with the Registry Editor (a shortcut can be directly created from the options menu)
+/windows: begins with the Windows Tab
+/apps: begins with the Applications Tab
+/ping: begins with the Ping Tab
+/ipconfig: begins with the IPConfig Tab
+/netstats: begins with the NetStats Tab
+/services: begins with the Services Tab
+/notifs: begins with the Notifications Tab
+/devices: begins with the Devices Tab
+/depends: begins with the Depends Tab 
+/about: begins with the About Tab
+
+/r: reboots pocket pc without confirmation
+/rq: ask confirmation before rebooting pocket pc
+/tray: starts minimized to tray
+/s: suspends pocket pc
+/w: wakes the pocket pc if in suspend mode
+/wl "xxx": wakes the pocket pc and launches program xxx
+/wlq "xxx": wakes the pocket pc and ask confirmation before launching program xxx
+/nr: reboots pocket pc at a specific time (a notification is created and every x hours, the pocket pc is rebooted.)
+The syntax is /nr d:n with n= number of hours (eg.: /nr d:24)
+/nd: removes notifications duplicates
+/ns: removes SCRIPT:0x000 events
+/nb: removes notifications duplicates and SCRIPT:0x000 events
+/kill processname: kill a process given its name
+/startsvc servicename: starts a service given its name (v2.8)
+/stopsvc servicename: stops a service given its name (v2.8)
+/startdvc devicename : start a device given its name
+/stopdvc devicename : stop a device given its name
+/u: used in conjonction with a .dll file in order to deregister it (v2.9)
+/provxml filepath: install/process a provisioning xml file (v2.9)
+/regxpkey [filepath] [[regkey]]: export registry key to file path, if no file path, default is created in \\My Documents.[] are mandatory for regkey. ex.: /regxpkey \\Storage Card\\Regfile.reg [HKEY_CURRENT_USER\\Software\\FdcSoft] (v3.1)
+/regxpall [filepath]: export all registry to filepath, if no filepath provided, a default one is created under \My Documents (v2.9)
+[filepath] /silent: used in conjonction with a .reg file or a .dll file, so no message box is shown (v2.9)
+/notif [/s \"subject\"] [/b \"body\"] [/t 0-60] [/bt \"ok\"] [/hide] [/beep] [/wake] : this will show a bubble notification for a certain amount of time, if 0 is specified then time is infinite. A subject and a body can be specified. The button text can be changed, the notification can wake the device, if suspended. (v3.3)
+/assocregext : associate the reg file extension to TaskMgr.(v3.3)
+/createtmsh : create the shortcuts for TaskMgr.(v3.3)
+/createregsh : create the shortcut for RegEdit.(v3.3)
+/runwinstart : launch TaskMgr automatically when the device boots.(v3.3)
+/hibernate: sends the WM_HIBERNATE message broadcastly.(v3.3)
+/tapscreen x,y: simulates click at position x,y with [x,y] in screen coordinates(v3.3)
+

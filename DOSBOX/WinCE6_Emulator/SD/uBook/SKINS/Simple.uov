@@ -1,0 +1,73 @@
+[patterns]
+;**** larger image containing a grid of small images
+;**** res=file,w,h 
+;****  file: must be in same folder as this file
+;****  w,h : number of small images in RES in x and y 
+;****   in this case simple.png is 144x96 pixels, so each image is in fact
+;****   16x16 pixels.  below in [patterns] x coordinates are 'a','b' up to 'i'
+;****   and y coordinates are '1' through '6'.
+res='Simple.png',9,6
+    
+;**** a pattern defines how to combine small images to create a larger control
+;**** it allows defining the pattern from the first and/or last column and from the 
+;**** first and/or last row.  it also allow to repeat sub-pattern to fill in remaining
+;**** space.  see also grid and cell above.
+;**** patterns are defined using:
+;****  t(row[,row]*) draw from the topmost unused row
+;****  b(row[,row]*) draw from the bottommost unused up
+;****  v(row[,row]*) repeat pattern on remaining rows (top to bottom)
+;**** each row is a series of segments:
+;****  l[...] draw from the leftmost unused column on current row
+;****  r[...] draw from the rightmost unused column on current row
+;****  h[...] repeat pattern on remaining columns (left to right) on current row
+;**** where ... is a series of xy grid cordinates (see grid above)
+;**** patterns can be defined on more than one line by repeating its key= left part.
+
+;**** default button
+b=t(l[a1]r[c1]h[b1]);b(l[a3]r[c3]h[b3]);v(l[a2]r[c2]h[b2])
+sb=t(l[a1]r[c1]h[b1]);b(l[a3]r[c3]h[b3]);v(l[a2]r[c2]h[b2])
+bx=t(l[a1]r[c1]h[b1]);b(l[a3]r[c3]h[b3]);v(l[a2]r[c2]h[b2])
+bs=t(l[a1]r[c1]h[b1]);b(l[a3]r[c3]h[b3]);v(l[a2]r[c2]h[b2])
+;**** square button
+bq=t(l[f1]r[i1]h[b1]);b(l[f4]r[i4]h[b3]);v(l[a2]r[c2]h[b2])
+
+;**** default multiple choice selection horizontal box
+x=t(l[a1b1e1]r[c1b1d1]h[d1b1e1]);b(l[a3b3e3]r[c3b3d3]h[d3b3e3]);v(l[a2b2b2]r[c2b2b2]h[b2])
+
+;**** default definition (a:b) double box
+d=t(l[a1b1e1]r[c1b1d1]h[d1b1e1]);b(l[a3b3e3]r[c3b3d3]h[d3b3e3]);v(l[a2b2d4]r[c2b2e4]h[b2])
+d0=t(l[a1b1e1],l[a2b2d4],l[a3b3e3])
+d1=t(l[d1b1c1],l[e4b2c2],l[d3b3c3])
+
+;**** default list box (lb left, lbc right)
+lb0=t(l[a1]r[g1]h[b1]);v(l[a2]r[d2]h[b2])
+lb1=v(l[a2]r[d2]h[b2])
+lb2=b(l[a3]r[g4]h[b3]);v(l[a2]r[d2]h[b2])
+lbc0=t(l[h1b1c1],l[e2b2c2],l[h2e5i2])
+lbc1=t(l[h3e6i3]);b(l[h2e5i2);v(l[e2b2c2])
+lbc2=b(l[h4b3c3],l[e2b2c2],l[h3e6i3])
+
+;**** default selected mode overlay
+s=t(l[a4]r[c4]h[b4]);b(l[a6]r[c6]h[b6]);v(l[a5]r[c5]h[b5])
+
+;**** special buttons for a PREV-CURRENT-NEXT section bar
+;**** where connecting walls are missing
+h0=t(l[a1]r[e1]h[b1],l[a2]h[b2b2],l[a3]r[e3]h[b3])
+h1=t(l[d1]r[e1]h[b1],h[b2],l[d3]r[e3]h[b3])
+h2=t(l[d1]r[c1]h[b1],r[c2]h[b2b2],l[d3]r[c3]h[b3])
+
+;**** icons
+;**** items referenced from the [commands] section can have their
+;**** own cell item grid (instead of cell above) but it must be
+;**** the first statement before the pattern definition.  For example
+;**** the following icons is based on a 2x2 cell item grid
+;open=c(2,2);t(l[g5h5],l[g6h6])
+
+
+[visual]
+input_a=@(white);f(uf_arial,3);s(uf_normal);x(uf_fit+uf_left+uf_vcenter);
+label_a=@(white);f(uf_arial,3);s(uf_normal);x(uf_center+uf_vcenter);
+label_t=@(white);f(uf_times,3);s(uf_normal);x(uf_center+uf_vcenter);
+label_c=@(white);f(uf_courier,3);s(uf_normal);x(uf_center+uf_vcenter);
+
+scrollbar=c(255,255,255);

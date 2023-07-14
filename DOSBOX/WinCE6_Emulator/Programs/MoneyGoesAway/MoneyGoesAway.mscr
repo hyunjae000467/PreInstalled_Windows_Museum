@@ -1,0 +1,18 @@
+ErrorLevel("off")
+
+ScriptsFolder = "\" & Part(SystemPath("ScriptPath"),"\",2) \ Part(SystemPath("ScriptPath"),"\",3) \ "Scripts"
+
+CallScript(ScriptsFolder\"OrientationToggle.mscr")
+
+Run(SystemPath("ScriptPath")\"MoneyGoesAway.exe")
+
+AW = "MoneyGoesAway"
+
+WaitFor(AW, 10)
+
+While(ProcExists("MoneyGoesAway.exe"))
+	Run(ProgramsFolder\"TroNik\ToolbarHide.exe", """" & AW & """")
+	Sleep(1000)
+EndWhile
+
+CallScript(ScriptsFolder\"OrientationToggle.mscr")

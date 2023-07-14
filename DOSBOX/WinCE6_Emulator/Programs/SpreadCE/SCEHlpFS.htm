@@ -1,0 +1,959 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Htm-Help" CONTENT="SCEHlpFS.htm#Main_Contents">
+<title>SpreadCE Help</title>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<!-- PegHelp -->
+<p><A NAME="Main_Contents"></A><b>Statistical functions</b></p><UL></UL>
+<p>[ ] indicates optional parameters</p>
+<A HREF="SCEHlpFS.htm#avedev">AVEDEV(number1, [number2, ...])</A><BR>
+<A HREF="SCEHlpFS.htm#average">AVERAGE(number1, [number2, ...])</A><BR>
+<A HREF="SCEHlpFS.htm#averagea">AVERAGEA(value1, [value2, ...])</A><BR>
+<A HREF="SCEHlpFS.htm#betadist">BETADIST(x, alpha, beta, [A], [B])</A><BR>
+<A HREF="SCEHlpFS.htm#betainv">BETAINV(probability, alpha, beta, [A], [B])</A><BR>
+<A HREF="SCEHlpFS.htm#binomdist">BINOMDIST(number_successes, trials, probability, cumulative)</A><BR>
+<A HREF="SCEHlpFS.htm#chidist">CHIDIST(x, degrees_freedom)</A><BR>
+<A HREF="SCEHlpFS.htm#chiinv">CHIINV(probability, degrees_freedom)</A><BR>
+<A HREF="SCEHlpFS.htm#chitest">CHITEST(actual_range, expected_range)</A><BR>
+<A HREF="SCEHlpFS.htm#confidence">CONFIDENCE(alpha, standard_deviation, size)</A><BR>
+<A HREF="SCEHlpFS.htm#correl">CORREL(range1, range2)</A><BR>
+<A HREF="SCEHlpFS.htm#count">COUNT(value1, [value2, ...])</A><BR>
+<A HREF="SCEHlpFS.htm#counta">COUNTA(value1, [value2, ...])</A><BR>
+<A HREF="SCEHlpFS.htm#covar">COVAR(range1, range2)</A><BR>
+<A HREF="SCEHlpFS.htm#critbinom">CRITBINOM(trials, probability_s, alpha)</A><BR>
+<A HREF="SCEHlpFS.htm#devsq">DEVSQ(number1, [number2, ...])</A><BR>
+<A HREF="SCEHlpFS.htm#expondist">EXPONDIST(x, lambda, cumulative)</A><BR>
+<A HREF="SCEHlpFS.htm#fdist">FDIST(x, degrees_freedom1, degrees_freedom2)</A><BR>
+<A HREF="SCEHlpFS.htm#finv">FINV(probability, degrees_freedom1, degrees_freedom2)</A><BR>
+<A HREF="SCEHlpFS.htm#fisher">FISHER(x)</A><BR>
+<A HREF="SCEHlpFS.htm#fisherinv">FISHERINV(y)</A><BR>
+<A HREF="SCEHlpFS.htm#forecast">FORECAST(x, known_ys, known_xs)</A><BR>
+<A HREF="SCEHlpFS.htm#frequency">FREQUENCY(data_array, bins_array)</A><BR>
+<A HREF="SCEHlpFS.htm#ftest">FTEST(array1, array2)</A><BR>
+<A HREF="SCEHlpFS.htm#gammadist">GAMMADIST(x, alpha, beta, cumulative)</A><BR>
+<A HREF="SCEHlpFS.htm#gammainv">GAMMAINV(probability, alpha, beta)</A><BR>
+<A HREF="SCEHlpFS.htm#gammaln">GAMMALN(x)</A><BR>
+<A HREF="SCEHlpFS.htm#geomean">GEOMEAN(number1, [number2, ...])</A><BR>
+<A HREF="SCEHlpFS.htm#growth">GROWTH(known_ys, [known_xs], [new_xs], [const])</A><BR>
+<A HREF="SCEHlpFS.htm#harmean">HARMEAN(number1, [number2, ...])</A><BR>
+<A HREF="SCEHlpFS.htm#hypgeomdist">HYPGEOMDIST(sample_s, number_sample, population_s, number_population)</A><BR>
+<A HREF="SCEHlpFS.htm#intercept">INTERCEPT(y_range, x_range)</A><BR>
+<A HREF="SCEHlpFS.htm#kurt">KURT(number1, [number2, ...])</A><BR>
+<A HREF="SCEHlpFS.htm#large">LARGE(array, k)</A><BR>
+<A HREF="SCEHlpFS.htm#linest">LINEST(known_ys, [known_xs], [const], [stats])</A><BR>
+<A HREF="SCEHlpFS.htm#logest">LOGEST(known_ys, [known_xs], [const], [stats])</A><BR>
+<A HREF="SCEHlpFS.htm#loginv">LOGINV(probability, mean, standard_dev)</A><BR>
+<A HREF="SCEHlpFS.htm#lognormdist">LOGNORMDIST(x, mean, standard_dev)</A><BR>
+<A HREF="SCEHlpFS.htm#max">MAX(number1, [number2, ...])</A><BR>
+<A HREF="SCEHlpFS.htm#maxa">MAXA(value1, [value2, ...])</A><BR>
+<A HREF="SCEHlpFS.htm#median">MEDIAN(number1, [number2, ...])</A><BR>
+<A HREF="SCEHlpFS.htm#min">MIN(number1, [number2, ...])</A><BR>
+<A HREF="SCEHlpFS.htm#mina">MINA(value1, [value2, ...])</A><BR>
+<A HREF="SCEHlpFS.htm#mode">MODE(number1, [number2, ...])</A><BR>
+<A HREF="SCEHlpFS.htm#negbinomdist">NEGBINOMDIST(number_f, number_s, probability_s)</A><BR>
+<A HREF="SCEHlpFS.htm#normdist">NORMDIST(x, mean, standard_dev, cumulative)</A><BR>
+<A HREF="SCEHlpFS.htm#norminv">NORMINV(probability, mean, standard_dev)</A><BR>
+<A HREF="SCEHlpFS.htm#normsdist">NORMSDIST(z)</A><BR>
+<A HREF="SCEHlpFS.htm#normsinv">NORMSINV(probability)</A><BR>
+<A HREF="SCEHlpFS.htm#pearson">PEARSON(array1, array2)</A><BR>
+<A HREF="SCEHlpFS.htm#percentile">PERCENTILE(array, k)</A><BR>
+<A HREF="SCEHlpFS.htm#percentrank">PERCENTRANK(array, x, [significance])</A><BR>
+<A HREF="SCEHlpFS.htm#permut">PERMUT(number, number_chosen)</A><BR>
+<A HREF="SCEHlpFS.htm#poisson">POISSON(x, mean, cumulative)</A><BR>
+<A HREF="SCEHlpFS.htm#prob">PROB(x_range, prob_range, lower_limit, [upper_limit])</A><BR>
+<A HREF="SCEHlpFS.htm#quartile">QUARTILE(array, quart)</A><BR>
+<A HREF="SCEHlpFS.htm#rank">RANK(number, range, [order])</A><BR>
+<A HREF="SCEHlpFS.htm#rsq">RSQ(y_array, x_array)</A><BR>
+<A HREF="SCEHlpFS.htm#skew">SKEW(number1, [number2, ...])</A><BR>
+<A HREF="SCEHlpFS.htm#slope">SLOPE(y_range, x_range)</A><BR>
+<A HREF="SCEHlpFS.htm#small">SMALL(array, k)</A><BR>
+<A HREF="SCEHlpFS.htm#standardize">STANDARDIZE(x, mean, standard_dev)</A><BR>
+<A HREF="SCEHlpFS.htm#stdev">STDEV(number1, [number2, ...])</A><BR>
+<A HREF="SCEHlpFS.htm#stdeva">STDEVA(value1, [value2, ...])</A><BR>
+<A HREF="SCEHlpFS.htm#stdevp">STDEVP(number1, [number2, ...])</A><BR>
+<A HREF="SCEHlpFS.htm#stdevpa">STDEVPA(value1, [value2, ...])</A><BR>
+<A HREF="SCEHlpFS.htm#steyx">STEYX(y_range, x_range)</A><BR>
+<A HREF="SCEHlpFS.htm#tdist">TDIST(x, degrees_freedom, tails)</A><BR>
+<A HREF="SCEHlpFS.htm#tinv">TINV(probability, degrees_freedom)</A><BR>
+<A HREF="SCEHlpFS.htm#trend">TREND(known_ys, [known_xs], [new_xs], [const])</A><BR>
+<A HREF="SCEHlpFS.htm#trimmean">TRIMMEAN(array, percent)</A><BR>
+<A HREF="SCEHlpFS.htm#ttest">TTEST(array1, array2, tails, type)</A><BR>
+<A HREF="SCEHlpFS.htm#var">VAR(number1, [number2, ...])</A><BR>
+<A HREF="SCEHlpFS.htm#vara">VARA(value1, [value2, ...])</A><BR>
+<A HREF="SCEHlpFS.htm#varp">VARP(number1, [number2, ...])</A><BR>
+<A HREF="SCEHlpFS.htm#varpa">VARPA(value1, [value2, ...])</A><BR>
+<A HREF="SCEHlpFS.htm#weibull">WEIBULL(x, alpha, beta, cumulative)</A><BR>
+<A HREF="SCEHlpFS.htm#ztest">ZTEST(array, x, [sigma])</A><BR>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="avedev"></a><b>AVEDEV(number1, [number2, ...])</b></p><UL></UL>
+<P>Returns the average of the differences of a set of numbers from their mean.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number1, ...</td><td>The numbers of which you want the average deviation.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="average"></a><b>AVERAGE(number1, [number2, ...])</b></p><UL></UL>
+<P>Returns the average of a set of numbers.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number1, ...</td><td>The numbers of which you want the average.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="averagea"></a><b>AVERAGEA(value1, [value2, ...])</b></p><UL></UL>
+<P>Returns the average of a set of values.</P>
+<table width=100%>
+<tr><td width=20% valign="top">value1, ...</td><td>The values of which you want the average.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="betadist"></a><b>BETADIST(x, alpha, beta, [A], [B])</b></p><UL></UL>
+<P>Returns the cumulative beta distribution probability.</P>
+<table width=100%>
+<tr><td width=20% valign="top">x</td><td>The value at which you want to evaluate the function.</td></tr>
+<tr><td width=20% valign="top">alpha</td><td>The alpha value.</td></tr>
+<tr><td width=20% valign="top">beta</td><td>The beta value.</td></tr>
+<tr><td width=20% valign="top">A</td><td>The lower limit. If this parameter is omitted it defaults to 0.</td></tr>
+<tr><td width=20% valign="top">B</td><td>The upper limit. If this parameter is omitted it defaults to 1.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="betainv"></a><b>BETAINV(probability, alpha, beta, [A], [B])</b></p><UL></UL>
+<P>Returns the value associated with the specified cumulative beta distribution probability.</P>
+<table width=100%>
+<tr><td width=20% valign="top">probability</td><td>The cumulative beta distribution probability for which you want the value.</td></tr>
+<tr><td width=20% valign="top">alpha</td><td>The alpha value.</td></tr>
+<tr><td width=20% valign="top">beta</td><td>The beta value.</td></tr>
+<tr><td width=20% valign="top">A</td><td>The lower limit. If this parameter is omitted it defaults to 0.</td></tr>
+<tr><td width=20% valign="top">B</td><td>The upper limit. If this parameter is omitted it defaults to 1.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="binomdist"></a><b>BINOMDIST(number_successes, trials, probability, cumulative)</b></p><UL></UL>
+<P>Returns the binomial distribution probability.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number_successes</td><td>The number of trials that are successful.</td></tr>
+<tr><td width=20% valign="top">trials</td><td>The total number of trials.</td></tr>
+<tr><td width=20% valign="top">probability</td><td>The probability of a single trial being successful.</td></tr>
+<tr><td width=20% valign="top">cumulative</td><td>Specifies whether to return the cumulative probability or not. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">FALSE</td><td>Return the value of the function.</td></tr>
+	<tr><td width=10% valign="top">TRUE</td><td>Return the integral of the function.</td></tr>
+	</table></td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="chidist"></a><b>CHIDIST(x, degrees_freedom)</b></p><UL></UL>
+<P>Returns the chi-squared distribution probability.</P>
+<table width=100%>
+<tr><td width=20% valign="top">x</td><td>The value at which you want to evaluate the function.</td></tr>
+<tr><td width=20% valign="top">degrees_freedom</td><td>The number of degrees of freedom.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="chiinv"></a><b>CHIINV(probability, degrees_freedom)</b></p><UL></UL>
+<P>Returns the value associated with the specified chi-squared distribution probability.</P>
+<table width=100%>
+<tr><td width=20% valign="top">probability</td><td>The probability for which you want the value.</td></tr>
+<tr><td width=20% valign="top">degrees_freedom</td><td>The number of degrees of freedom.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="chitest"></a><b>CHITEST(actual_range, expected_range)</b></p><UL></UL>
+<P>Returns the probability result of the chi-squared test.</P>
+<table width=100%>
+<tr><td width=20% valign="top">actual_range</td><td>An array or reference to cells containing the empirical results.</td></tr>
+<tr><td width=20% valign="top">expected_range</td><td>An array or reference to cells containing the theoretical results.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="confidence"></a><b>CONFIDENCE(alpha, standard_deviation, size)</b></p><UL></UL>
+<P>Returns the confidence interval for a population mean.</P>
+<table width=100%>
+<tr><td width=20% valign="top">alpha</td><td>The significance level.</td></tr>
+<tr><td width=20% valign="top">standard_deviation</td><td>The population standard deviation.</td></tr>
+<tr><td width=20% valign="top">size</td><td>The sample size.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="correl"></a><b>CORREL(range1, range2)</b></p><UL></UL>
+<P>Returns the correlation coefficient of two ranges.</P>
+<table width=100%>
+<tr><td width=20% valign="top">range1</td><td>The first range to be compared.</td></tr>
+<tr><td width=20% valign="top">range2</td><td>The second range to be compared.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="count"></a><b>COUNT(value1, [value2, ...])</b></p><UL></UL>
+<P>Returns the count of numbers in a list.</P>
+<table width=100%>
+<tr><td width=20% valign="top">value1, ...</td><td>The items whose numbers are to be counted.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="counta"></a><b>COUNTA(value1, [value2, ...])</b></p><UL></UL>
+<P>Returns the count of values in a list.</P>
+<table width=100%>
+<tr><td width=20% valign="top">value1, ...</td><td>The items whose values are to be counted.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="covar"></a><b>COVAR(range1, range2)</b></p><UL></UL>
+<P>Returns the covariance of two ranges.</P>
+<table width=100%>
+<tr><td width=20% valign="top">range1</td><td>The first range to be compared.</td></tr>
+<tr><td width=20% valign="top">range2</td><td>The second range to be compared.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="critbinom"></a><b>CRITBINOM(trials, probability_s, alpha)</b></p><UL></UL>
+<P>Returns the value at which the cumulative binomial distribution is greater than or equal to alpha.</P>
+<table width=100%>
+<tr><td width=20% valign="top">trials</td><td>The total number of trials.</td></tr>
+<tr><td width=20% valign="top">probability_s</td><td>The probability of a single trial being successful.</td></tr>
+<tr><td width=20% valign="top">alpha</td><td>The value at which you want to evaluate the function.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="devsq"></a><b>DEVSQ(number1, [number2, ...])</b></p><UL></UL>
+<P>Returns the sum of the squares of the differences of a set of numbers from their mean.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number1, ...</td><td>The numbers of which you want the squared deviations.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="expondist"></a><b>EXPONDIST(x, lambda, cumulative)</b></p><UL></UL>
+<P>Returns the exponential distribution probability.</P>
+<table width=100%>
+<tr><td width=20% valign="top">x</td><td>The value at which you want to evaluate the function.</td></tr>
+<tr><td width=20% valign="top">lambda</td><td>The lambda value.</td></tr>
+<tr><td width=20% valign="top">cumulative</td><td>Specifies whether to return the cumulative probability or not. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">FALSE</td><td>Return the value of the function.</td></tr>
+	<tr><td width=10% valign="top">TRUE</td><td>Return the integral of the function.</td></tr>
+	</table></td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="fdist"></a><b>FDIST(x, degrees_freedom1, degrees_freedom2)</b></p><UL></UL>
+<P>Returns the F distribution probability.</P>
+<table width=100%>
+<tr><td width=20% valign="top">x</td><td>The value at which you want to evaluate the function.</td></tr>
+<tr><td width=20% valign="top">degrees_freedom1</td><td>The degrees of freedom of the first set.</td></tr>
+<tr><td width=20% valign="top">degrees_freedom2</td><td>The degrees of freedom of the second set.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="finv"></a><b>FINV(probability, degrees_freedom1, degrees_freedom2)</b></p><UL></UL>
+<P>Returns the value associated with the specified F distribution probability.</P>
+<table width=100%>
+<tr><td width=20% valign="top">probability</td><td>The probability for which you want the value.</td></tr>
+<tr><td width=20% valign="top">degrees_freedom1</td><td>The degrees of freedom of the first set.</td></tr>
+<tr><td width=20% valign="top">degrees_freedom2</td><td>The degrees of freedom of the second set.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="fisher"></a><b>FISHER(x)</b></p><UL></UL>
+<P>Returns the Fisher transformation.</P>
+<table width=100%>
+<tr><td width=20% valign="top">x</td><td>The value at which to evaluate the function.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="fisherinv"></a><b>FISHERINV(y)</b></p><UL></UL>
+<P>Returns the inverse Fisher transformation.</P>
+<table width=100%>
+<tr><td width=20% valign="top">y</td><td>The value at which to evaluate the function.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="forecast"></a><b>FORECAST(x, known_ys, known_xs)</b></p><UL></UL>
+<P>Returns the expected value of y for a given x value for a line passing through a specified set of points.</P>
+<table width=100%>
+<tr><td width=20% valign="top">x</td><td>The x value at which to evaluate the function.</td></tr>
+<tr><td width=20% valign="top">known_ys</td><td>An array or reference to a range of cells containing the y values that are already known.</td></tr>
+<tr><td width=20% valign="top">known_xs</td><td>An array or reference to a range of cells containing the x values that are already known.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="frequency"></a><b>FREQUENCY(data_array, bins_array)</b></p><UL></UL>
+<P>Returns the counts of items in specified numeric categories.</P>
+<table width=100%>
+<tr><td width=20% valign="top">data_array</td><td>An array or reference to a range of cells containing values to be counted.</td></tr>
+<tr><td width=20% valign="top">bins_array</td><td>An array or reference to a range of cells containing the upper limits for each category.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="ftest"></a><b>FTEST(array1, array2)</b></p><UL></UL>
+<P>Returns the probability result of the F test.</P>
+<table width=100%>
+<tr><td width=20% valign="top">array1</td><td>The first range to be compared.</td></tr>
+<tr><td width=20% valign="top">array2</td><td>The second range to be compared.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="gammadist"></a><b>GAMMADIST(x, alpha, beta, cumulative)</b></p><UL></UL>
+<P>Returns the gamma distribution probability.</P>
+<table width=100%>
+<tr><td width=20% valign="top">x</td><td>The value at which you want to evaluate the function.</td></tr>
+<tr><td width=20% valign="top">alpha</td><td>The alpha value.</td></tr>
+<tr><td width=20% valign="top">beta</td><td>The beta value.</td></tr>
+<tr><td width=20% valign="top">cumulative</td><td>Specifies whether to return the cumulative probability or not. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">FALSE</td><td>Return the value of the function.</td></tr>
+	<tr><td width=10% valign="top">TRUE</td><td>Return the integral of the function.</td></tr>
+	</table></td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="gammainv"></a><b>GAMMAINV(probability, alpha, beta)</b></p><UL></UL>
+<P>Returns the value associated with the specified gamma distribution probability.</P>
+<table width=100%>
+<tr><td width=20% valign="top">probability</td><td>The probability for which you want the value.</td></tr>
+<tr><td width=20% valign="top">alpha</td><td>The alpha value.</td></tr>
+<tr><td width=20% valign="top">beta</td><td>The beta value.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="gammaln"></a><b>GAMMALN(x)</b></p><UL></UL>
+<P>Returns the natural logarithm of the gamma function evaluated at x.</P>
+<table width=100%>
+<tr><td width=20% valign="top">x</td><td>The value at which you want to evaluate the function.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="geomean"></a><b>GEOMEAN(number1, [number2, ...])</b></p><UL></UL>
+<P>Returns the geometric mean of a set of numbers.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number1, ...</td><td>The numbers of which you want the geometric mean.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="growth"></a><b>GROWTH(known_ys, [known_xs], [new_xs], [const])</b></p><UL></UL>
+<P>Returns the expected values of y for given x values for an exponential curve passing through a specified set of points.</P>
+<table width=100%>
+<tr><td width=20% valign="top">known_ys</td><td>The y values that are already known.</td></tr>
+<tr><td width=20% valign="top">known_xs</td><td>The x values that are already known. If this parameter is omitted it defaults to an array of values from 1 to the number of known ys.</td></tr>
+<tr><td width=20% valign="top">new_xs</td><td>The new x values for which y values are required. If this parameter is omitted it defaults to the known xs.</td></tr>
+<tr><td width=20% valign="top">const</td><td>Specifies whether the line must pass through the origin. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">FALSE</td><td>The intercept is forced to be 1.</td></tr>
+	<tr><td width=10% valign="top">TRUE</td><td>The intercept is calculated normally.</td></tr>
+	</table></td></tr>
+<tr><td width=20% valign="top"></td><td>If this parameter is omitted it defaults to TRUE.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="harmean"></a><b>HARMEAN(number1, [number2, ...])</b></p><UL></UL>
+<P>Returns the harmonic mean of a set of numbers.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number1, ...</td><td>The numbers of which you want the harmonic mean.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="hypgeomdist"></a><b>HYPGEOMDIST(sample_s, number_sample, population_s, number_population)</b></p><UL></UL>
+<P>Returns the hypergeometric distribution probability.</P>
+<table width=100%>
+<tr><td width=20% valign="top">sample_s</td><td>The number of sample trials that are successful.</td></tr>
+<tr><td width=20% valign="top">number_sample</td><td>The total number of trials in the sample.</td></tr>
+<tr><td width=20% valign="top">population_s</td><td>The number of population trials that are successful.</td></tr>
+<tr><td width=20% valign="top">number_population</td><td>The total number of trials in the population.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="intercept"></a><b>INTERCEPT(y_range, x_range)</b></p><UL></UL>
+<P>Returns the expected value of y when x is zero for a line passing though a specified set of points.</P>
+<table width=100%>
+<tr><td width=20% valign="top">y_range</td><td>The y values that are already known.</td></tr>
+<tr><td width=20% valign="top">x_range</td><td>The x values that are already known.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="kurt"></a><b>KURT(number1, [number2, ...])</b></p><UL></UL>
+<P>Returns the kurtosis of a set of numbers.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number1, ...</td><td>The numbers of which you want the kurtosis.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="large"></a><b>LARGE(array, k)</b></p><UL></UL>
+<P>Returns the k<sup>th</sup> largest number in a set of numbers.</P>
+<table width=100%>
+<tr><td width=20% valign="top">array</td><td>An array or reference to cells containing numbers of which you want the k<sup>th</sup> largest.</td></tr>
+<tr><td width=20% valign="top">k</td><td>The rank of the number that you want.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="linest"></a><b>LINEST(known_ys, [known_xs], [const], [stats])</b></p><UL></UL>
+<P>Returns the coefficients for a straight line using multiple linear regression.</P>
+<table width=100%>
+<tr><td width=20% valign="top">known_ys</td><td>The y values that are already known.</td></tr>
+<tr><td width=20% valign="top">known_xs</td><td>One or more sets of x values corresponding to the known y values. If this parameter is omitted it defaults to an array of values from 1 to the number of known ys.</td></tr>
+<tr><td width=20% valign="top">const</td><td>Specifies whether the line must pass through the origin. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">FALSE</td><td>The line is forced to pass through the origin.</td></tr>
+	<tr><td width=10% valign="top">TRUE</td><td>The line is not forced to pass through the origin.</td></tr>
+	</table></td></tr>
+<tr><td width=20% valign="top"></td><td>If this parameter is omitted it defaults to TRUE.</td></tr>
+<tr><td width=20% valign="top">stats</td><td>Specifies whether the additional statistics are returned in the rows below the coefficients. These are: the standard error values for the coefficients, the R2 coefficient, the standard error for the Y estimate, the F statistic, the degrees of freedom, the regression sum of squares and the residual sum of squares. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">FALSE</td><td>The additional statistics are not returned.</td></tr>
+	<tr><td width=10% valign="top">TRUE</td><td>The additional statistics are returned.</td></tr>
+	</table></td></tr>
+<tr><td width=20% valign="top"></td><td>If this parameter is omitted it defaults to FALSE.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="logest"></a><b>LOGEST(known_ys, [known_xs], [const], [stats])</b></p><UL></UL>
+<P>Returns the coefficients for an exponential curve using multiple linear regression.</P>
+<table width=100%>
+<tr><td width=20% valign="top">known_ys</td><td>The y values that are already known.</td></tr>
+<tr><td width=20% valign="top">known_xs</td><td>One or more sets of x values corresponding to the known y values. If this parameter is omitted it defaults to an array of values from 1 to the number of known ys.</td></tr>
+<tr><td width=20% valign="top">const</td><td>Specifies whether the line must pass through the origin. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">FALSE</td><td>The intercept is forced to be 1.</td></tr>
+	<tr><td width=10% valign="top">TRUE</td><td>The intercept is calculated normally.</td></tr>
+	</table></td></tr>
+<tr><td width=20% valign="top"></td><td>If this parameter is omitted it defaults to TRUE.</td></tr>
+<tr><td width=20% valign="top">stats</td><td>Specifies whether the additional statistics are returned in the rows below the coefficients. These are: the standard error values for the coefficients, the R2 coefficient, the standard error for the Y estimate, the F statistic, the degrees of freedom, the regression sum of squares and the residual sum of squares. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">FALSE</td><td>The additional statistics are not returned.</td></tr>
+	<tr><td width=10% valign="top">TRUE</td><td>The additional statistics are returned.</td></tr>
+	</table></td></tr>
+<tr><td width=20% valign="top"></td><td>If this parameter is omitted it defaults to FALSE.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="loginv"></a><b>LOGINV(probability, mean, standard_dev)</b></p><UL></UL>
+<P>Returns the value associated with the specified cumulative lognormal distribution probability.</P>
+<table width=100%>
+<tr><td width=20% valign="top">probability</td><td>The probability for which you want the value.</td></tr>
+<tr><td width=20% valign="top">mean</td><td>The mean of the natural logarithms of the values.</td></tr>
+<tr><td width=20% valign="top">standard_dev</td><td>The standard deviation of the natural logarithms of the values.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="lognormdist"></a><b>LOGNORMDIST(x, mean, standard_dev)</b></p><UL></UL>
+<P>Returns the cumulative lognormal distribution probability.</P>
+<table width=100%>
+<tr><td width=20% valign="top">x</td><td>The value at which you want to evaluate the function.</td></tr>
+<tr><td width=20% valign="top">mean</td><td>The mean of the natural logarithms of the values.</td></tr>
+<tr><td width=20% valign="top">standard_dev</td><td>The standard deviation of the natural logarithms of the values.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="max"></a><b>MAX(number1, [number2, ...])</b></p><UL></UL>
+<P>Returns the maximum of a set of numbers.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number1, ...</td><td>The numbers of which you want the maximum.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="maxa"></a><b>MAXA(value1, [value2, ...])</b></p><UL></UL>
+<P>Returns the maximum of a set of values.</P>
+<table width=100%>
+<tr><td width=20% valign="top">value1, ...</td><td>The values of which you want the maximum.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="median"></a><b>MEDIAN(number1, [number2, ...])</b></p><UL></UL>
+<P>Returns the median of a set of numbers.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number1, ...</td><td>The numbers of which you want the median.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="min"></a><b>MIN(number1, [number2, ...])</b></p><UL></UL>
+<P>Returns the minimum of a set of numbers.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number1, ...</td><td>The numbers of which you want the minimum.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="mina"></a><b>MINA(value1, [value2, ...])</b></p><UL></UL>
+<P>Returns the minimum of a set of values.</P>
+<table width=100%>
+<tr><td width=20% valign="top">value1, ...</td><td>The values of which you want the minimum.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="mode"></a><b>MODE(number1, [number2, ...])</b></p><UL></UL>
+<P>Returns the mode of a set of numbers.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number1, ...</td><td>The numbers of which you want the mode.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="negbinomdist"></a><b>NEGBINOMDIST(number_f, number_s, probability_s)</b></p><UL></UL>
+<P>Returns the negative binomial distribution probability.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number_f</td><td>The number of trials that fail.</td></tr>
+<tr><td width=20% valign="top">number_s</td><td>The threshold number of trials that are successful.</td></tr>
+<tr><td width=20% valign="top">probability_s</td><td>The probability of a single trial being successful.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="normdist"></a><b>NORMDIST(x, mean, standard_dev, cumulative)</b></p><UL></UL>
+<P>Returns the normal distribution probability.</P>
+<table width=100%>
+<tr><td width=20% valign="top">x</td><td>The value at which you want to evaluate the function.</td></tr>
+<tr><td width=20% valign="top">mean</td><td>The mean of the values.</td></tr>
+<tr><td width=20% valign="top">standard_dev</td><td>The standard deviation of the values.</td></tr>
+<tr><td width=20% valign="top">cumulative</td><td>Specifies whether to return the cumulative probability or not. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">FALSE</td><td>Return the value of the function.</td></tr>
+	<tr><td width=10% valign="top">TRUE</td><td>Return the integral of the function.</td></tr>
+	</table></td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="norminv"></a><b>NORMINV(probability, mean, standard_dev)</b></p><UL></UL>
+<P>Returns the value associated with the specified cumulative normal distribution probability.</P>
+<table width=100%>
+<tr><td width=20% valign="top">probability</td><td>The probability for which you want the value.</td></tr>
+<tr><td width=20% valign="top">mean</td><td>The mean of the values.</td></tr>
+<tr><td width=20% valign="top">standard_dev</td><td>The standard deviation of the values.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="normsdist"></a><b>NORMSDIST(z)</b></p><UL></UL>
+<P>Returns the cumulative standard normal distribution probability.</P>
+<table width=100%>
+<tr><td width=20% valign="top">z</td><td>The value at which you want to evaluate the function.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="normsinv"></a><b>NORMSINV(probability)</b></p><UL></UL>
+<P>Returns the value associated with the specified cumulative standard normal distribution probability.</P>
+<table width=100%>
+<tr><td width=20% valign="top">probability</td><td>The probability for which you want the value.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="pearson"></a><b>PEARSON(array1, array2)</b></p><UL></UL>
+<P>Returns the Pearson correlation coefficient.</P>
+<table width=100%>
+<tr><td width=20% valign="top">array1</td><td>The first range to be compared.</td></tr>
+<tr><td width=20% valign="top">array2</td><td>The second range to be compared.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="percentile"></a><b>PERCENTILE(array, k)</b></p><UL></UL>
+<P>Returns the k<sup>th</sup> percentile of a set of values.</P>
+<table width=100%>
+<tr><td width=20% valign="top">array</td><td>An array or reference to cells containing the values.</td></tr>
+<tr><td width=20% valign="top">k</td><td>The percentile value.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="percentrank"></a><b>PERCENTRANK(array, x, [significance])</b></p><UL></UL>
+<P>Returns the percentile of a value in a set of values.</P>
+<table width=100%>
+<tr><td width=20% valign="top">array</td><td>An array or reference to cells containing the values.</td></tr>
+<tr><td width=20% valign="top">x</td><td>The value of which you want the percentile.</td></tr>
+<tr><td width=20% valign="top">significance</td><td>The number of decimal places required in the result. If this parameter is omitted it defaults to 3.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="permut"></a><b>PERMUT(number, number_chosen)</b></p><UL></UL>
+<P>Returns the number of permutations in which a number of items can be chosen from a total number.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The total number of items.</td></tr>
+<tr><td width=20% valign="top">number_chosen</td><td>The number of items chosen.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="poisson"></a><b>POISSON(x, mean, cumulative)</b></p><UL></UL>
+<P>Returns the Poisson distribution probability.</P>
+<table width=100%>
+<tr><td width=20% valign="top">x</td><td>The value at which you want to evaluate the function.</td></tr>
+<tr><td width=20% valign="top">mean</td><td>The mean of the values.</td></tr>
+<tr><td width=20% valign="top">cumulative</td><td>Specifies whether to return the cumulative probability or not. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">FALSE</td><td>Return the value of the function.</td></tr>
+	<tr><td width=10% valign="top">TRUE</td><td>Return the integral of the function.</td></tr>
+	</table></td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="prob"></a><b>PROB(x_range, prob_range, lower_limit, [upper_limit])</b></p><UL></UL>
+<P>Returns the probability that numbers in a set are between the specified limits.</P>
+<table width=100%>
+<tr><td width=20% valign="top">x_range</td><td>An array or reference to cells containing the numbers.</td></tr>
+<tr><td width=20% valign="top">prob_range</td><td>An array or reference to cells containing the probabilities associated with each number. These values must add up to 1.</td></tr>
+<tr><td width=20% valign="top">lower_limit</td><td>The lower limit of the test.</td></tr>
+<tr><td width=20% valign="top">upper_limit</td><td>The upper limit of the test. If this value is omitted it defaults to the value specified for the lower limit.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="quartile"></a><b>QUARTILE(array, quart)</b></p><UL></UL>
+<P>Returns the specified quartile of a set of numbers.</P>
+<table width=100%>
+<tr><td width=20% valign="top">array</td><td>An array or reference to cells containing the numbers.</td></tr>
+<tr><td width=20% valign="top">quart</td><td>Specifies which quartile to return. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>Returns the minimum value.</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Returns the first quartile.</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Returns the second quartile.</td></tr>
+	<tr><td width=10% valign="top">3</td><td>Returns the third quartile.</td></tr>
+	<tr><td width=10% valign="top">4</td><td>Returns the maximum value.</td></tr>
+	</table></td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="rank"></a><b>RANK(number, range, [order])</b></p><UL></UL>
+<P>Returns the rank of a number in a set of numbers.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number of which you want the rank.</td></tr>
+<tr><td width=20% valign="top">range</td><td>An array or reference to cells containing the values.</td></tr>
+<tr><td width=20% valign="top">order</td><td>Specifies whether the list is treated as being in ascending or descending order of value. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>The list is in descending order (the highest value has rank 1).</td></tr>
+	<tr><td width=10% valign="top">any other value</td><td>The list is in ascending order (the lowest value has rank 1).</td></tr>
+	</table></td></tr>
+<tr><td width=20% valign="top"></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="rsq"></a><b>RSQ(y_array, x_array)</b></p><UL></UL>
+<P>Returns the square of the Pearson correlation coefficient.</P>
+<table width=100%>
+<tr><td width=20% valign="top">y_array</td><td>The first range to be compared.</td></tr>
+<tr><td width=20% valign="top">x_array</td><td>The second range to be compared.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="skew"></a><b>SKEW(number1, [number2, ...])</b></p><UL></UL>
+<P>Returns the skewness of a set of numbers.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number1, ...</td><td>The numbers of which you want the skewness.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="slope"></a><b>SLOPE(y_range, x_range)</b></p><UL></UL>
+<P>Returns the slope of a line passing through a specified set of points.</P>
+<table width=100%>
+<tr><td width=20% valign="top">y_range</td><td>The y values that are already known.</td></tr>
+<tr><td width=20% valign="top">x_range</td><td>The x values that are already known.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="small"></a><b>SMALL(array, k)</b></p><UL></UL>
+<P>Returns the k<sup>th</sup> smallest number in a set of numbers.</P>
+<table width=100%>
+<tr><td width=20% valign="top">array</td><td>An array or reference to cells containing numbers of which you want the k<sup>th</sup> smallest.</td></tr>
+<tr><td width=20% valign="top">k</td><td>The rank of the number that you want.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="standardize"></a><b>STANDARDIZE(x, mean, standard_dev)</b></p><UL></UL>
+<P>Returns the standardized value of x for the specified mean and standard deviation.</P>
+<table width=100%>
+<tr><td width=20% valign="top">x</td><td>The value that you want to standardize.</td></tr>
+<tr><td width=20% valign="top">mean</td><td>The mean of the values.</td></tr>
+<tr><td width=20% valign="top">standard_dev</td><td>The standard deviation of the values.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="stdev"></a><b>STDEV(number1, [number2, ...])</b></p><UL></UL>
+<P>Returns the standard deviation (based on a population sample) of a set of numbers.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number1, ...</td><td>The numbers of which you want the standard deviation.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="stdeva"></a><b>STDEVA(value1, [value2, ...])</b></p><UL></UL>
+<P>Returns the standard deviation (based on a population sample) of a set of values.</P>
+<table width=100%>
+<tr><td width=20% valign="top">value1, ...</td><td>The values of which you want the standard deviation.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="stdevp"></a><b>STDEVP(number1, [number2, ...])</b></p><UL></UL>
+<P>Returns the standard deviation (based on the entire population) of a set of numbers.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number1, ...</td><td>The numbers of which you want the standard deviation.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="stdevpa"></a><b>STDEVPA(value1, [value2, ...])</b></p><UL></UL>
+<P>Returns the standard deviation (based on the entire population) of a set of values.</P>
+<table width=100%>
+<tr><td width=20% valign="top">value1, ...</td><td>The values of which you want the standard deviation.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="steyx"></a><b>STEYX(y_range, x_range)</b></p><UL></UL>
+<P>Returns the standard error of the y values of a line passing through a specified set of points.</P>
+<table width=100%>
+<tr><td width=20% valign="top">y_range</td><td>The y values that are already known.</td></tr>
+<tr><td width=20% valign="top">x_range</td><td>The x values that are already known.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="tdist"></a><b>TDIST(x, degrees_freedom, tails)</b></p><UL></UL>
+<P>Returns the Student's T distribution probability.</P>
+<table width=100%>
+<tr><td width=20% valign="top">x</td><td>The value at which you want to evaluate the function.</td></tr>
+<tr><td width=20% valign="top">degrees_freedom</td><td>The degrees of freedom.</td></tr>
+<tr><td width=20% valign="top">tails</td><td>Specifies the tails to include in the distribution. Should be 1 or 2.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="tinv"></a><b>TINV(probability, degrees_freedom)</b></p><UL></UL>
+<P>Returns the value associated with the specified Student's T distribution probability.</P>
+<table width=100%>
+<tr><td width=20% valign="top">probability</td><td>The probability for which you want the value.</td></tr>
+<tr><td width=20% valign="top">degrees_freedom</td><td>The degrees of freedom.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="trend"></a><b>TREND(known_ys, [known_xs], [new_xs], [const])</b></p><UL></UL>
+<P>Returns the expected values of y for given x values for a line passing through a specified set of points.</P>
+<table width=100%>
+<tr><td width=20% valign="top">known_ys</td><td>The y values that are already known.</td></tr>
+<tr><td width=20% valign="top">known_xs</td><td>The x values that are already known. If this parameter is omitted it defaults to an array of values from 1 to the number of known ys.</td></tr>
+<tr><td width=20% valign="top">new_xs</td><td>The new x values for which y values are required. If this parameter is omitted it defaults to the known xs.</td></tr>
+<tr><td width=20% valign="top">const</td><td>Specifies whether the line must pass through the origin. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">FALSE</td><td>The line is forced to pass through the origin.</td></tr>
+	<tr><td width=10% valign="top">TRUE</td><td>The line is not forced to pass through the origin.</td></tr>
+	</table></td></tr>
+<tr><td width=20% valign="top"></td><td>If this parameter is omitted it defaults to TRUE.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="trimmean"></a><b>TRIMMEAN(array, percent)</b></p><UL></UL>
+<P>Returns the mean of a set of numbers with the extreme values removed.</P>
+<table width=100%>
+<tr><td width=20% valign="top">array</td><td>An array or reference to cells containing the numbers.</td></tr>
+<tr><td width=20% valign="top">percent</td><td>The percentage of the numbers to exclude from the calculation.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="ttest"></a><b>TTEST(array1, array2, tails, type)</b></p><UL></UL>
+<P>Returns the probability result of the Student's T test.</P>
+<table width=100%>
+<tr><td width=20% valign="top">array1</td><td>The first range to be compared.</td></tr>
+<tr><td width=20% valign="top">array2</td><td>The second range to be compared.</td></tr>
+<tr><td width=20% valign="top">tails</td><td>Specifies the tails to include in the distribution. Should be 1 or 2.</td></tr>
+<tr><td width=20% valign="top">type</td><td>Specifies which type of test is required. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">1</td><td>Paired.</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Equal variance.</td></tr>
+	<tr><td width=10% valign="top">3</td><td>Unequal variance.</td></tr>
+	</table></td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="var"></a><b>VAR(number1, [number2, ...])</b></p><UL></UL>
+<P>Returns the variance (based on a population sample) of a set of numbers.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number1, ...</td><td>The numbers of which you want the variance.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="vara"></a><b>VARA(value1, [value2, ...])</b></p><UL></UL>
+<P>Returns the variance (based on a population sample) of a set of values.</P>
+<table width=100%>
+<tr><td width=20% valign="top">value1, ...</td><td>The values of which you want the variance.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="varp"></a><b>VARP(number1, [number2, ...])</b></p><UL></UL>
+<P>Returns the variance (based on the entire population) of a set of numbers.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number1, ...</td><td>The numbers of which you want the variance.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="varpa"></a><b>VARPA(value1, [value2, ...])</b></p><UL></UL>
+<P>Returns the variance (based on the entire population) of a set of values.</P>
+<table width=100%>
+<tr><td width=20% valign="top">value1, ...</td><td>The values of which you want the variance.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="weibull"></a><b>WEIBULL(x, alpha, beta, cumulative)</b></p><UL></UL>
+<P>Returns the Weibull distribution probability.</P>
+<table width=100%>
+<tr><td width=20% valign="top">x</td><td>The value at which you want to evaluate the function.</td></tr>
+<tr><td width=20% valign="top">alpha</td><td>The alpha value.</td></tr>
+<tr><td width=20% valign="top">beta</td><td>The beta value.</td></tr>
+<tr><td width=20% valign="top">cumulative</td><td>Specifies whether to return the cumulative probability or not. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">FALSE</td><td>Return the value of the function.</td></tr>
+	<tr><td width=10% valign="top">TRUE</td><td>Return the integral of the function.</td></tr>
+	</table></td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="ztest"></a><b>ZTEST(array, x, [sigma])</b></p><UL></UL>
+<P>Returns the probability result of the z test.</P>
+<table width=100%>
+<tr><td width=20% valign="top">array</td><td>An array or reference to cells containing the data against which x is to be tested.</td></tr>
+<tr><td width=20% valign="top">x</td><td>The value to be tested.</td></tr>
+<tr><td width=20% valign="top">sigma</td><td>The population standard deviation. If this parameter is omitted it defaults to the sample standard deviation of the data.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+</BODY>
+</HTML>

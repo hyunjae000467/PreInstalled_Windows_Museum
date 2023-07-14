@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+<meta http-equiv="Htm-Help" content="devmgmt.htm#MAIN_CONTENTS">
+<title>PHM Device Manager Help</title>
+<!-- by Philippe Majerus -->
+<!-- Copyright (C) 2000  -->
+</head>
+
+<body bgcolor=#FFFFFF text=#000000>
+<!-- PegHelp -->
+
+<p><a name="MAIN_CONTENTS"></a><b>PHM Device Manager Help</b></p>
+<br>
+<b>Concepts</b><br>
+<a href="devmgmt.htm#overview">Device Manager Overview</a><br>
+<a href="devmgmt.htm#view_devices">View devices</a><br>
+<br>
+<!--
+<b>How to</b><br>
+<br>
+-->
+<b>References</b><br>
+<a href="devmgmt.htm#devices_names">Devices names</a><br>
+
+<br clear=all>
+<!-- PegHelp --><hr>
+
+<!-- ************************Topic Break************************* -->
+
+<a name="overview"></a><b>Device Manager Overview</b>
+<p>
+Device Manager provides you with a graphical view of the hardware that is installed on your Pocket PC,
+this can be built-in devices, PC/CF Cards and external modems.<br>
+Using Device Manager, you can:<br>
+<ul>
+<li>Determine whether the hardware on your Pocket PC is working properly.</li>
+<li>Identify the device drivers that are loaded for each device.</li>
+</ul>
+Because the manufacturer provide the device with the corresponding hardware abstraction layer,
+there is nothing you can configure, but you can see the structure, check devices status and drivers.<br>
+</p>
+
+<!-- PegHelp --><hr>
+
+<!-- ************************Topic Break************************* -->
+
+<a name="view_devices"></a><b>View devices</b>
+<p>
+Device Manager display devices by the type of device installed, such as infrared or modem.<br>
+Select a device and tap the properties button to display more information.<br>
+Press the refresh button to reload devices information,
+this is needed to update the display when you removed or inserted a device.<br>
+<br>
+Windows CE assign a name to most devices, like DSK1: for the first disk device,
+see the <a href="devmgmt.htm#devices_names">devices names page</a> for a complete description.<br>
+
+<!-- PegHelp --><hr>
+
+<!-- ************************Topic Break************************* -->
+
+<a name="devices_names"></a><b>Devices names</b>
+<p>
+<table><tbody>
+<tr>
+	<td align="center" valign="top"><b>SIP</b></td>
+	<td align="left" align="top"><u>Soft Input Panel</u><br>This is the IME software providing the on-screen keyboard, character recognizer, or another installed input method.</td>
+</tr><tr>
+	<td align="center" valign="top"><b>COM</b></td>
+	<td align="left" valign="top"><u>Communication (Serial) device</u><br>Can be a serial port, an infrared adapter, a modem, or a serial interface to another device.</td>
+</tr><tr>
+	<td align="center" valign="top"><b>WAV</b></td>
+	<td align="left" valign="top"><u>Waveform audio device</u><br>This is a digital audio sound device.</td>
+</tr><tr>
+	<td align="center" valign="top"><b>WAM</b></td>
+	<td align="left" valign="top"><u>Wave API Manager</u><br>This is a driver that allow applications to generate waveform sounds.</td>
+</tr><tr>
+	<td align="center" valign="top"><b>ACM</b></td>
+	<td align="left" valign="top"><u>Audio Compression Manager</u><br>A codec device that simplify audio compression/decompression.</td>
+</tr><tr>
+	<td align="center" valign="top"><b>DSK</b></td>
+	<td align="left" valign="top"><u>Disk device</u><br>The main filesystem, called the Object Store, is in RAM. Disk devices are aditionnal storage devices, a CompactFlash memory card for example.</td>
+</tr><tr>
+	<td align="center" valign="top"><b>NDS</b></td>
+	<td align="left" valign="top"><u>NDIS device</u><br>A network interface adapter, allow you to connect to a network.</td>
+</tr>
+</tbody></table>
+<br>
+External modems don't have a device name, they just link a modem driver to an existing COM port.<br>
+PWO (PowerOn) and RCN (remocon) are Cassiopeia specific devices.<br>
+</p>
+
+<!-- PegHelp --><hr>
+
+<!-- ************************Topic Break************************* -->
+
+<a name="properties"></a><b>Device Properties</b>
+<p>
+<table><tbody>
+<tr>
+	<td valign="top"><u>Type</u></td>
+	<td valign="top">Describe the function of the device.</td>
+</tr></tr>
+	<td valign="top"><u>Registry</u></td>
+	<td valign="top">Driver definition location in the system registry.</td>
+</tr><tr>
+	<td valign="top"><u>Driver files</u></td>
+	<td valign="top">Device Driver : The driver file used for this device.<br>
+		TSP driver : Transport Service Provider for this device.<br>
+		File System : File System driver for this device.</td>
+</tr><tr>
+	<td valign="top"><u>Resources</u></td>
+	<td valign="top">Device ID : Windows CE ID for this device.<br>
+		Socket : PCMCIA Socket used by this device.</td>
+</tr><tr>
+	<td valign="top"><u>Plug and Play ID</u></td>
+	<td valign="top">Plug and Play identification string, built-in devices usually does not provide this.</td>
+</tr>
+</tbody></table>
+</p>
+
+
+<!-- PegHelp -->
+
+</body>
+</html>

@@ -1,0 +1,996 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Htm-Help" CONTENT="SCEHlpFF.htm#Main_Contents">
+<title>SpreadCE Help</title>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<!-- PegHelp -->
+<p><A NAME="Main_Contents"></A><b>Financial functions</b></p><UL></UL>
+<p>[ ] indicates optional parameters</p>
+<A HREF="SCEHlpFF.htm#accrint">ACCRINT(issue_date, first_interest_date, settlement_date, rate, par, frequency, [basis])</A><BR>
+<A HREF="SCEHlpFF.htm#accrintm">ACCRINTM(issue_date, maturity_date, rate, [par], [basis])</A><BR>
+<A HREF="SCEHlpFF.htm#amordegrc">AMORDEGRC(cost, purchase_date, first_period_date, salvage, period, rate, [basis])</A><BR>
+<A HREF="SCEHlpFF.htm#amorlinc">AMORLINC(cost, purchase_date, first_period_date, salvage, period, rate, [basis])</A><BR>
+<A HREF="SCEHlpFF.htm#coupdaybs">COUPDAYBS(settlement_date, maturity_date, frequency, [basis])</A><BR>
+<A HREF="SCEHlpFF.htm#coupdays">COUPDAYS(settlement_date, maturity_date, frequency, [basis])</A><BR>
+<A HREF="SCEHlpFF.htm#coupdaysnc">COUPDAYSNC(settlement_date, maturity_date, frequency, [basis])</A><BR>
+<A HREF="SCEHlpFF.htm#coupncd">COUPNCD(settlement_date, maturity_date, frequency, [basis])</A><BR>
+<A HREF="SCEHlpFF.htm#coupnum">COUPNUM(settlement_date, maturity_date, frequency, [basis])</A><BR>
+<A HREF="SCEHlpFF.htm#couppcd">COUPPCD(settlement_date, maturity_date, frequency, [basis])</A><BR>
+<A HREF="SCEHlpFF.htm#cumipmt">CUMIPMT(rate, nper, pv, start_period, end_period, type)</A><BR>
+<A HREF="SCEHlpFF.htm#cumprinc">CUMPRINC(rate, nper, pv, start_period, end_period, type)</A><BR>
+<A HREF="SCEHlpFF.htm#db">DB(cost, salvage, life, period, [month])</A><BR>
+<A HREF="SCEHlpFF.htm#ddb">DDB(cost, salvage, life, period, [factor])</A><BR>
+<A HREF="SCEHlpFF.htm#disc">DISC(settlement_date, maturity_date, pr, redemption, [basis])</A><BR>
+<A HREF="SCEHlpFF.htm#dollarde">DOLLARDE(fractional_dollar, fraction)</A><BR>
+<A HREF="SCEHlpFF.htm#dollarfr">DOLLARFR(decimal_dollar, fraction)</A><BR>
+<A HREF="SCEHlpFF.htm#duration">DURATION(settlement_date, maturity_date, coupon, yield, frequency, [basis])</A><BR>
+<A HREF="SCEHlpFF.htm#effect">EFFECT(nominal_rate, npery)</A><BR>
+<A HREF="SCEHlpFF.htm#fv">FV(rate, term, payment, [pv], [type])</A><BR>
+<A HREF="SCEHlpFF.htm#fvschedule">FVSCHEDULE(principal, schedule_range)</A><BR>
+<A HREF="SCEHlpFF.htm#intrate">INTRATE(settlement_date, maturity_date, investment_amount, redemption_amount, [basis])</A><BR>
+<A HREF="SCEHlpFF.htm#ipmt">IPMT(rate, period, term, pv, [fv], [type])</A><BR>
+<A HREF="SCEHlpFF.htm#irr">IRR(values_range, [guess])</A><BR>
+<a href="SCEHlpFF.htm#ispmt">ISPMT(rate, period, term, pv)</a><br>
+<A HREF="SCEHlpFF.htm#mduration">MDURATION(settlement_date, maturity_date, coupon, yield, frequency, [basis])</A><BR>
+<A HREF="SCEHlpFF.htm#mirr">MIRR(values_range, finance_rate, reinvest_rate)</A><BR>
+<A HREF="SCEHlpFF.htm#nominal">NOMINAL(effect_rate, npery)</A><BR>
+<A HREF="SCEHlpFF.htm#nper">NPER(rate, payment, pv, [fv], [type])</A><BR>
+<A HREF="SCEHlpFF.htm#npv">NPV(rate, value1, [value2, ...])</A><BR>
+<A HREF="SCEHlpFF.htm#oddfprice">ODDFPRICE(settlement_date, maturity_date, issue_date, first_coupon_date, rate, yield, redemption, frequency, [basis])</A><BR>
+<A HREF="SCEHlpFF.htm#oddfyield">ODDFYIELD(settlement_date, maturity_date, issue_date, first_coupon_date, rate, price, redemption, frequency, [basis])</A><BR>
+<A HREF="SCEHlpFF.htm#oddlprice">ODDLPRICE(settlement_date, maturity_date, last_coupon_date, rate, yield, redemption, frequency, [basis])</A><BR>
+<A HREF="SCEHlpFF.htm#oddlyield">ODDLYIELD(settlement_date, maturity_date, last_coupon_date, rate, price, redemption, frequency, [basis])</A><BR>
+<A HREF="SCEHlpFF.htm#pmt">PMT(rate, term, [pv], [fv], [type])</A><BR>
+<A HREF="SCEHlpFF.htm#ppmt">PPMT(rate, period, term, pv, [fv], [type])</A><BR>
+<A HREF="SCEHlpFF.htm#price">PRICE(settlement_date, maturity_date, rate, yield, redemption, frequency, [basis])</A><BR>
+<A HREF="SCEHlpFF.htm#pricedisc">PRICEDISC(settlement_date, maturity_date, discount, redemption, [basis])</A><BR>
+<A HREF="SCEHlpFF.htm#pricemat">PRICEMAT(settlement_date, maturity_date, issue_date, rate, yield, [basis])</A><BR>
+<A HREF="SCEHlpFF.htm#pv">PV(rate, term, payment, [fv], [type])</A><BR>
+<A HREF="SCEHlpFF.htm#rate">RATE(term, payment, pv, [fv], [type], [guess])</A><BR>
+<A HREF="SCEHlpFF.htm#received">RECEIVED(settlement_date, maturity_date, investment, discount, [basis])</A><BR>
+<A HREF="SCEHlpFF.htm#sln">SLN(cost, salvage, life)</A><BR>
+<A HREF="SCEHlpFF.htm#syd">SYD(cost, salvage, life, period)</A><BR>
+<A HREF="SCEHlpFF.htm#tbilleq">TBILLEQ(settlement_date, maturity_date, discount)</A><BR>
+<A HREF="SCEHlpFF.htm#tbillprice">TBILLPRICE(settlement_date, maturity_date, discount)</A><BR>
+<A HREF="SCEHlpFF.htm#tbillyield">TBILLYIELD(settlement_date, maturity_date, price)</A><BR>
+<A HREF="SCEHlpFF.htm#vdb">VDB(cost, salvage, life, start_period, end_period, [factor], [no_switch])</A><BR>
+<A HREF="SCEHlpFF.htm#xirr">XIRR(values_range, dates_range, [guess])</A><BR>
+<A HREF="SCEHlpFF.htm#xnpv">XNPV(rate, values_range, dates_range)</A><BR>
+<A HREF="SCEHlpFF.htm#yield">YIELD(settlement_date, maturity_date, rate, price, redemption, frequency, [basis])</A><BR>
+<A HREF="SCEHlpFF.htm#yielddisc">YIELDDISC(settlement_date, maturity_date, price, redemption, [basis])</A><BR>
+<A HREF="SCEHlpFF.htm#yieldmat">YIELDMAT(settlement_date, maturity_date, issue_date, rate, price, [basis])</A><BR>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="accrint"></a><b>ACCRINT(issue_date, first_interest_date, settlement_date, rate, par, frequency, [basis])</b></p><UL></UL>
+<P>Returns accrued interest for a security that pays periodic interest.</P>
+<table width=100%>
+<tr><td width=20% valign="top">issue_date</td><td>The issue date.</td></tr>
+<tr><td width=20% valign="top">first_interest_date</td><td>The first interest date.</td></tr>
+<tr><td width=20% valign="top">settlement_date</td><td>The settlement date.</td></tr>
+<tr><td width=20% valign="top">rate</td><td>The annual coupon rate.</td></tr>
+<tr><td width=20% valign="top">par</td><td>The par value.</td></tr>
+<tr><td width=20% valign="top">frequency</td><td>The number of interest payments per year. Should be 1, 2 or 4.</td></tr>
+<tr><td width=20% valign="top">basis</td><td>The method used to represent the number of days in the period versus the number of days in a year. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>US (NASD) 30/360</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Actual/actual</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Actual/360</td></tr>
+	<tr><td width=10% valign="top">3</td><td>Actual/365</td></tr>
+	<tr><td width=10% valign="top">4</td><td>European 30/360</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="accrintm"></a><b>ACCRINTM(issue_date, maturity_date, rate, [par], [basis])</b></p><UL></UL>
+<P>Returns accrued interest for a security that pays interest at maturity.</P>
+<table width=100%>
+<tr><td width=20% valign="top">issue_date</td><td>The issue date.</td></tr>
+<tr><td width=20% valign="top">maturity_date</td><td>The maturity date.</td></tr>
+<tr><td width=20% valign="top">rate</td><td>The annual coupon rate.</td></tr>
+<tr><td width=20% valign="top">par</td><td>The par value. If this parameter is omitted it defaults to 1000.</td></tr>
+<tr><td width=20% valign="top">basis</td><td>The method used to represent the number of days in the period versus the number of days in a year. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>US (NASD) 30/360</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Actual/actual</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Actual/360</td></tr>
+	<tr><td width=10% valign="top">3</td><td>Actual/365</td></tr>
+	<tr><td width=10% valign="top">4</td><td>European 30/360</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="amordegrc"></a><b>AMORDEGRC(cost, purchase_date, first_period_date, salvage, period, rate, [basis])</b></p><UL></UL>
+<P>Returns the depreciation for each accounting period.</P>
+<table width=100%>
+<tr><td width=20% valign="top">cost</td><td>The cost.</td></tr>
+<tr><td width=20% valign="top">purchase_date</td><td>The purchase date.</td></tr>
+<tr><td width=20% valign="top">first_period_date</td><td>The end date of the first period.</td></tr>
+<tr><td width=20% valign="top">salvage</td><td>The salvage value.</td></tr>
+<tr><td width=20% valign="top">period</td><td>The period for which you want to calculate the depreciation.</td></tr>
+<tr><td width=20% valign="top">rate</td><td>The depreciation rate.</td></tr>
+<tr><td width=20% valign="top">basis</td><td>The method used to represent the number of days in the period versus the number of days in a year. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>US (NASD) 30/360</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Actual/actual</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Actual/360</td></tr>
+	<tr><td width=10% valign="top">3</td><td>Actual/365</td></tr>
+	<tr><td width=10% valign="top">4</td><td>European 30/360</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="amorlinc"></a><b>AMORLINC(cost, purchase_date, first_period_date, salvage, period, rate, [basis])</b></p><UL></UL>
+<P>Returns the depreciation for each accounting period.</P>
+<table width=100%>
+<tr><td width=20% valign="top">cost</td><td>The cost.</td></tr>
+<tr><td width=20% valign="top">purchase_date</td><td>The purchase date.</td></tr>
+<tr><td width=20% valign="top">first_period_date</td><td>The end date of the first period.</td></tr>
+<tr><td width=20% valign="top">salvage</td><td>The salvage value.</td></tr>
+<tr><td width=20% valign="top">period</td><td>The period for which you want to calculate the depreciation.</td></tr>
+<tr><td width=20% valign="top">rate</td><td>The depreciation rate.</td></tr>
+<tr><td width=20% valign="top">basis</td><td>The method used to represent the number of days in the period versus the number of days in a year. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>US (NASD) 30/360</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Actual/actual</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Actual/360</td></tr>
+	<tr><td width=10% valign="top">3</td><td>Actual/365</td></tr>
+	<tr><td width=10% valign="top">4</td><td>European 30/360</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="coupdaybs"></a><b>COUPDAYBS(settlement_date, maturity_date, frequency, [basis])</b></p><UL></UL>
+<P>Returns the number of days from the beginning of the coupon period to the settlement date.</P>
+<table width=100%>
+<tr><td width=20% valign="top">settlement_date</td><td>The settlement date.</td></tr>
+<tr><td width=20% valign="top">maturity_date</td><td>The maturity date.</td></tr>
+<tr><td width=20% valign="top">frequency</td><td>The number of coupon payments per year. Should be 1, 2 or 4.</td></tr>
+<tr><td width=20% valign="top">basis</td><td>The method used to represent the number of days in the period versus the number of days in a year. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>US (NASD) 30/360</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Actual/actual</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Actual/360</td></tr>
+	<tr><td width=10% valign="top">3</td><td>Actual/365</td></tr>
+	<tr><td width=10% valign="top">4</td><td>European 30/360</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="coupdays"></a><b>COUPDAYS(settlement_date, maturity_date, frequency, [basis])</b></p><UL></UL>
+<P>Returns the number of days in the coupon period that contains the settlement date.</P>
+<table width=100%>
+<tr><td width=20% valign="top">settlement_date</td><td>The settlement date.</td></tr>
+<tr><td width=20% valign="top">maturity_date</td><td>The maturity date.</td></tr>
+<tr><td width=20% valign="top">frequency</td><td>The number of coupon payments per year. Should be 1, 2 or 4.</td></tr>
+<tr><td width=20% valign="top">basis</td><td>The method used to represent the number of days in the period versus the number of days in a year. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>US (NASD) 30/360</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Actual/actual</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Actual/360</td></tr>
+	<tr><td width=10% valign="top">3</td><td>Actual/365</td></tr>
+	<tr><td width=10% valign="top">4</td><td>European 30/360</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="coupdaysnc"></a><b>COUPDAYSNC(settlement_date, maturity_date, frequency, [basis])</b></p><UL></UL>
+<P>Returns the number of days from the settlement date to the next coupon date.</P>
+<table width=100%>
+<tr><td width=20% valign="top">settlement_date</td><td>The settlement date.</td></tr>
+<tr><td width=20% valign="top">maturity_date</td><td>The maturity date.</td></tr>
+<tr><td width=20% valign="top">frequency</td><td>The number of coupon payments per year. Should be 1, 2 or 4.</td></tr>
+<tr><td width=20% valign="top">basis</td><td>The method used to represent the number of days in the period versus the number of days in a year. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>US (NASD) 30/360</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Actual/actual</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Actual/360</td></tr>
+	<tr><td width=10% valign="top">3</td><td>Actual/365</td></tr>
+	<tr><td width=10% valign="top">4</td><td>European 30/360</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="coupncd"></a><b>COUPNCD(settlement_date, maturity_date, frequency, [basis])</b></p><UL></UL>
+<P>Returns the next coupon date after the settlement date.</P>
+<table width=100%>
+<tr><td width=20% valign="top">settlement_date</td><td>The settlement date.</td></tr>
+<tr><td width=20% valign="top">maturity_date</td><td>The maturity date.</td></tr>
+<tr><td width=20% valign="top">frequency</td><td>The number of coupon payments per year. Should be 1, 2 or 4.</td></tr>
+<tr><td width=20% valign="top">basis</td><td>The method used to represent the number of days in the period versus the number of days in a year. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>US (NASD) 30/360</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Actual/actual</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Actual/360</td></tr>
+	<tr><td width=10% valign="top">3</td><td>Actual/365</td></tr>
+	<tr><td width=10% valign="top">4</td><td>European 30/360</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="coupnum"></a><b>COUPNUM(settlement_date, maturity_date, frequency, [basis])</b></p><UL></UL>
+<P>Returns the number of coupon periods between the settlement date and the maturity date.</P>
+<table width=100%>
+<tr><td width=20% valign="top">settlement_date</td><td>The settlement date.</td></tr>
+<tr><td width=20% valign="top">maturity_date</td><td>The maturity date.</td></tr>
+<tr><td width=20% valign="top">frequency</td><td>The number of coupon payments per year. Should be 1, 2 or 4.</td></tr>
+<tr><td width=20% valign="top">basis</td><td>The method used to represent the number of days in the period versus the number of days in a year. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>US (NASD) 30/360</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Actual/actual</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Actual/360</td></tr>
+	<tr><td width=10% valign="top">3</td><td>Actual/365</td></tr>
+	<tr><td width=10% valign="top">4</td><td>European 30/360</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="couppcd"></a><b>COUPPCD(settlement_date, maturity_date, frequency, [basis])</b></p><UL></UL>
+<P>Returns the coupon date before the settlement date.</P>
+<table width=100%>
+<tr><td width=20% valign="top">settlement_date</td><td>The settlement date.</td></tr>
+<tr><td width=20% valign="top">maturity_date</td><td>The maturity date.</td></tr>
+<tr><td width=20% valign="top">frequency</td><td>The number of coupon payments per year. Should be 1, 2 or 4.</td></tr>
+<tr><td width=20% valign="top">basis</td><td>The method used to represent the number of days in the period versus the number of days in a year. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>US (NASD) 30/360</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Actual/actual</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Actual/360</td></tr>
+	<tr><td width=10% valign="top">3</td><td>Actual/365</td></tr>
+	<tr><td width=10% valign="top">4</td><td>European 30/360</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="cumipmt"></a><b>CUMIPMT(rate, nper, pv, start_period, end_period, type)</b></p><UL></UL>
+<P>Returns the cumulative interest paid on a loan in the specified periods.</P>
+<table width=100%>
+<tr><td width=20% valign="top">rate</td><td>The interest rate.</td></tr>
+<tr><td width=20% valign="top">nper</td><td>The total number of periods.</td></tr>
+<tr><td width=20% valign="top">pv</td><td>The present value.</td></tr>
+<tr><td width=20% valign="top">start_period</td><td>The first period number for which to calculate interest.</td></tr>
+<tr><td width=20% valign="top">end_period</td><td>The last period number for which to calculate interest.</td></tr>
+<tr><td width=20% valign="top">type</td><td>The timing of the payment. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>Payment is made at the end of each period.</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Payment is made at the start of each period.</td></tr>
+	</table></td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="cumprinc"></a><b>CUMPRINC(rate, nper, pv, start_period, end_period, type)</b></p><UL></UL>
+<P>Returns the cumulative principal paid on a loan in the specified periods.</P>
+<table width=100%>
+<tr><td width=20% valign="top">rate</td><td>The interest rate.</td></tr>
+<tr><td width=20% valign="top">nper</td><td>The total number of periods.</td></tr>
+<tr><td width=20% valign="top">pv</td><td>The present value.</td></tr>
+<tr><td width=20% valign="top">start_period</td><td>The first period number for which to calculate interest.</td></tr>
+<tr><td width=20% valign="top">end_period</td><td>The last period number for which to calculate interest.</td></tr>
+<tr><td width=20% valign="top">type</td><td>The timing of the payment. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>Payment is made at the end of each period.</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Payment is made at the start of each period.</td></tr>
+	</table></td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="db"></a><b>DB(cost, salvage, life, period, [month])</b></p><UL></UL>
+<P>Returns the depreciation in a specified period using the fixed declining balance method.</P>
+<table width=100%>
+<tr><td width=20% valign="top">cost</td><td>The cost.</td></tr>
+<tr><td width=20% valign="top">salvage</td><td>The salvage value.</td></tr>
+<tr><td width=20% valign="top">life</td><td>The total number of periods.</td></tr>
+<tr><td width=20% valign="top">period</td><td>The period number for which to calculate depreciation.</td></tr>
+<tr><td width=20% valign="top">month</td><td>The number of months in the first year. If this parameter is omitted it defaults to 12.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="ddb"></a><b>DDB(cost, salvage, life, period, [factor])</b></p><UL></UL>
+<P>Returns the depreciation in a specified period using the double declining balance method.</P>
+<table width=100%>
+<tr><td width=20% valign="top">cost</td><td>The cost.</td></tr>
+<tr><td width=20% valign="top">salvage</td><td>The salvage value.</td></tr>
+<tr><td width=20% valign="top">life</td><td>The total number of periods.</td></tr>
+<tr><td width=20% valign="top">period</td><td>The period number for which to calculate depreciation.</td></tr>
+<tr><td width=20% valign="top">factor</td><td>The rate at which the balance declines. If this parameter is omitted it defaults to 2.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="disc"></a><b>DISC(settlement_date, maturity_date, pr, redemption, [basis])</b></p><UL></UL>
+<P>Returns the discount rate for a security.</P>
+<table width=100%>
+<tr><td width=20% valign="top">settlement_date</td><td>The settlement date.</td></tr>
+<tr><td width=20% valign="top">maturity_date</td><td>The maturity date.</td></tr>
+<tr><td width=20% valign="top">pr</td><td>The price per $100 value.</td></tr>
+<tr><td width=20% valign="top">redemption</td><td>The redemption per $100 value.</td></tr>
+<tr><td width=20% valign="top">basis</td><td>The method used to represent the number of days in the period versus the number of days in a year. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>US (NASD) 30/360</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Actual/actual</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Actual/360</td></tr>
+	<tr><td width=10% valign="top">3</td><td>Actual/365</td></tr>
+	<tr><td width=10% valign="top">4</td><td>European 30/360</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="dollarde"></a><b>DOLLARDE(fractional_dollar, fraction)</b></p><UL></UL>
+<P>Returns the decimal equivalent of a dollar price expressed as a fraction.</P>
+<table width=100%>
+<tr><td width=20% valign="top">fractional_dollar</td><td>The value expressed as a fraction.</td></tr>
+<tr><td width=20% valign="top">fraction</td><td>The fraction denominator.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="dollarfr"></a><b>DOLLARFR(decimal_dollar, fraction)</b></p><UL></UL>
+<P>Returns the fraction equivalent of a dollar price expressed as a decimal.</P>
+<table width=100%>
+<tr><td width=20% valign="top">decimal_dollar</td><td>The value expressed as a decimal.</td></tr>
+<tr><td width=20% valign="top">fraction</td><td>The fraction denominator.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="duration"></a><b>DURATION(settlement_date, maturity_date, coupon, yield, frequency, [basis])</b></p><UL></UL>
+<P>Returns the Macauley duration for a value of $100.</P>
+<table width=100%>
+<tr><td width=20% valign="top">settlement_date</td><td>The settlement date.</td></tr>
+<tr><td width=20% valign="top">maturity_date</td><td>The maturity date.</td></tr>
+<tr><td width=20% valign="top">coupon</td><td>The interest rate.</td></tr>
+<tr><td width=20% valign="top">yield</td><td>The annual yield rate.</td></tr>
+<tr><td width=20% valign="top">frequency</td><td>The number of coupon payments per year. Should be 1, 2 or 4.</td></tr>
+<tr><td width=20% valign="top">basis</td><td>The method used to represent the number of days in the period versus the number of days in a year. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>US (NASD) 30/360</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Actual/actual</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Actual/360</td></tr>
+	<tr><td width=10% valign="top">3</td><td>Actual/365</td></tr>
+	<tr><td width=10% valign="top">4</td><td>European 30/360</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="effect"></a><b>EFFECT(nominal_rate, npery)</b></p><UL></UL>
+<P>Returns the effective annual interest rate.</P>
+<table width=100%>
+<tr><td width=20% valign="top">nominal_rate</td><td>The nominal annual interest rate.</td></tr>
+<tr><td width=20% valign="top">npery</td><td>The number of compound interest payments per year.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="fv"></a><b>FV(rate, term, payment, [pv], [type])</b></p><UL></UL>
+<P>Returns the future value of an investment at a fixed rate.</P>
+<table width=100%>
+<tr><td width=20% valign="top">rate</td><td>The interest rate per period.</td></tr>
+<tr><td width=20% valign="top">term</td><td>The total number of periods.</td></tr>
+<tr><td width=20% valign="top">payment</td><td>The payment amount each period.</td></tr>
+<tr><td width=20% valign="top">pv</td><td>The present value. If this parameter is omitted it is assumed to be zero.</td></tr>
+<tr><td width=20% valign="top">type</td><td>The timing of the payment. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>Payment is made at the end of each period.</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Payment is made at the start of each period.</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="fvschedule"></a><b>FVSCHEDULE(principal, schedule_range)</b></p><UL></UL>
+<P>Returns the future value of an investment at a variable rate.</P>
+<table width=100%>
+<tr><td width=20% valign="top">principal</td><td>The initial value of the investment.</td></tr>
+<tr><td width=20% valign="top">schedule_range</td><td>The list (array or reference) of interest rates to be applied.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="intrate"></a><b>INTRATE(settlement_date, maturity_date, investment_amount, redemption_amount, [basis])</b></p><UL></UL>
+<P>Returns the interest rate for a fully invested security.</P>
+<table width=100%>
+<tr><td width=20% valign="top">settlement_date</td><td>The settlement date.</td></tr>
+<tr><td width=20% valign="top">maturity_date</td><td>The maturity date.</td></tr>
+<tr><td width=20% valign="top">investment_amount</td><td>The initial value.</td></tr>
+<tr><td width=20% valign="top">redemption_amount</td><td>The final value.</td></tr>
+<tr><td width=20% valign="top">basis</td><td>The method used to represent the number of days in the period versus the number of days in a year. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>US (NASD) 30/360</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Actual/actual</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Actual/360</td></tr>
+	<tr><td width=10% valign="top">3</td><td>Actual/365</td></tr>
+	<tr><td width=10% valign="top">4</td><td>European 30/360</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="ipmt"></a><b>IPMT(rate, period, term, pv, [fv], [type])</b></p><UL></UL>
+<P>Returns the interest payment for a given period.</P>
+<table width=100%>
+<tr><td width=20% valign="top">rate</td><td>The interest rate per period.</td></tr>
+<tr><td width=20% valign="top">period</td><td>The period for which you want the interest amount.</td></tr>
+<tr><td width=20% valign="top">term</td><td>The total number of periods.</td></tr>
+<tr><td width=20% valign="top">pv</td><td>The present value.</td></tr>
+<tr><td width=20% valign="top">fv</td><td>The future value. If this parameter is omitted it is assumed to be zero.</td></tr>
+<tr><td width=20% valign="top">type</td><td>The timing of the payment. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>Payment is made at the end of each period.</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Payment is made at the start of each period.</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="irr"></a><b>IRR(values_range, [guess])</b></p><UL></UL>
+<P>Returns the internal rate of return.</P>
+<table width=100%>
+<tr><td width=20% valign="top">values_range</td><td>The list (array or reference) of payment and income values.</td></tr>
+<tr><td width=20% valign="top">guess</td><td>The estimated rate of return. If this parameter is omitted it defaults to 0.1.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="ispmt"></a><b>ISPMT(rate, period, term, pv)</b></p><UL></UL>
+<P>Returns the interest payment for a given period.</P>
+<table width=100%>
+<tr><td width=20% valign="top">rate</td><td>The interest rate per period.</td></tr>
+<tr><td width=20% valign="top">period</td><td>The period for which you want the interest amount.</td></tr>
+<tr><td width=20% valign="top">term</td><td>The total number of periods.</td></tr>
+<tr><td width=20% valign="top">pv</td><td>The present value.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="mduration"></a><b>MDURATION(settlement_date, maturity_date, coupon, yield, frequency, [basis])</b></p><UL></UL>
+<P>Returns the modified Macauley duration for a value of $100.</P>
+<table width=100%>
+<tr><td width=20% valign="top">settlement_date</td><td>The settlement date.</td></tr>
+<tr><td width=20% valign="top">maturity_date</td><td>The maturity date.</td></tr>
+<tr><td width=20% valign="top">coupon</td><td>The interest rate.</td></tr>
+<tr><td width=20% valign="top">yield</td><td>The annual yield rate.</td></tr>
+<tr><td width=20% valign="top">frequency</td><td>The number of coupon payments per year. Should be 1, 2 or 4.</td></tr>
+<tr><td width=20% valign="top">basis</td><td>The method used to represent the number of days in the period versus the number of days in a year. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>US (NASD) 30/360</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Actual/actual</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Actual/360</td></tr>
+	<tr><td width=10% valign="top">3</td><td>Actual/365</td></tr>
+	<tr><td width=10% valign="top">4</td><td>European 30/360</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="mirr"></a><b>MIRR(values_range, finance_rate, reinvest_rate)</b></p><UL></UL>
+<P>Returns the modified internal rate of return.</P>
+<table width=100%>
+<tr><td width=20% valign="top">values_range</td><td>The list (array or reference) of payment and income values.</td></tr>
+<tr><td width=20% valign="top">finance_rate</td><td>The interest rate on the payment values.</td></tr>
+<tr><td width=20% valign="top">reinvest_rate</td><td>The interest rate on the income values.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="nominal"></a><b>NOMINAL(effect_rate, npery)</b></p><UL></UL>
+<P>Returns the nominal annual interest rate.</P>
+<table width=100%>
+<tr><td width=20% valign="top">effect_rate</td><td>The effective annual interest rate.</td></tr>
+<tr><td width=20% valign="top">npery</td><td>The number of compound interest payments per year.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="nper"></a><b>NPER(rate, payment, pv, [fv], [type])</b></p><UL></UL>
+<P>Returns the number of periods required for an investment.</P>
+<table width=100%>
+<tr><td width=20% valign="top">rate</td><td>The interest rate per period.</td></tr>
+<tr><td width=20% valign="top">payment</td><td>The payment amount per period.</td></tr>
+<tr><td width=20% valign="top">pv</td><td>The present value.</td></tr>
+<tr><td width=20% valign="top">fv</td><td>The future value. If this parameter is omitted it defaults to 0.</td></tr>
+<tr><td width=20% valign="top">type</td><td>The timing of the payment. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>Payment is made at the end of each period.</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Payment is made at the start of each period.</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="npv"></a><b>NPV(rate, value1, [value2, ...])</b></p><UL></UL>
+<P>Returns the net present value of an investment.</P>
+<table width=100%>
+<tr><td width=20% valign="top">rate</td><td>The discount rate per period.</td></tr>
+<tr><td width=20% valign="top">value1, ...</td><td>The payment and income amounts.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="oddfprice"></a><b>ODDFPRICE(settlement_date, maturity_date, issue_date, first_coupon_date, rate, yield, redemption, frequency, [basis])</b></p><UL></UL>
+<P>Returns the price per $100 face value of a security having an odd (short or long) first period.</P>
+<table width=100%>
+<tr><td width=20% valign="top">settlement_date</td><td>The settlement date.</td></tr>
+<tr><td width=20% valign="top">maturity_date</td><td>The maturity date.</td></tr>
+<tr><td width=20% valign="top">issue_date</td><td>The issue date.</td></tr>
+<tr><td width=20% valign="top">first_coupon_date</td><td>The first coupon date.</td></tr>
+<tr><td width=20% valign="top">rate</td><td>The annual coupon rate.</td></tr>
+<tr><td width=20% valign="top">yield</td><td>The annual yield rate.</td></tr>
+<tr><td width=20% valign="top">redemption</td><td>The redemption value per $100.</td></tr>
+<tr><td width=20% valign="top">frequency</td><td>The number of coupon payments per year. Should be 1, 2 or 4.</td></tr>
+<tr><td width=20% valign="top">basis</td><td>The method used to represent the number of days in the period versus the number of days in a year. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>US (NASD) 30/360</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Actual/actual</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Actual/360</td></tr>
+	<tr><td width=10% valign="top">3</td><td>Actual/365</td></tr>
+	<tr><td width=10% valign="top">4</td><td>European 30/360</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="oddfyield"></a><b>ODDFYIELD(settlement_date, maturity_date, issue_date, first_coupon_date, rate, price, redemption, frequency, [basis])</b></p><UL></UL>
+<P>Returns the yield of a security having an odd (short or long) first period.</P>
+<table width=100%>
+<tr><td width=20% valign="top">settlement_date</td><td>The settlement date.</td></tr>
+<tr><td width=20% valign="top">maturity_date</td><td>The maturity date.</td></tr>
+<tr><td width=20% valign="top">issue_date</td><td>The issue date.</td></tr>
+<tr><td width=20% valign="top">first_coupon_date</td><td>The first coupon date.</td></tr>
+<tr><td width=20% valign="top">rate</td><td>The annual coupon rate.</td></tr>
+<tr><td width=20% valign="top">price</td><td>The price per $100.</td></tr>
+<tr><td width=20% valign="top">redemption</td><td>The redemption value per $100.</td></tr>
+<tr><td width=20% valign="top">frequency</td><td>The number of coupon payments per year. Should be 1, 2 or 4.</td></tr>
+<tr><td width=20% valign="top">basis</td><td>The method used to represent the number of days in the period versus the number of days in a year. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>US (NASD) 30/360</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Actual/actual</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Actual/360</td></tr>
+	<tr><td width=10% valign="top">3</td><td>Actual/365</td></tr>
+	<tr><td width=10% valign="top">4</td><td>European 30/360</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="oddlprice"></a><b>ODDLPRICE(settlement_date, maturity_date, last_coupon_date, rate, yield, redemption, frequency, [basis])</b></p><UL></UL>
+<P>Returns the price per $100 face value of a security having an odd (short or long) last period.</P>
+<table width=100%>
+<tr><td width=20% valign="top">settlement_date</td><td>The settlement date.</td></tr>
+<tr><td width=20% valign="top">maturity_date</td><td>The maturity date.</td></tr>
+<tr><td width=20% valign="top">last_coupon_date</td><td>The last coupon date.</td></tr>
+<tr><td width=20% valign="top">rate</td><td>The annual coupon rate.</td></tr>
+<tr><td width=20% valign="top">yield</td><td>The annual yield rate.</td></tr>
+<tr><td width=20% valign="top">redemption</td><td>The redemption value per $100.</td></tr>
+<tr><td width=20% valign="top">frequency</td><td>The number of coupon payments per year. Should be 1, 2 or 4.</td></tr>
+<tr><td width=20% valign="top">basis</td><td>The method used to represent the number of days in the period versus the number of days in a year. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>US (NASD) 30/360</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Actual/actual</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Actual/360</td></tr>
+	<tr><td width=10% valign="top">3</td><td>Actual/365</td></tr>
+	<tr><td width=10% valign="top">4</td><td>European 30/360</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="oddlyield"></a><b>ODDLYIELD(settlement_date, maturity_date, last_coupon_date, rate, price, redemption, frequency, [basis])</b></p><UL></UL>
+<P>Returns the yield of a security having an odd (short or long) last period.</P>
+<table width=100%>
+<tr><td width=20% valign="top">settlement_date</td><td>The settlement date.</td></tr>
+<tr><td width=20% valign="top">maturity_date</td><td>The maturity date.</td></tr>
+<tr><td width=20% valign="top">last_coupon_date</td><td>The last coupon date.</td></tr>
+<tr><td width=20% valign="top">rate</td><td>The annual coupon rate.</td></tr>
+<tr><td width=20% valign="top">price</td><td>The price per $100.</td></tr>
+<tr><td width=20% valign="top">redemption</td><td>The redemption value per $100.</td></tr>
+<tr><td width=20% valign="top">frequency</td><td>The number of coupon payments per year. Should be 1, 2 or 4.</td></tr>
+<tr><td width=20% valign="top">basis</td><td>The method used to represent the number of days in the period versus the number of days in a year. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>US (NASD) 30/360</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Actual/actual</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Actual/360</td></tr>
+	<tr><td width=10% valign="top">3</td><td>Actual/365</td></tr>
+	<tr><td width=10% valign="top">4</td><td>European 30/360</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="pmt"></a><b>PMT(rate, term, [pv], [fv], [type])</b></p><UL></UL>
+<P>Returns the payment amount for a loan.</P>
+<table width=100%>
+<tr><td width=20% valign="top">rate</td><td>The interest rate per period.</td></tr>
+<tr><td width=20% valign="top">term</td><td>The total number of periods.</td></tr>
+<tr><td width=20% valign="top">pv</td><td>The present value of the loan. If this parameter is omitted it defaults to 0.</td></tr>
+<tr><td width=20% valign="top">fv</td><td>The future value of the loan. If this parameter is omitted it defaults to 0.</td></tr>
+<tr><td width=20% valign="top">type</td><td>The timing of the payment. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>Payment is made at the end of each period.</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Payment is made at the start of each period.</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="ppmt"></a><b>PPMT(rate, period, term, pv, [fv], [type])</b></p><UL></UL>
+<P>Returns the payment on the principal for a specified period.</P>
+<table width=100%>
+<tr><td width=20% valign="top">rate</td><td>The interest rate per period.</td></tr>
+<tr><td width=20% valign="top">period</td><td>The period for which you want the payment amount.</td></tr>
+<tr><td width=20% valign="top">term</td><td>The total number of periods.</td></tr>
+<tr><td width=20% valign="top">pv</td><td>The present value of the loan.<td></tr>
+<tr><td width=20% valign="top">fv</td><td>The future value of the loan. If this parameter is omitted it defaults to 0.</td></tr>
+<tr><td width=20% valign="top">type</td><td>The timing of the payment. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>Payment is made at the end of each period.</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Payment is made at the start of each period.</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="price"></a><b>PRICE(settlement_date, maturity_date, rate, yield, redemption, frequency, [basis])</b></p><UL></UL>
+<P>Returns the price per $100 of a security.</P>
+<table width=100%>
+<tr><td width=20% valign="top">settlement_date</td><td>The settlement date.</td></tr>
+<tr><td width=20% valign="top">maturity_date</td><td>The maturity date.</td></tr>
+<tr><td width=20% valign="top">rate</td><td>The annual coupon rate.</td></tr>
+<tr><td width=20% valign="top">yield</td><td>The annual yield rate.<td></tr>
+<tr><td width=20% valign="top">redemption</td><td>The redemption value per $100.</td></tr>
+<tr><td width=20% valign="top">frequency</td><td>The number of coupon payments per year. Should be 1, 2 or 4.</td></tr>
+<tr><td width=20% valign="top">basis</td><td>The method used to represent the number of days in the period versus the number of days in a year. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>US (NASD) 30/360</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Actual/actual</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Actual/360</td></tr>
+	<tr><td width=10% valign="top">3</td><td>Actual/365</td></tr>
+	<tr><td width=10% valign="top">4</td><td>European 30/360</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="pricedisc"></a><b>PRICEDISC(settlement_date, maturity_date, discount, redemption, [basis])</b></p><UL></UL>
+<P>Returns the price per $100 of a discounted security.</P>
+<table width=100%>
+<tr><td width=20% valign="top">settlement_date</td><td>The settlement date.</td></tr>
+<tr><td width=20% valign="top">maturity_date</td><td>The maturity date.</td></tr>
+<tr><td width=20% valign="top">discount</td><td>The discount rate.</td></tr>
+<tr><td width=20% valign="top">redemption</td><td>The redemption value per $100.</td></tr>
+<tr><td width=20% valign="top">basis</td><td>The method used to represent the number of days in the period versus the number of days in a year. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>US (NASD) 30/360</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Actual/actual</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Actual/360</td></tr>
+	<tr><td width=10% valign="top">3</td><td>Actual/365</td></tr>
+	<tr><td width=10% valign="top">4</td><td>European 30/360</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="pricemat"></a><b>PRICEMAT(settlement_date, maturity_date, issue_date, rate, yield, [basis])</b></p><UL></UL>
+<P>Returns the price per $100 of a security that pays interest at maturity.</P>
+<table width=100%>
+<tr><td width=20% valign="top">settlement_date</td><td>The settlement date.</td></tr>
+<tr><td width=20% valign="top">maturity_date</td><td>The maturity date.</td></tr>
+<tr><td width=20% valign="top">issue_date</td><td>The issue date.</td></tr>
+<tr><td width=20% valign="top">rate</td><td>The interest rate.</td></tr>
+<tr><td width=20% valign="top">yield</td><td>The annual yield rate.</td></tr>
+<tr><td width=20% valign="top">basis</td><td>The method used to represent the number of days in the period versus the number of days in a year. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>US (NASD) 30/360</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Actual/actual</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Actual/360</td></tr>
+	<tr><td width=10% valign="top">3</td><td>Actual/365</td></tr>
+	<tr><td width=10% valign="top">4</td><td>European 30/360</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="pv"></a><b>PV(rate, term, payment, [fv], [type])</b></p><UL></UL>
+<P>Returns the present value of an investment at a fixed rate.</P>
+<table width=100%>
+<tr><td width=20% valign="top">rate</td><td>The interest rate per period.</td></tr>
+<tr><td width=20% valign="top">term</td><td>The total number of periods.</td></tr>
+<tr><td width=20% valign="top">payment</td><td>The payment amount each period.</td></tr>
+<tr><td width=20% valign="top">fv</td><td>The future value. If this parameter is omitted it is assumed to be zero.</td></tr>
+<tr><td width=20% valign="top">type</td><td>The timing of the payment. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>Payment is made at the end of each period.</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Payment is made at the start of each period.</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="rate"></a><b>RATE(term, payment, pv, [fv], [type], [guess])</b></p><UL></UL>
+<P>Returns the interest rate per period of an annuity.</P>
+<table width=100%>
+<tr><td width=20% valign="top">term</td><td>The total number of periods.</td></tr>
+<tr><td width=20% valign="top">payment</td><td>The payment amount each period.</td></tr>
+<tr><td width=20% valign="top">pv</td><td>The present value.</td></tr>
+<tr><td width=20% valign="top">fv</td><td>The future value. If this parameter is omitted it is assumed to be zero.</td></tr>
+<tr><td width=20% valign="top">type</td><td>The timing of the payment. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>Payment is made at the end of each period.</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Payment is made at the start of each period.</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+<tr><td width=20% valign="top">guess</td><td>The estimated rate of return. If this parameter is omitted it defaults to 0.1.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="received"></a><b>RECEIVED(settlement_date, maturity_date, investment, discount, [basis])</b></p><UL></UL>
+<P>Returns the amount received at maturity for a fully invested security.</P>
+<table width=100%>
+<tr><td width=20% valign="top">settlement_date</td><td>The settlement date.</td></tr>
+<tr><td width=20% valign="top">maturity_date</td><td>The maturity date.</td></tr>
+<tr><td width=20% valign="top">investment</td><td>The investment amount.</td></tr>
+<tr><td width=20% valign="top">discount</td><td>The discount rate.</td></tr>
+<tr><td width=20% valign="top">basis</td><td>The method used to represent the number of days in the period versus the number of days in a year. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>US (NASD) 30/360</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Actual/actual</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Actual/360</td></tr>
+	<tr><td width=10% valign="top">3</td><td>Actual/365</td></tr>
+	<tr><td width=10% valign="top">4</td><td>European 30/360</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="sln"></a><b>SLN(cost, salvage, life)</b></p><UL></UL>
+<P>Returns the straight line depreciation.</P>
+<table width=100%>
+<tr><td width=20% valign="top">cost</td><td>The cost.</td></tr>
+<tr><td width=20% valign="top">salvage</td><td>The salvage value.</td></tr>
+<tr><td width=20% valign="top">life</td><td>The total number of periods.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="syd"></a><b>SYD(cost, salvage, life, period)</b></p><UL></UL>
+<P>Returns the sum of years depreciation.</P>
+<table width=100%>
+<tr><td width=20% valign="top">cost</td><td>The cost.</td></tr>
+<tr><td width=20% valign="top">salvage</td><td>The salvage value.</td></tr>
+<tr><td width=20% valign="top">life</td><td>The total number of periods.</td></tr>
+<tr><td width=20% valign="top">period</td><td>The period for which you want the depreciation.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="tbilleq"></a><b>TBILLEQ(settlement_date, maturity_date, discount)</b></p><UL></UL>
+<P>Returns the bond-equivalent yield for a treasury bill.</P>
+<table width=100%>
+<tr><td width=20% valign="top">settlement_date</td><td>The settlement date.</td></tr>
+<tr><td width=20% valign="top">maturity_date</td><td>The maturity date.</td></tr>
+<tr><td width=20% valign="top">discount</td><td>The discount rate.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="tbillprice"></a><b>TBILLPRICE(settlement_date, maturity_date, discount)</b></p><UL></UL>
+<P>Returns the price per $100 for a treasury bill.</P>
+<table width=100%>
+<tr><td width=20% valign="top">settlement_date</td><td>The settlement date.</td></tr>
+<tr><td width=20% valign="top">maturity_date</td><td>The maturity date.</td></tr>
+<tr><td width=20% valign="top">discount</td><td>The discount rate.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="tbillyield"></a><b>TBILLYIELD(settlement_date, maturity_date, price)</b></p><UL></UL>
+<P>Returns the yield for a treasury bill.</P>
+<table width=100%>
+<tr><td width=20% valign="top">settlement_date</td><td>The settlement date.</td></tr>
+<tr><td width=20% valign="top">maturity_date</td><td>The maturity date.</td></tr>
+<tr><td width=20% valign="top">price</td><td>The price per $100.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="vdb"></a><b>VDB(cost, salvage, life, start_period, end_period, [factor], [no_switch])</b></p><UL></UL>
+<P>Returns the depreciation in a specified range of periods using the variable declining balance method.</P>
+<table width=100%>
+<tr><td width=20% valign="top">cost</td><td>The cost.</td></tr>
+<tr><td width=20% valign="top">salvage</td><td>The salvage value.</td></tr>
+<tr><td width=20% valign="top">life</td><td>The total number of periods.</td></tr>
+<tr><td width=20% valign="top">start_period</td><td>The first period number for which to calculate depreciation.</td></tr>
+<tr><td width=20% valign="top">end_period</td><td>The last period number for which to calculate depreciation.</td></tr>
+<tr><td width=20% valign="top">factor</td><td>The rate at which the balance declines. If this parameter is omitted it defaults to 2.</td></tr>
+<tr><td width=20% valign="top">no_switch</td><td>Specifies whether to switch to straight-line depreciation when the straight-line depreciation is greater than the declining balance depreciation. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">FALSE</td><td>Switch to straight-line depreciation.</td></tr>
+	<tr><td width=10% valign="top">TRUE</td><td>Do not switch to straight-line depreciation.</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to FALSE.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="xirr"></a><b>XIRR(values_range, dates_range, [guess])</b></p><UL></UL>
+<P>Returns the internal rate of return.</P>
+<table width=100%>
+<tr><td width=20% valign="top">values_range</td><td>The list (array or reference) of payment and income values.</td></tr>
+<tr><td width=20% valign="top">dates_range</td><td>The list (array or reference) of the dates of the payment and income values.</td></tr>
+<tr><td width=20% valign="top">guess</td><td>The estimated rate of return. If this parameter is omitted it defaults to 0.1.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="xnpv"></a><b>XNPV(rate, values_range, dates_range)</b></p><UL></UL>
+<P>Returns the net present value of an investment.</P>
+<table width=100%>
+<tr><td width=20% valign="top">rate</td><td>The discount rate per period.</td></tr>
+<tr><td width=20% valign="top">values_range</td><td>The list (array or reference) of payment and income values.</td></tr>
+<tr><td width=20% valign="top">dates_range</td><td>The list (array or reference) of the dates of the payment and income values.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="yield"></a><b>YIELD(settlement_date, maturity_date, rate, price, redemption, frequency, [basis])</b></p><UL></UL>
+<P>Returns the yield on a security.</P>
+<table width=100%>
+<tr><td width=20% valign="top">settlement_date</td><td>The settlement date.</td></tr>
+<tr><td width=20% valign="top">maturity_date</td><td>The maturity date.</td></tr>
+<tr><td width=20% valign="top">rate</td><td>The annual coupon rate.</td></tr>
+<tr><td width=20% valign="top">price</td><td>The price per $100.<td></tr>
+<tr><td width=20% valign="top">redemption</td><td>The redemption value per $100.</td></tr>
+<tr><td width=20% valign="top">frequency</td><td>The number of coupon payments per year. Should be 1, 2 or 4.</td></tr>
+<tr><td width=20% valign="top">basis</td><td>The method used to represent the number of days in the period versus the number of days in a year. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>US (NASD) 30/360</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Actual/actual</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Actual/360</td></tr>
+	<tr><td width=10% valign="top">3</td><td>Actual/365</td></tr>
+	<tr><td width=10% valign="top">4</td><td>European 30/360</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="yielddisc"></a><b>YIELDDISC(settlement_date, maturity_date, price, redemption, [basis])</b></p><UL></UL>
+<P>Returns the annual yield for a discounted security.</P>
+<table width=100%>
+<tr><td width=20% valign="top">settlement_date</td><td>The settlement date.</td></tr>
+<tr><td width=20% valign="top">maturity_date</td><td>The maturity date.</td></tr>
+<tr><td width=20% valign="top">price</td><td>The price per $100.</td></tr>
+<tr><td width=20% valign="top">redemption</td><td>The redemption value per $100.</td></tr>
+<tr><td width=20% valign="top">basis</td><td>The method used to represent the number of days in the period versus the number of days in a year. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>US (NASD) 30/360</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Actual/actual</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Actual/360</td></tr>
+	<tr><td width=10% valign="top">3</td><td>Actual/365</td></tr>
+	<tr><td width=10% valign="top">4</td><td>European 30/360</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="yieldmat"></a><b>YIELDMAT(settlement_date, maturity_date, issue_date, rate, price, [basis])</b></p><UL></UL>
+<P>Returns the annual yield of a security that pays interest at maturity.</P>
+<table width=100%>
+<tr><td width=20% valign="top">settlement_date</td><td>The settlement date.</td></tr>
+<tr><td width=20% valign="top">maturity_date</td><td>The maturity date.</td></tr>
+<tr><td width=20% valign="top">issue_date</td><td>The issue date.</td></tr>
+<tr><td width=20% valign="top">rate</td><td>The interest rate.</td></tr>
+<tr><td width=20% valign="top">price</td><td>The price per $100.</td></tr>
+<tr><td width=20% valign="top">basis</td><td>The method used to represent the number of days in the period versus the number of days in a year. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">0</td><td>US (NASD) 30/360</td></tr>
+	<tr><td width=10% valign="top">1</td><td>Actual/actual</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Actual/360</td></tr>
+	<tr><td width=10% valign="top">3</td><td>Actual/365</td></tr>
+	<tr><td width=10% valign="top">4</td><td>European 30/360</td></tr>
+	</table></td></tr>
+<tr><td width=20%></td><td>If this parameter is omitted it defaults to 0.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+</BODY>
+</HTML>

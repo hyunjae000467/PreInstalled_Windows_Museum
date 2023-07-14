@@ -1,0 +1,269 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Htm-Help" CONTENT="SCEHlpFX.htm#Main_Contents">
+<title>SpreadCE Help</title>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<!-- PegHelp -->
+<p><A NAME="Main_Contents"></A><b>Text functions</b></p><UL></UL>
+<p>[ ] indicates optional parameters</p>
+<A HREF="SCEHlpFX.htm#char">CHAR(number)</A><BR>
+<A HREF="SCEHlpFX.htm#clean">CLEAN(text)</A><BR>
+<A HREF="SCEHlpFX.htm#code">CODE(text)</A><BR>
+<A HREF="SCEHlpFX.htm#concatenate">CONCATENATE(text1, [text2, ...])</A><BR>
+<A HREF="SCEHlpFX.htm#dollar">DOLLAR(number, [decimals])</A><BR>
+<A HREF="SCEHlpFX.htm#exact">EXACT(text1, text2)</A><BR>
+<A HREF="SCEHlpFX.htm#find">FIND(find_text, within_text, [start_num])</A><BR>
+<A HREF="SCEHlpFX.htm#fixed">FIXED(number, [decimals], [no_commas])</A><BR>
+<A HREF="SCEHlpFX.htm#left">LEFT(text, [num_chars])</A><BR>
+<A HREF="SCEHlpFX.htm#len">LEN(text)</A><BR>
+<A HREF="SCEHlpFX.htm#lower">LOWER(text)</A><BR>
+<A HREF="SCEHlpFX.htm#mid">MID(text, start_num, num_chars)</A><BR>
+<A HREF="SCEHlpFX.htm#proper">PROPER(text)</A><BR>
+<A HREF="SCEHlpFX.htm#replace">REPLACE(old_text, start_num, num_chars, new_text)</A><BR>
+<A HREF="SCEHlpFX.htm#rept">REPT(text, number_times)</A><BR>
+<A HREF="SCEHlpFX.htm#right">RIGHT(text, [num_chars])</A><BR>
+<A HREF="SCEHlpFX.htm#search">SEARCH(find_text, within_text, [start_num])</A><BR>
+<A HREF="SCEHlpFX.htm#substitute">SUBSTITUTE(text, old_text, new_text, [instance_num])</A><BR>
+<A HREF="SCEHlpFX.htm#t">T(value)</A><BR>
+<A HREF="SCEHlpFX.htm#text">TEXT(value, format_text)</A><BR>
+<A HREF="SCEHlpFX.htm#trim">TRIM(text)</A><BR>
+<A HREF="SCEHlpFX.htm#upper">UPPER(text)</A><BR>
+<A HREF="SCEHlpFX.htm#value">VALUE(text)</A><BR>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="char"></a><b>CHAR(number)</b></p><UL></UL>
+<P>Returns the character corresponding to the specified position in the character set.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number of the character that you want.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="clean"></a><b>CLEAN(text)</b></p><UL></UL>
+<P>Returns a string corresponding to the input string with any unprintable characters removed.</P>
+<table width=100%>
+<tr><td width=20% valign="top">text</td><td>The text from which you want to remove unprintable characters.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="code"></a><b>CODE(text)</b></p><UL></UL>
+<P>Returns the position in the character set of the first character in the string.</P>
+<table width=100%>
+<tr><td width=20% valign="top">text</td><td>The character of which you want the character code.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="concatenate"></a><b>CONCATENATE(text1, [text2, ...])</b></p><UL></UL>
+<P>Returns a string consisting of the input strings concatenated together.</P>
+<table width=100%>
+<tr><td width=20% valign="top">text1, ...</td><td>The strings that you want to concatenate.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="dollar"></a><b>DOLLAR(number, [decimals])</b></p><UL></UL>
+<P>Returns a string consisting of the input number rounded to the specified number of decimal places and converted to currency format.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The amount that you want to format.</td></tr>
+<tr><td width=20% valign="top">decimals</td><td>The number of decimal places required. If this parameter is omitted it defaults to 2.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="exact"></a><b>EXACT(text1, text2)</b></p><UL></UL>
+<P>Returns TRUE if the input strings are exactly the same, otherwise FALSE.</P>
+<table width=100%>
+<tr><td width=20% valign="top">text1</td><td>The first string to be compared.</td></tr>
+<tr><td width=20% valign="top">text2</td><td>The second string to be compared.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="find"></a><b>FIND(find_text, within_text, [start_num])</b></p><UL></UL>
+<P>Returns a number corresponding to the position of one text string within another (case-sensitive).</P>
+<table width=100%>
+<tr><td width=20% valign="top">find_text</td><td>The text you want to find.</td></tr>
+<tr><td width=20% valign="top">within_text</td><td>The text to be searched.</td></tr>
+<tr><td width=20% valign="top">start_num</td><td>The position at which to start searching. If this parameter is omitted it defaults to 1.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="fixed"></a><b>FIXED(number, [decimals], [no_commas])</b></p><UL></UL>
+<P>Returns a string consisting of the input number rounded to the specified number of decimal places.</P>
+<table width=100%>
+<tr><td width=20% valign="top">number</td><td>The number that you want to format.</td></tr>
+<tr><td width=20% valign="top">decimals</td><td>The number of decimal places required. If this parameter is omitted it defaults to 2.</td></tr>
+<tr><td width=20% valign="top">no_commas</td><td>Specifies whether to suppress the thousands separator in the formatted number. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">FALSE</td><td>The thousands separator is used.</td></tr>
+	<tr><td width=10% valign="top">TRUE</td><td>The thousands separator is not used.</td></tr>
+	</table></td></tr>
+<tr><td width=20% valign="top"></td><td>If this parameter is omitted it defaults to FALSE.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="left"></a><b>LEFT(text, [num_chars])</b></p><UL></UL>
+<P>Returns a string consisting of the specified number of characters from the beginning of the input string.</P>
+<table width=100%>
+<tr><td width=20% valign="top">text</td><td>The string of which you want the beginning.</td></tr>
+<tr><td width=20% valign="top">num_chars</td><td>The number of characters to extract from the string. If this parameter is omitted it defaults to 1.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="len"></a><b>LEN(text)</b></p><UL></UL>
+<P>Returns the length of the input string.</P>
+<table width=100%>
+<tr><td width=20% valign="top">text</td><td>The string of which you want the length.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="lower"></a><b>LOWER(text)</b></p><UL></UL>
+<P>Returns a string which is the input string with all of the characters converted to lower case.</P>
+<table width=100%>
+<tr><td width=20% valign="top">text</td><td>The string you want to convert.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="mid"></a><b>MID(text, start_num, num_chars)</b></p><UL></UL>
+<P>Returns a string consisting of the specified number of characters from the specified position of the input string.</P>
+<table width=100%>
+<tr><td width=20% valign="top">text</td><td>The string of which you want the extract.</td></tr>
+<tr><td width=20% valign="top">start_num</td><td>The starting position of characters to extract from the string.</td></tr>
+<tr><td width=20% valign="top">num_chars</td><td>The number of characters to extract from the string.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="proper"></a><b>PROPER(text)</b></p><UL></UL>
+<P>Returns a string which is the input string with the first letter of each word converted to upper case and all of the other characters converted to lower case.</P>
+<table width=100%>
+<tr><td width=20% valign="top">text</td><td>The string you want to convert.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="replace"></a><b>REPLACE(old_text, start_num, num_chars, new_text)</b></p><UL></UL>
+<P>Returns a string which is the input string with a specified portion replaced.</P>
+<table width=100%>
+<tr><td width=20% valign="top">old_text</td><td>The string you want to convert.</td></tr>
+<tr><td width=20% valign="top">start_num</td><td>The starting position of the text to be removed.</td></tr>
+<tr><td width=20% valign="top">num_chars</td><td>The number of characters to be removed.</td></tr>
+<tr><td width=20% valign="top">new_text</td><td>The text to be inserted into the string.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="rept"></a><b>REPT(text, number_times)</b></p><UL></UL>
+<P>Returns a string which is the input string repeated a specified number of times.</P>
+<table width=100%>
+<tr><td width=20% valign="top">text</td><td>The string you want to repeat.</td></tr>
+<tr><td width=20% valign="top">number_times</td><td>The number of times to repeat the string.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="right"></a><b>RIGHT(text, [num_chars])</b></p><UL></UL>
+<P>Returns a string consisting of the specified number of characters from the end of the input string.</P>
+<table width=100%>
+<tr><td width=20% valign="top">text</td><td>The string of which you want the end.</td></tr>
+<tr><td width=20% valign="top">num_chars</td><td>The number of characters to extract from the string. If this parameter is omitted it defaults to 1.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="search"></a><b>SEARCH(find_text, within_text, [start_num])</b></p><UL></UL>
+<P>Returns a number corresponding to the position of one text string within another (not case-sensitive).</P>
+<table width=100%>
+<tr><td width=20% valign="top">find_text</td><td>The text you want to find.</td></tr>
+<tr><td width=20% valign="top">within_text</td><td>The text to be searched.</td></tr>
+<tr><td width=20% valign="top">start_num</td><td>The position at which to start searching. If this parameter is omitted it defaults to 1.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="substitute"></a><b>SUBSTITUTE(text, old_text, new_text, [instance_num])</b></p><UL></UL>
+<P>Returns a string which is the input string with specified text replaced.</P>
+<table width=100%>
+<tr><td width=20% valign="top">text</td><td>The string you want to convert.</td></tr>
+<tr><td width=20% valign="top">old_text</td><td>The string to be removed from the original text.</td></tr>
+<tr><td width=20% valign="top">new_text</td><td>The string to be inserted in the original text.</td></tr>
+<tr><td width=20% valign="top">instance_num</td><td>Specifies which occurrence of old_text is to be replaced. If this parameter is omitted then all occurrences are replaced.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="t"></a><b>T(value)</b></p><UL></UL>
+<P>Returns a string which is the input value if it is text, otherwise an empty string.</P>
+<table width=100%>
+<tr><td width=20% valign="top">value</td><td>The value you want if it is a string.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="text"></a><b>TEXT(value, format_text)</b></p><UL></UL>
+<P>Returns a string consisting of the input number formatted using the specified format string.</P>
+<table width=100%>
+<tr><td width=20% valign="top">value</td><td>The number that you want to format.</td></tr>
+<tr><td width=20% valign="top">format_text</td><td>The format string to use.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="trim"></a><b>TRIM(text)</b></p><UL></UL>
+<P>Returns a string consisting of the input string with any extra spaces removed.</P>
+<table width=100%>
+<tr><td width=20% valign="top">text</td><td>The string that you want to format.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="upper"></a><b>UPPER(text)</b></p><UL></UL>
+<P>Returns a string which is the input string with all of the characters converted to upper case.</P>
+<table width=100%>
+<tr><td width=20% valign="top">text</td><td>The string that you want to convert.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="value"></a><b>VALUE(text)</b></p><UL></UL>
+<P>Returns a number which corresponds to the value in the input string. You should not need to use this function, as values are automatically converted from text to numeric when required in formulas.</P>
+<table width=100%>
+<tr><td width=20% valign="top">text</td><td>The string that you want to convert to a number.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+</BODY>
+</HTML>

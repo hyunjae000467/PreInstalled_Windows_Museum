@@ -1,0 +1,231 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Htm-Help" CONTENT="SCEHlpFR.htm#Main_Contents">
+<title>SpreadCE Help</title>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<!-- PegHelp -->
+<p><A NAME="Main_Contents"></A><b>Lookup/reference functions</b></p><UL></UL>
+<p>[ ] indicates optional parameters</p>
+<A HREF="SCEHlpFR.htm#address">ADDRESS(row_num, column_num, [abs_num], [a1], [sheet_text])</A><BR>
+<A HREF="SCEHlpFR.htm#areas">AREAS(reference)</A><BR>
+<A HREF="SCEHlpFR.htm#choose">CHOOSE(index_num, value1, [value2, ...])</A><BR>
+<A HREF="SCEHlpFR.htm#column">COLUMN([reference])</A><BR>
+<A HREF="SCEHlpFR.htm#columns">COLUMNS(array)</A><BR>
+<A HREF="SCEHlpFR.htm#hlookup">HLOOKUP(lookup_value, table_range, row_index_num, [range_lookup])</A><BR>
+<A HREF="SCEHlpFR.htm#hyperlink">HYPERLINK(link_location, [friendly_name])</A><BR>
+<A HREF="SCEHlpFR.htm#index">INDEX(reference, [row_num], [col_num], [area_num])</A><BR>
+<A HREF="SCEHlpFR.htm#indirect">INDIRECT(ref_text, [a1])</A><BR>
+<A HREF="SCEHlpFR.htm#lookup">LOOKUP(lookup_value, lookup_range, [result_range])</A><BR>
+<A HREF="SCEHlpFR.htm#match">MATCH(lookup_value, lookup_range, [match_type])</A><BR>
+<A HREF="SCEHlpFR.htm#offset">OFFSET(reference, rows, cols, [height], [width])</A><BR>
+<A HREF="SCEHlpFR.htm#row">ROW([reference])</A><BR>
+<A HREF="SCEHlpFR.htm#rows">ROWS(array)</A><BR>
+<A HREF="SCEHlpFR.htm#transpose">TRANSPOSE(array)</A><BR>
+<A HREF="SCEHlpFR.htm#vlookup">VLOOKUP(lookup_value, table_range, col_index_num, [range_lookup])</A><BR>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="address"></a><b>ADDRESS(row_num, column_num, [abs_num], [a1], [sheet_text])</b></p><UL></UL>
+<P>Returns a string containing the specified cell address.</P>
+<table width=100%>
+<tr><td width=20% valign="top">row_num</td><td>The row number of the cell.</td></tr>
+<tr><td width=20% valign="top">column_num</td><td>The column number of the cell.</td></tr>
+<tr><td width=20% valign="top">abs_num</td><td>A number representing whether the row or column are to be absolute or relative. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">1</td><td>Both absolute</td></tr>
+	<tr><td width=10% valign="top">2</td><td>Absolute row, relative column</td></tr>
+	<tr><td width=10% valign="top">3</td><td>Relative row, absolute column</td></tr>
+	<tr><td width=10% valign="top">4</td><td>Both relative</td></tr>
+	</table></td></tr>
+<tr><td width=20% valign="top"></td><td>If this parameter is omitted it defaults to 1.</td></tr>
+<tr><td width=20% valign="top">a1</td><td>Specifies the style of the reference. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">FALSE</td><td>R1C1 style</td></tr>
+	<tr><td width=10% valign="top">TRUE</td><td>A1 style</td></tr>
+	</table></td></tr>
+<tr><td width=20% valign="top"></td><td>If this parameter is omitted it defaults to TRUE.</td></tr>
+<tr><td width=20% valign="top">sheet_text</td><td>Optional sheet name with which to prefix the reference.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="areas"></a><b>AREAS(reference)</b></p><UL></UL>
+<P>Returns the number of areas contained in the reference.</P>
+<table width=100%>
+<tr><td width=20% valign="top">reference</td><td>The reference whose areas you want to count.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="choose"></a><b>CHOOSE(index_num, value1, [value2, ...])</b></p><UL></UL>
+<P>Returns one of several values depending on the index.</P>
+<table width=100%>
+<tr><td width=20% valign="top">index_num</td><td>The index of the value to be returned, should be in the range 1 to 29.</td></tr>
+<tr><td width=20% valign="top">value1, ...</td><td>Up to 29 values, one of which will be chosen to be the result.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="column"></a><b>COLUMN([reference])</b></p><UL></UL>
+<P>Returns the column number of the reference.</P>
+<table width=100%>
+<tr><td width=20% valign="top">reference</td><td>The reference whose column number you want. If this parameter is omitted it defaults to the cell containing the function.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="columns"></a><b>COLUMNS(array)</b></p><UL></UL>
+<P>Returns the number of columns in the reference.</P>
+<table width=100%>
+<tr><td width=20% valign="top">array</td><td>The reference whose columns you want to count.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="hlookup"></a><b>HLOOKUP(lookup_value, table_range, row_index_num, [range_lookup])</b></p><UL></UL>
+<P>Returns a value from a horizontal table, found by searching for the lookup value in the top row of the table and then returning a value from the same or a different row in the table.</P>
+<table width=100%>
+<tr><td width=20% valign="top">lookup_value</td><td>The value to be found in the table.</td></tr>
+<tr><td width=20% valign="top">table_range</td><td>A reference containing the table cells.</td></tr>
+<tr><td width=20% valign="top">row_index_num</td><td>The offset of the value to be returned, where 1 is the top row of the table.</td></tr>
+<tr><td width=20% valign="top">range_lookup</td><td>Whether to find an approximate or exact match. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">FALSE</td><td>An exact match is required</td></tr>
+	<tr><td width=10% valign="top">TRUE</td><td>If an exact match is not found, use the closest value less than the lookup value</td></tr>
+	</table></td></tr>
+<tr><td width=20% valign="top"></td><td>If this parameter is omitted it defaults to TRUE.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="hyperlink"></a><b>HYPERLINK(link_location, [friendly_name])</b></p><UL></UL>
+<P>Jumps to a cell or range when this cell is selected.</P>
+<table width=100%>
+<tr><td width=20% valign="top">link_location</td><td>A text expression that evaluates to the form "filename" or "[filename]reference".</td></tr>
+<tr><td width=20% valign="top">friendly_name</td><td>The text to be displayed in the cell. If this parameter is omitted it defaults to the link location text.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="index"></a><b>INDEX(reference, [row_num], [col_num], [area_num])</b></p><UL></UL>
+<P>Returns a subset of an array or reference.</P>
+<table width=100%>
+<tr><td width=20% valign="top">reference</td><td>The array or reference of which you want the subset.</td></tr>
+<tr><td width=20% valign="top">row_num</td><td>The number of the row to return. If this parameter is omitted all rows will be returned.</td></tr>
+<tr><td width=20% valign="top">col_num</td><td>The number of the column to return. If this parameter is omitted all columns will be returned.</td></tr>
+<tr><td width=20% valign="top">area_num</td><td>The number of the area to return when the reference contains more than one area. If this parameter is omitted it defaults to 1.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="indirect"></a><b>INDIRECT(ref_text, [a1])</b></p><UL></UL>
+<P>Returns a reference from the specified text.</P>
+<table width=100%>
+<tr><td width=20% valign="top">ref_text</td><td>A text expression that evaluates to the name of a cell or range of cells.</td></tr>
+<tr><td width=20% valign="top">a1</td><td>Specifies the style of the reference. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">FALSE</td><td>R1C1 style</td></tr>
+	<tr><td width=10% valign="top">TRUE</td><td>A1 style</td></tr>
+	</table></td></tr>
+<tr><td width=20% valign="top"></td><td>If this parameter is omitted it defaults to TRUE.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="lookup"></a><b>LOOKUP(lookup_value, lookup_range, [result_range])</b></p><UL></UL>
+<P>Returns a value from a horizontal or vertical table, found by searching for the lookup value in the top row (for a horizontal table) or left column (for a vertical or square table) of the table and then returning a value from the corresponding position in the result range (if specified) or from the bottom row (for a horizontal table) or right column (for a vertical or square table) of the table.</P>
+<table width=100%>
+<tr><td width=20% valign="top">lookup_value</td><td>The value to be found in the table.</td></tr>
+<tr><td width=20% valign="top">table_range</td><td>A reference containing the table cells.</td></tr>
+<tr><td width=20% valign="top">result_range</td><td>The range of cells from which to return a result. If this parameter is not specified the result will be returned from the opposite row or column of the table range.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="match"></a><b>MATCH(lookup_value, lookup_range, [match_type])</b></p><UL></UL>
+<P>Returns a number representing the position of a value in a table.</P>
+<table width=100%>
+<tr><td width=20% valign="top">lookup_value</td><td>The value to be found in the table.</td></tr>
+<tr><td width=20% valign="top">lookup_range</td><td>A reference containing the table cells.</td></tr>
+<tr><td width=20% valign="top">match_type</td><td>Whether to find an approximate or exact match. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">1</td><td>If an exact match is not found, use the closest value less than the lookup value (the table values should be in ascending order)</td></tr>
+	<tr><td width=10% valign="top">0</td><td>An exact match is required</td></tr>
+	<tr><td width=10% valign="top">-1</td><td>If an exact match is not found, use the closest value greater than the lookup value (the table values should be in descending order)</td></tr>
+	</table></td></tr>
+<tr><td width=20% valign="top"></td><td>If this parameter is omitted it defaults to 1.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="offset"></a><b>OFFSET(reference, rows, cols, [height], [width])</b></p><UL></UL>
+<P>Returns a new reference based on the specified reference.</P>
+<table width=100%>
+<tr><td width=20% valign="top">reference</td><td>The reference to be used as a starting point.</td></tr>
+<tr><td width=20% valign="top">rows</td><td>The number of rows to move the reference up (negative) or down (positive).</td></tr>
+<tr><td width=20% valign="top">cols</td><td>The number of columns to move the reference left (negative) or right (positive).</td></tr>
+<tr><td width=20% valign="top">height</td><td>The height of the new reference. If this parameter is omitted it defaults to the height of the old reference.</td></tr>
+<tr><td width=20% valign="top">width</td><td>The width of the new reference. If this parameter is omitted it defaults to the width of the old reference.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="row"></a><b>ROW([reference])</b></p><UL></UL>
+<P>Returns the row number of the reference.</P>
+<table width=100%>
+<tr><td width=20% valign="top">reference</td><td>The reference whose row number you want. If this parameter is omitted it defaults to the cell containing the function.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="rows"></a><b>ROWS(array)</b></p><UL></UL>
+<P>Returns the number of rows in the reference.</P>
+<table width=100%>
+<tr><td width=20% valign="top">array</td><td>The reference whose rows you want to count.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="transpose"></a><b>TRANSPOSE(array)</b></p><UL></UL>
+<P>Returns the transposition of the specified array or reference.</P>
+<table width=100%>
+<tr><td width=20% valign="top">array</td><td>The array or reference whose values you want to transpose.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+<hr>
+<!-- ************************Topic Break************************* -->
+<p><a name="vlookup"></a><b>VLOOKUP(lookup_value, table_range, col_index_num, [range_lookup])</b></p><UL></UL>
+<P>Returns a value from a vertical table, found by searching for the lookup value in the left column of the table and then returning a value from the same or a different column in the table.</P>
+<table width=100%>
+<tr><td width=20% valign="top">lookup_value</td><td>The value to be found in the table.</td></tr>
+<tr><td width=20% valign="top">table_range</td><td>A reference containing the table cells.</td></tr>
+<tr><td width=20% valign="top">col_index_num</td><td>The offset of the value to be returned, where 1 is the left column of the table.</td></tr>
+<tr><td width=20% valign="top">range_lookup</td><td>Whether to find an approximate or exact match. The possible values are:</td></tr>
+<tr><td width=20%></td><td><table width=100%>
+	<tr><td width=10% valign="top">FALSE</td><td>An exact match is required</td></tr>
+	<tr><td width=10% valign="top">TRUE</td><td>If an exact match is not found, use the closest value less than the lookup value</td></tr>
+	</table></td></tr>
+<tr><td width=20% valign="top"></td><td>If this parameter is omitted it defaults to TRUE.</td></tr>
+</table>
+<BR CLEAR=ALL>
+<!-- PegHelp -->
+</BODY>
+</HTML>

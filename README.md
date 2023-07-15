@@ -48,7 +48,8 @@ C:\ 의 최상단 디렉토리(Root)에 DOSBOX 폴더를 복사한다.
 >> Microsoft®, Azure®, Windows®, Windows Vista® 및 Windows 로고는 미국 및/또는 기타 국가에서 Microsoft Corporation의 등록 상표입니다.
 >> 모든 저작권은 Microsoft Corporation에게 있습니다.
 
-파일 위치 : DOSBOX\WIN95
+파일 위치 : DOSBOX\WIN95  
+<br/>
 설치 절차(공통)
 1. 파일 다운로드
 다음 공유 폴더에 있는 파일을 다운받아 DOSBOX\WIN95\bin\Win32\Release의 최상단 디렉토리에 복사한다.(Root)
